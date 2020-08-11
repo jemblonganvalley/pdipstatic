@@ -1,0 +1,38 @@
+<div class="wrapperPaginate" style="
+            display : flex;
+            justify-content : center;  
+            flex-wrap : wrap;
+        ">
+    {struktur.map((e)=> {
+    return (
+    <!-- <CardCircle image={e.image} -->
+    jabatan={e.jabatan}
+    nama={e.nama} />
+    )
+    })}
+
+    <nav aria-label="Page navigation example" style="
+            margin-top : 10px;
+            width : 100%;
+            display : flex;
+            justify-content : center;
+        ">
+
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link prevnext" href="#" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="/partai">01</a></li>
+            <li class="page-item">
+                <a class="page-link prevnext" href="#" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+)
+}
