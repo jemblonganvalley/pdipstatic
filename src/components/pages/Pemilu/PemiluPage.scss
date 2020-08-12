@@ -1,0 +1,355 @@
+$secondary : #f3f3f3;
+@import "../../../utilities/variable/variables.scss";
+
+
+.wrapperPemilu {
+    width: 100%;
+
+    .headers {
+        background: url(../../../img/pemilu6.jpg);
+        background-size: cover;
+        height: 25vh;
+        background-position: center;
+
+        .backgrounds {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            color: #ffffff;
+
+            .textBackgroundBerita {
+                width: 30%;
+                height: 50%;
+                margin-left: 5rem;
+            }
+        }
+    }
+    .linkedBerita {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+        padding: $padding;
+        i {
+            span {
+                margin-left: 5px;
+                font-style: italic;
+                font-size: 8pt;
+            }
+        }
+    }
+
+    // Container1
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        background: #f3f3f3;
+        padding: 0 10%;
+        overflow: hidden;
+
+        // Column1
+        .col1-container-1{
+            display: flex;
+            height: auto;
+            width: 100%;
+            overflow: hidden;
+
+            // Row1
+            .row1-col1{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 35%;
+                overflow: hidden;
+                
+                // Bagian1
+                .bagian1{
+                    display: flex;
+                    height: 50%;
+                    width: 100%;
+                    margin: 0 0 20px 0;
+                    border: 1px solid blue;
+                }
+                // END Bagian1
+
+                // Bagian2
+                .bagian2{
+                    display: flex;
+                    height: 50%;
+                    width: 100%;
+                    border: 1px solid blue;
+                }
+                // END Bagian2
+            }
+            // END Row1
+
+            // Row2
+            .row2-col1{
+                display: flex;
+                height: auto;
+                width: 65%;
+                background: #fff;
+                margin: 0px 0px 0 20px;
+                padding: 10px 0 0 0;
+                overflow: hidden;
+
+                // Row Bagian1
+                .row-bagian1{
+                    display: flex;
+                    height: auto;
+                    width: 25px;
+                    overflow: hidden;
+
+                    .garis-pinggir-merah{
+                        display: flex;
+                        height: auto;
+                        width: 100%;
+                        background: $colors;
+                        margin: 15px 0 15px 0;
+                        overflow: hidden;
+                    }
+                }
+                // END Row Bagian1
+            }
+        }
+        // END Column1
+
+        // Column2
+        .col2-container-1{
+            display: flex;
+            height: auto;
+            width: 100%;
+            padding: 30px 0 30px 0;
+            overflow: hidden;
+
+            // Row1
+            .row1-col2{
+                display: flex;
+                height: 20vh;
+                // width: 50%;
+                background: $colors;
+                margin: 0 20px 0 0;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                .col1-row1{
+                    display: flex;
+                    // height: 100%;
+                    // width: 30%;
+                    overflow: hidden;
+
+                    img{
+                        display: flex;
+                        // height: 100%;
+                        width: 100%;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        margin: -1px;
+                        overflow: hidden;
+                    }
+                }
+
+                .col2-row1{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 70%;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px 20px 5px 20px;
+                    overflow: hidden;
+
+                    .txt-title{
+                        display: flex;
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #fff;
+                        text-align: start;
+                        margin: 1px;
+                        overflow: hidden;
+                    }
+
+                    .txt-desk{
+                        display: flex;
+                        font-size: 11px;
+                        font-weight: 500;
+                        color: #fff;
+                        text-align: start;
+                        margin: 1px;
+                        overflow: hidden;
+                    }
+                }
+            }
+            // END Row1
+
+            // Row2
+            .row2-col2{
+                display: flex;
+                // height: 20vh;
+                // width: 50%;
+                background: $colors;
+                overflow: hidden;
+
+                .col1-row2{
+                    display: flex;
+                    // position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    // height: 100%;
+                    width: 30%;
+                    background-image: url(../../../img/pemilu9.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    overflow: hidden;
+
+                    img{
+                        position: absolute;
+                        margin-left: 10px;
+                    }
+                }
+
+                .col2-row2{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    // width: 70%;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px 20px 5px 20px;
+                    overflow: hidden;
+
+                    .txt-title{
+                        display: flex;
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #fff;
+                        text-align: start;
+                        margin: 1px;
+                        overflow: hidden;
+                    }
+
+                    .txt-desk{
+                        display: flex;
+                        font-size: 11px;
+                        font-weight: 500;
+                        color: #fff;
+                        text-align: start;
+                        margin: 1px;
+                        overflow: hidden;
+                    }
+                }
+            }
+            // END Row2
+        }
+        // END Column2
+    }
+    // END Container1
+
+    // Container2
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 60vh;
+        width: 100%;
+        background-image: url(../../../img/pemilu5.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 20px 0 20px 0;
+        overflow: hidden;
+
+        img{
+            display: flex;
+            position: absolute;
+            height: 100%;
+            width: 150%;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .jdl-col1{
+            display: flex;
+            flex-direction: row-reverse;
+            height: 70%;
+            width: 100%;
+            overflow: hidden;
+            z-index: 1;
+
+            .box-txt-jdl{
+                display: flex;
+                flex-direction: column-reverse;
+                height: 100%;
+                width: 500px;
+                padding: 10px 10px 20px 10px;
+                margin: 0 100px 0 0;
+                overflow: hidden;
+            }
+
+            .txt-jdl{
+                display: flex;
+                font-size: 20px;
+                font-weight: bold;
+                color: #000;
+                text-align: start;
+                overflow: hidden;
+            }
+        }
+
+        .btn-col2{
+            display: flex;
+            flex-direction: row-reverse;
+            height: 30%;
+            width: 100%;
+            align-items: center;
+            padding: 0 200px 20px 0;
+            z-index: 1;
+            overflow: hidden;
+
+            .btn-lihat{
+                display: flex;
+                height: 35px;
+                width: 130px;
+                background: #eee;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                // For Font Btn
+                font-size: 13px;
+                color: $colors;
+                transition: .5s;
+
+                &:hover{
+                    background: $colors;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // END Container2
+
+    // Container3
+    .container-3{
+        display: flex;
+        height: 60vh;
+        width: 100%;
+        background: #f3f3f3;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%;
+        margin: 40px 0 80px 0;
+        overflow: hidden;
+    }
+    // END Container3
+}
