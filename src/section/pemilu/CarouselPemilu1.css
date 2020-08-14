@@ -1,0 +1,26 @@
+.carousel1-pemiluPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel1-pemiluPage .box-carousel1-pemiluPage {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel1-pemiluPage .box-carousel1-pemiluPage .img-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/pemilu.jpeg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  margin: 20px 0 0 0;
+}
+/*# sourceMappingURL=CarouselPemilu1.css.map */
