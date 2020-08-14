@@ -156,7 +156,7 @@
 
 .wrapperInformasi .profilContainer .ytProfil {
   margin-top: 2rem;
-  padding: 40px 10%;
+  padding: 5px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,6 +195,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding: 2rem;
 }
 
 .wrapperInformasi .profilContainer .containerLaporan .cardLaporan {

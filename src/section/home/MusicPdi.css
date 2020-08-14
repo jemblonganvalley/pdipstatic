@@ -11,12 +11,39 @@
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  .containerDua {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .containerDua {
+    padding: 0 2%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid blue;
+  }
+}
+
 .containerDua .contentDua {
   width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .containerDua .contentDua {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .containerDua .contentDua .wrapperContentMusic {
@@ -29,7 +56,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #99000a;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #c60605;
 }
 
 .containerDua .contentDua .wrapperContentMusic .contentMusic {
@@ -203,16 +232,8 @@
   overflow-x: hidden;
 }
 
-.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p ::-webkit-scrollbar {
-  width: 10px;
-}
-
-.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p ::-webkit-scrollbar-thumb {
-  background: #888;
+.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p::-webkit-scrollbar {
+  display: none;
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic {
@@ -244,7 +265,7 @@
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton {
   width: 20%;
   height: 100%;
-  background: #2d3436;
+  background: #960001;
   padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,7 +359,7 @@
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay i {
-  color: #ecf0f1;
+  color: #bbbbbb;
   margin: 0 .3rem;
 }
 
@@ -351,17 +372,118 @@
   right: 0;
 }
 
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider {
+  height: 12px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider:focus {
+  outline: none;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0px #000000;
+          box-shadow: 0px 0px 0px #000000;
+  background: rgba(189, 195, 199, 0.8);
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-webkit-slider-thumb {
+  -webkit-box-shadow: 0px 0px 1px #000000;
+          box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 6px;
+  width: 6px;
+  border-radius: 50px;
+  background: #D80010;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -2.5px;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider:focus::-webkit-slider-runnable-track {
+  background: rgba(189, 195, 199, 0.5);
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: rgba(189, 195, 199, 0.5);
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-moz-range-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 6px;
+  width: 6px;
+  border-radius: 50px;
+  background: #D80010;
+  cursor: pointer;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-ms-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-ms-fill-lower {
+  background: rgba(189, 195, 199, 0.5);
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-ms-fill-upper {
+  background: rgba(189, 195, 199, 0.5);
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 6px;
+  width: 6px;
+  border-radius: 50px;
+  background: #D80010;
+  cursor: pointer;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider:focus::-ms-fill-lower {
+  background: rgba(189, 195, 199, 0.5);
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider:focus::-ms-fill-upper {
+  background: rgba(189, 195, 199, 0.5);
+}
+
 .containerDua .contentDua .musicList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: #ffffff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .containerDua .contentDua .musicList .judulList {
@@ -369,7 +491,6 @@
 }
 
 .containerDua .contentDua .musicList .headersList {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,30 +500,40 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 10px;
-  color: #9e0000;
+  height: 20vh;
+  border-top-right-radius: 10px;
+  background: #960001;
+  color: #ffff;
 }
 
 .containerDua .contentDua .musicList .headersList img {
   margin-right: 10px;
 }
 
-.containerDua .contentDua .musicList .headersList h4 {
-  font-size: 14pt;
+.containerDua .contentDua .musicList .headersList .textHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.containerDua .contentDua .musicList .headersList .textHeader h4 {
+  font-size: 18pt;
   font-weight: 700;
 }
 
-.containerDua .contentDua .musicList .list {
-  padding: 2rem 0;
-}
-
-.containerDua .contentDua .musicList .listSatu {
-  margin-top: 20px;
+.containerDua .contentDua .musicList .listMusic .listSatu {
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,34 +546,35 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 10px;
+  padding: 15px 20px;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
 }
 
-.containerDua .contentDua .musicList .listSatu:hover {
-  background: #a80101;
+.containerDua .contentDua .musicList .listMusic .listSatu:hover {
+  background: #ba0003;
   color: #ffffff;
 }
 
-.containerDua .contentDua .musicList .listSatu h5 {
+.containerDua .contentDua .musicList .listMusic .listSatu h5 {
   font-size: 11pt;
 }
 
-.containerDua .contentDua .musicList .listSatu h5:nth-child(0) {
+.containerDua .contentDua .musicList .listMusic .listSatu h5:nth-child(0) {
   color: #9e0000;
 }
 
-.containerDua .contentDua .musicList .listSatu p {
+.containerDua .contentDua .musicList .listMusic .listSatu p {
   margin-top: 5px;
   font-size: 9pt;
   letter-spacing: .8px;
   font-weight: 300;
 }
 
-.containerDua .contentDua .musicList .listDua {
+.containerDua .contentDua .musicList .listMusic .listDua {
   color: #c70000;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,37 +586,38 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 10px;
+  padding: 15px 20px;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
 }
 
-.containerDua .contentDua .musicList .listDua:hover {
-  background: #a80101;
+.containerDua .contentDua .musicList .listMusic .listDua:hover {
+  background: #ba0003;
   color: #ffffff;
 }
 
-.containerDua .contentDua .musicList .listDua h5 {
+.containerDua .contentDua .musicList .listMusic .listDua h5 {
   font-size: 11pt;
 }
 
-.containerDua .contentDua .musicList .listDua h5:nth-child(0) {
+.containerDua .contentDua .musicList .listMusic .listDua h5:nth-child(0) {
   color: #9e0000;
 }
 
-.containerDua .contentDua .musicList .listDua p {
+.containerDua .contentDua .musicList .listMusic .listDua p {
   margin-top: 5px;
   font-size: 8pt;
   letter-spacing: .8px;
   font-weight: 300;
 }
 
-.containerDua .contentDua .musicList .listTiga {
+.containerDua .contentDua .musicList .listMusic .listTiga {
   color: #c70000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 20vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -493,33 +626,33 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 10px;
+  padding: 15px 20px;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
 }
 
-.containerDua .contentDua .musicList .listTiga:hover {
-  background: #a80101;
+.containerDua .contentDua .musicList .listMusic .listTiga:hover {
+  background: #ba0003;
   color: #ffffff;
 }
 
-.containerDua .contentDua .musicList .listTiga h5 {
+.containerDua .contentDua .musicList .listMusic .listTiga h5 {
   font-size: 11pt;
 }
 
-.containerDua .contentDua .musicList .listTiga h5:nth-child(0) {
+.containerDua .contentDua .musicList .listMusic .listTiga h5:nth-child(0) {
   color: #9e0000;
 }
 
-.containerDua .contentDua .musicList .listTiga p {
+.containerDua .contentDua .musicList .listMusic .listTiga p {
   margin-top: 5px;
   font-size: 8pt;
   letter-spacing: .8px;
   font-weight: 300;
 }
 
-.containerDua .contentDua .musicList .listEmpat {
+.containerDua .contentDua .musicList .listMusic .listEmpat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,31 +660,33 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  height: 20vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 10px;
+  padding: 15px 20px;
+  border-bottom-right-radius: 10px;
   -webkit-transition: .3s;
   transition: .3s;
   color: #c70000;
   cursor: pointer;
 }
 
-.containerDua .contentDua .musicList .listEmpat:hover {
-  background: #a80101;
+.containerDua .contentDua .musicList .listMusic .listEmpat:hover {
+  background: #ba0003;
   color: #ffffff;
 }
 
-.containerDua .contentDua .musicList .listEmpat h5 {
+.containerDua .contentDua .musicList .listMusic .listEmpat h5 {
   font-size: 11pt;
 }
 
-.containerDua .contentDua .musicList .listEmpat h5:nth-child(0) {
+.containerDua .contentDua .musicList .listMusic .listEmpat h5:nth-child(0) {
   color: #9e0000;
 }
 
-.containerDua .contentDua .musicList .listEmpat p {
+.containerDua .contentDua .musicList .listMusic .listEmpat p {
   margin-top: 5px;
   font-size: 8pt;
   letter-spacing: .8px;
