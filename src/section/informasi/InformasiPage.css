@@ -3,7 +3,7 @@
 }
 
 .wrapperInformasi .headInformasi {
-  background: url(../../../img/mask.png);
+  background: url(../../img/mask.png);
   background-size: cover;
   height: 25vh;
   background-position: center;
@@ -11,8 +11,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .wrapperInformasi .headInformasi .textHeadInformasi {
@@ -26,7 +26,7 @@
 
 .wrapperInformasi .headInformasi .textHeadInformasi h2 {
   text-transform: uppercase;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .wrapperInformasi .headInformasi .textHeadInformasi h2 .pdip {
@@ -38,12 +38,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 40%;
   margin-top: 20px;
   padding: 5px 10%;
@@ -60,15 +60,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 5px 10%;
 }
 
@@ -87,9 +87,9 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: 'Roboto';
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: "Roboto";
 }
 
 .wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri .merdeka {
@@ -111,8 +111,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 50vw;
 }
 
@@ -121,28 +121,32 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: absolute;
   bottom: 0;
   width: 25vw;
   right: 0;
   height: 45vh;
-  background: url(../../../img/illustrator.png);
+  background: url(../../img/illustrator.png);
   background-size: cover;
   color: #ffffff;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
-.wrapperInformasi .profilContainer .paragrapKanan .backgroundPK .textParagrapKanan {
+.wrapperInformasi
+  .profilContainer
+  .paragrapKanan
+  .backgroundPK
+  .textParagrapKanan {
   margin-top: 1rem;
   font-size: 10pt;
 }
@@ -161,11 +165,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -189,11 +193,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   padding: 2rem;
 }
@@ -204,19 +208,19 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 20vh;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   background: #e50209;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wrapperInformasi .profilContainer .containerLaporan .cardLaporan:hover {
@@ -233,17 +237,27 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #ffffff;
   margin: 0 1rem;
 }
 
-.wrapperInformasi .profilContainer .containerLaporan .cardLaporan .textHarta .h5Harta {
+.wrapperInformasi
+  .profilContainer
+  .containerLaporan
+  .cardLaporan
+  .textHarta
+  .h5Harta {
   text-transform: uppercase;
 }
 
-.wrapperInformasi .profilContainer .containerLaporan .cardLaporan .textHarta .paragrapHarta {
+.wrapperInformasi
+  .profilContainer
+  .containerLaporan
+  .cardLaporan
+  .textHarta
+  .paragrapHarta {
   font-size: 8pt;
 }
 
@@ -252,15 +266,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 40px 10%;
 }
 
@@ -293,7 +307,7 @@
   width: 100%;
   display: block;
   height: 60vh;
-  background: url(../../../img/illustrator2.png);
+  background: url(../../img/illustrator2.png);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -318,8 +332,8 @@
   border: 1px solid #d80010;
   font-size: 7pt;
   text-transform: uppercase;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wrapperInformasi .sliderTataCara .carousel-item .imageTC .kunjungi:hover {
@@ -328,12 +342,12 @@
 }
 
 .wrapperInformasi .sliderTataCara .carousel-control-next-icon {
-  background: url(../../../img/right.png);
+  background: url(../../img/right.png);
   background-size: cover;
 }
 
 .wrapperInformasi .sliderTataCara .carousel-control-prev-icon {
-  background: url(../../../img/left.png);
+  background: url(../../img/left.png);
   background-size: cover;
 }
 
@@ -350,11 +364,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .wrapperInformasi .infoDua .kolomFormulir {
@@ -363,17 +377,17 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 25vh;
 }
 
 .wrapperInformasi .infoDua .kolomFormulir .textFormulir {
   margin-left: 1rem;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .wrapperInformasi .infoDua .kolomFormulirSatu {

@@ -16,7 +16,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 40px 7%;
+  padding: 40px 10%;
 }
 
 .wrapperFooter .wrapperContent {
@@ -35,7 +35,7 @@
 }
 
 .wrapperFooter .wrapperContent .textFooter {
-  margin-left: 10px;
+  word-wrap: break-word;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +43,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrapperFooter .wrapperContent .textFooter .heads {
@@ -64,20 +70,8 @@
 }
 
 .wrapperFooter .wrapperContent .emailFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 3%;
+  display: inline;
+  padding-right: 20px;
 }
 
 .wrapperFooter .wrapperContent .emailFooter i {
@@ -152,5 +146,25 @@
 .wrapperFooter .wrapperContent .alamatFooter small {
   text-align: center;
   font-size: 8pt;
+}
+
+.wrapperFooter .wrapperContent .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperFooter .wrapperContent .contact .emailFooter {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapperFooter .wrapperContent .contact .emailFooter:hover {
+  color: #d80010;
 }
 /*# sourceMappingURL=MainFooter.css.map */

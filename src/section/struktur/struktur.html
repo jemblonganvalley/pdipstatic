@@ -1,0 +1,131 @@
+<!-- satria -->
+<!-- dedi -->
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+  integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="stylesheet" href="StrukturPage.css" />
+<link rel="stylesheet" href="BreadCrumbs.css" />
+<link rel="stylesheet" href="MainDivider.css" />
+<link rel="stylesheet" href="CardCircle.css" />
+<link rel="stylesheet" href="StrukturPaginate.css" />
+<div class="pageStruktur">
+  <!-- {/* HEADERS   */} -->
+  <div class="headers">
+    <div class="backgrounds">
+      <div class="textBackgroundPartai">
+        <h2>Solid Bergerak Untuk<br />Indonesia Raya</h2>
+      </div>
+    </div>
+  </div>
+  <!-- {/* END */} -->
+
+  <!-- {/* LINK PARTAI */} -->
+  <div class="linkedPartai">
+    <!-- <BreadCrumbs link1="home"
+                      to1="/"
+                      link2="Partai"
+                      to2="/partai"
+                      page3="Struktur Pengurus" /> -->
+    <span class="wrapperBread">
+      <ul class="breadcrumb" style="background: none;">
+        <li><i class="fa fa-home customBread"></i></li>
+        <li class="breadcrumb-item customBread">
+          <a href="{to1}">Home</a>
+        </li>
+        <li style="color: #6c757d;" class="breadcrumb-item active customBread">
+          <a href="partai">Partai</a>
+        </li>
+        <li style="color: #6c757d;" class="breadcrumb-item active customBread">
+          Struktur Pengurus
+        </li>
+      </ul>
+    </span>
+  </div>
+  <!-- {/* END */} -->
+
+  <div class="pengurusPage">
+    <!-- <MainDivider text="pengurus"
+                      garisMerah="3rem" /> -->
+    <div class="col3-container-3" style="margin: 2rem 0; padding: 0px 0px;">
+      <div class="box-jdl-col3">
+        <p class="txt-jdl-col3">
+          Pengurus
+        </p>
+      </div>
+      <div class="box-garis-lurus-col3">
+        <div class="garis-merah" style="width: 100px;"></div>
+      </div>
+    </div>
+
+    <div class="strukturTextHead">
+      <h2>Struktur Pengurus Dewan Pimpinan Pusat<br />PDI Perjuangan</h2>
+    </div>
+
+    <div class="pengurusList">
+      <div class="listPengurus">
+        <!-- <StrukturPaginate/> -->
+        <div
+          class="wrapperPaginate"
+          style="display: flex; justify-content: center; flex-wrap: wrap;"
+        >
+          <a class="circleCard" href="#">
+            <div
+              class="imageCircle"
+              style="
+                background-image: url('../../img/megawati.png');
+                background-size: cover;
+              "
+            ></div>
+            <small class="jabatan"></small>
+            <h6 class="nama"></h6>
+          </a>
+
+          <nav
+            aria-label="Page navigation example"
+            style="
+              margin-top: 10px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            "
+          >
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link prevnext" href="#" aria-label="Previous">
+                  <span aria-hidden="true">«</span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="/partai">01</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link prevnext" href="#" aria-label="Next">
+                  <span aria-hidden="true">»</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- {/* END */} -->
+</div>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+  integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+  crossorigin="anonymous"
+></script>

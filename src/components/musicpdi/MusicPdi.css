@@ -114,40 +114,46 @@
   transition: .2s;
 }
 
-.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .partitur {
-  margin-top: 3.5rem;
-  width: 100%;
+.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download .downloadContent {
+  padding: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .partitur img {
+.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download .downloadContent img {
   cursor: pointer;
 }
 
-.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .minusOn {
-  margin-top: 2.5rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .minusOn img {
-  cursor: pointer;
+.containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download .downloadContent .downloadSpan {
+  margin-left: 1rem;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-weight: 700;
 }
 
 .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 {
@@ -188,7 +194,7 @@
 }
 
 .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p {
-  font-size: 8pt;
+  font-size: 10pt;
   letter-spacing: .8px;
   margin-top: 1rem;
   height: 40vh;
@@ -233,7 +239,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1px solid green;
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton {
@@ -287,6 +292,7 @@
   width: 80%;
   height: 100%;
   background: #ffffff;
+  padding: 1rem;
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .judulPlay {
@@ -323,15 +329,26 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  padding: 5px;
+  padding: 5px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   font-size: 7pt;
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay i {
   color: #ecf0f1;
+  margin: 0 .3rem;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay i span {
+  margin: 0 .3rem;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay .times {
+  position: absolute;
+  right: 0;
 }
 
 .containerDua .contentDua .musicList {
@@ -343,6 +360,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .containerDua .contentDua .musicList .judulList {
@@ -376,6 +395,10 @@
 .containerDua .contentDua .musicList .headersList h4 {
   font-size: 14pt;
   font-weight: 700;
+}
+
+.containerDua .contentDua .musicList .list {
+  padding: 2rem 0;
 }
 
 .containerDua .contentDua .musicList .listSatu {
@@ -413,7 +436,7 @@
 
 .containerDua .contentDua .musicList .listSatu p {
   margin-top: 5px;
-  font-size: 8pt;
+  font-size: 9pt;
   letter-spacing: .8px;
   font-weight: 300;
 }
