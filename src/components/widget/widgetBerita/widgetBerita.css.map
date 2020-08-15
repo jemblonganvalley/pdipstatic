@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,cAAc,CAAA;EACV,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,OAAO,ECJA,IAAI,CAAC,GAAG;EDKf,SAAS,EAAE,IAAI;CAWlB;;AAfD,AAOI,cAPU,CAOV,eAAe,CAAA;EACX,UAAU,EAAE,IAAI;CACnB;;AATL,AAWI,cAXU,CAWV,WAAW,CAAA;EACP,UAAU,EAAE,kDAAkD;CACjE",
+    "sources": [
+        "widgetBerita.scss",
+        "../../../utilities/variable/variables.scss"
+    ],
+    "names": [],
+    "file": "widgetBerita.css"
+}
