@@ -1,0 +1,151 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="./HomePage.css">
+<link rel="stylesheet" href="./MainSlider.css">
+<link rel="stylesheet" href="./MainDivider.css">
+<link rel="stylesheet" href="./MainCards.css">
+<link rel="stylesheet" href="./MainButton.css">
+<link rel="stylesheet" href="./MusicPdi.css">
+
+
+<div class="homePageTwo">
+
+    <!-- <MusicPdi/> -->
+    <div class="musiPdi">
+        <div class="containerDua">
+            <div class="contentDua">
+
+                <div class="col col-md-8 musicPlayer">
+                    <div class="wrapperContentMusic">
+                        <div class="contentMusic">
+                            <div class="col-sm-4">
+                                <div class="plyr">
+                                    <div class="backplyr">
+                                        <div class="iconMusic">
+                                            <i class="fa fa-play"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download">
+                                    <div class="partitur downloadContent">
+                                        <img src="../../img/downloadSatu.png" alt="" width="35" />
+                                        <span class="downloadSpan">Download</span>
+                                    </div>
+                                    <div class="minusOn downloadContent">
+                                        <img src="../../img/downloadDua.png" alt="" width="35" />
+                                        <span class="downloadSpan">Download</span>
+                                    </div>
+                                    <div class="minusOn downloadContent">
+                                        <img src="../../img/downloadTiga.png" alt="" width="35" />
+                                        <span class="downloadSpan">Download</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="containerLirik">
+                                    <small>lagu perjuangan</small>
+                                    <span class="judulLagu" id="songTitle">
+                                        mars pdi perjuangan
+                                    </span>
+                                    <span class="lirik">lirik</span>
+                                    <p class="isiLirik">Atas Kasih dan Kehendak Yang Maha Pencipta<br />Kita Telat
+                                        Sepakat
+                                        Bersatu<br />Bersatu Dalam Satu Rampak Barisan<br />Menentang Kemiskinan
+                                        <br /><br />
+                                        Atas Rahmat dan Bimbingan Yang Maha Kuasa<br />Kita Telah Bertekad
+                                        Berjuang<br />Berjuang untuk
+                                        Satu
+                                        Tujuan Mulia<br />Mencapai Indonesia Sentosa
+                                        <br /><br />
+                                        Bersama PDI Perjuangan<br />Bersama PDI Perjuangan<br />Wadah Kedaulatan Rakyat
+                                        Indonesia<br />Atas
+                                        Berkat dan Kemurahan Yang Maha Esa<br />PDI Perjuangan Jaya!
+
+                                        Atas Kasih dan Kehendak Yang Maha Pencipta<br />Kita Telat Sepakat
+                                        Bersatu<br />Bersatu Dalam Satu
+                                        Rampak Barisan<br />Menentang Kemiskinan
+                                        <br /><br />
+                                        Atas Rahmat dan Bimbingan Yang Maha Kuasa<br />Kita Telah Bertekad
+                                        Berjuang<br />Berjuang untuk
+                                        Satu
+                                        Tujuan Mulia<br />Mencapai Indonesia Sentosa
+                                        <br /><br />
+                                        Bersama PDI Perjuangan<br />Bersama PDI Perjuangan<br />Wadah Kedaulatan Rakyat
+                                        Indonesia<br />Atas
+                                        Berkat dan Kemurahan Yang Maha Esa<br />PDI Perjuangan Jaya! </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 playerMusic">
+                            <div class="wrapperPlayerMusic">
+                                <div class="playButton">
+                                    <div class="playbtn" id="play-btn">
+                                        <i class="fa fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="playMusic">
+                                    <audio id="player" class="audio-wrapper">
+                                        <source src="http://www.lukeduncan.me/oslo.mp3" type="audio/mp3" />
+                                    </audio>
+                                    <div class="judulPlay">
+                                        <h5 class="judulPlays">{judul}</h5>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <input type="range" id="songSlider" class="song-slider" min="0" step="1" />
+                                    <div class="iconsPlay">
+                                        <i class="fa fa-play"><span class="textPlay">0</span></i>
+                                        <i class="fa fa-heart"><span class="textPlay">0</span></i>
+                                        <i class="fa fa-comment"><span class="textPlay">0</span></i>
+                                        <div class="times">
+                                            <span class="current-time time" id="currentTime">00:00 /</span>
+                                            <span class="duration time" id="duration"> 00:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" col-md-4 musicList">
+                    <div class="headersList">
+                        <img src="../../img/laguperjuangan.png" alt="" width="75" />
+                        <div class="textHeader">
+                            <h4>Lagu<br />Perjuangan</h4>
+                        </div>
+                    </div>
+                    <div class="listMusic">
+                        <div class="listSatu list">
+                            <h5 class="judulList">Mars PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div class="listDua list">
+                            <h5 class="judulList">Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div class="listTiga list">
+                            <h5 class="judulList">Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div class="listEmpat list">
+                            <h5 class="judulList">Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
