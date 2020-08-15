@@ -61,9 +61,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -74,9 +73,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -97,6 +98,52 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .col-md-3 {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .col-md-3 .textContent {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .col-md-3 .textContent h4 {
+  font-size: 11pt;
+}
+
+.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .col-md-3 .textContent p {
+  font-size: 10px;
+  line-height: 1.5;
 }
 
 .wrapperPartai .containerSatu .contentSatu .col-lg-4 {
@@ -133,7 +180,7 @@
 }
 
 .wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselImgSatu {
-  width: 100%;
+  width: auto;
   height: 80vh;
   background: url(../../img/megawati011.jpg);
   background-size: cover;
@@ -151,51 +198,6 @@
   font-style: italic;
   font-size: 10pt;
   font-weight: 300;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 {
-  margin: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent {
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent h4 {
-  font-size: 11pt;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent p {
-  font-size: 10px;
-  line-height: 1.5;
 }
 
 .wrapperPartai .containerTiga {
