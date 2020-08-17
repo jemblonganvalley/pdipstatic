@@ -1,3 +1,5 @@
+/* uta */
+
 body{
   margin: 0px;
   padding: 0px;
@@ -223,7 +225,7 @@ body{
 
 .wrapperMultimedia .panggung {
   width: 100%;
-  background-image: url(../../../img/panggung.png);
+  background-image: url(../../img/panggung.png);
   background-size: cover;
   height: 60vh;
   display: -webkit-box;

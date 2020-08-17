@@ -1,0 +1,110 @@
+.wrapperWejangan {
+  width: 100%;
+  padding: 40px 10%;
+  background: #f3f3f3;
+}
+
+.wrapperWejangan .linkedMateri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 15px;
+}
+
+.wrapperWejangan .linkedMateri i span {
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 8pt;
+}
+
+.wrapperWejangan .container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0px 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperWejangan .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin: 0px 0 20px 0;
+  padding: 0 0%;
+}
+
+.wrapperWejangan .container2 .col-card-materi-pokok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin: 40px 0 20px 0;
+}
+
+.wrapperWejangan .container2 .col-card-materi-pokok .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.wrapperWejangan .container2 .col-card-materi-pokok .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.wrapperWejangan .container2 .col-card-materi-pokok .row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.wrapperWejangan .container2 .col-pagination-materi-pokok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=ThumbnailWejangan.css.map */

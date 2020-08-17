@@ -1,8 +1,14 @@
 <!-- uta -->
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="Page2.css">
+<link rel="stylesheet" href="BreadCrumbs.css">
+<link rel="stylesheet" href="CarouselPage2.css">
 
 <div class="wrapperPage2">
     <div class="headers">
@@ -13,9 +19,16 @@
         </div>
     </div>
     <div class="linkedBerita">
-        <i class="fa fa-home">
-            <span>Home / Berita / Bung Karno Bapak Bangsa</span>
-        </i>
+        <span class="wrapperBread">
+            <ul class="breadcrumb" style="
+                background : none">
+                <li><i class="fa fa-home customBread"></i></li>
+                <li class="breadcrumb-item customBread"><a href={to1}>Home</a></li>
+                <li style="
+                    color : #6c757d" class={`breadcrumb-item ${active} customBread`}><a href={to2}>/ Berita</a></li>
+                <li class="breadcrumb-item active customBread">/ Berita Foto</li>
+            </ul>
+        </span>
     </div>
 
     <!-- {/* Container1 */} -->
@@ -24,19 +37,8 @@
         <div class="col1-container-1">
             <!-- {/* Row1 */} -->
             <div class="row1">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="page2" class="carousel carousel-berita-page2 slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <!-- {/* Box Indicator */} -->
-                        <div class="box-indicator">
-                            <p class="txt-no-slide-in">
-                                2
-                            </p>
-                            <p class="txt-no-slide-total">
-                                / 34
-                            </p>
-                        </div>
-                        <!-- {/* END Box Indicator */} -->
-
                         <div class="carousel-item active img1">
 
                         </div>
@@ -48,19 +50,41 @@
                         </div>
                     </div>
 
-                    <div class="box-btn">
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true" />
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true" />
-                            <span class="sr-only">Next</span>
-                        </a>
+                    <!-- Container Box Indicator Carousel -->
+                    <div class="container-box-indicator-page2">
+                        <!-- Box Indicator -->
+                        <div class="box-tombol-carousel-page2">
+                            <a class="carousel-control-prev" href="#page2" role="button" data-slide="prev"
+                                id="btn-left-page2">
+                                <span class="carousel-control" aria-hidden="true" />
+                                <div class="btn-arrow-left-page2">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#page2" role="button" data-slide="next"
+                                id="btn-right-page2">
+                                <span class="carousel-control" aria-hidden="true" />
+                                <div class="btn-arrow-right-page2">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!-- Box Indicator Number -->
+                            <div class="box-indicator-number-page2">
+                                <p class="txt-nomer-utama">
+                                    2
+                                </p>
 
+                                <p class="txt-nomer-target-total">
+                                    / 34
+                                </p>
+                            </div>
+                            <!-- END Box Indicator Number -->
+                        </div>
+                        <!-- END Box Indicator -->
                     </div>
+                    <!-- END Container Box Indicator Carousel -->
                 </div>
             </div>
             <!-- {/* END Row1 */} -->

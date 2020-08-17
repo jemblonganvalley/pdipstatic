@@ -1,0 +1,137 @@
+.carousel-berita-page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  background: #555;
+  margin: 20px 0 20px 0;
+  overflow: hidden;
+}
+
+.carousel-berita-page1 .carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-berita-page1 .carousel-inner .img1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../../../img/detailartikel2.jpg);
+  background-size: cover;
+}
+
+.carousel-berita-page1 .carousel-inner .img2 {
+  height: 100%;
+  width: 100%;
+  background: #555;
+}
+
+.carousel-berita-page1 .carousel-inner .img3 {
+  height: 100%;
+  width: 100%;
+  background: #aaa;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: auto;
+  width: 100%;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 #btn-left-page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  height: 50px;
+  width: 50px;
+  margin: 0 0px 0 0;
+  background: #fff;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 #btn-left-page1 .btn-arrow-left-page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../../../img/detailartikel8.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 #btn-right-page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  height: 50px;
+  width: 50px;
+  margin: 0 1px 0 0;
+  background: #fff;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 #btn-right-page1 .btn-arrow-right-page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../../../img/detailartikel9.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 .box-indicator-number-page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 100px;
+  background: rgba(255, 0, 8, 0.5);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 .box-indicator-number-page1 .txt-nomer-utama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: blue;
+  margin: 1px;
+}
+
+.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 .box-indicator-number-page1 .txt-nomer-target-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  margin: 1px;
+  color: #fff;
+}
+/*# sourceMappingURL=CarouselPage1.css.map */

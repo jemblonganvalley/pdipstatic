@@ -7,20 +7,93 @@
 }
 
 .carousel1-pemiluPage .box-carousel1-pemiluPage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #555;
+}
+
+.carousel1-pemiluPage .box-carousel1-pemiluPage .carousel-item {
+  position: relative;
   height: 100%;
   width: 100%;
 }
 
-.carousel1-pemiluPage .box-carousel1-pemiluPage .img-1 {
+.carousel1-pemiluPage .box-carousel1-pemiluPage .carousel-item .img-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   height: 100%;
   width: 100%;
   background-image: url(../../img/pemilu.jpeg);
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  margin: 20px 0 0 0;
+  margin: 0px 0 0 0;
+}
+
+.carousel1-pemiluPage .container-box-indicator-pemilu1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel1-pemiluPage .box-indicator-carousel-pemilu1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel1-pemiluPage .box-indicator-carousel-pemilu1 #btn-left-carousel1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  color: #000;
+  margin: 0 10px 0 0;
+  border-radius: 500px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.carousel1-pemiluPage .box-indicator-carousel-pemilu1 #btn-left-carousel1:hover {
+  opacity: 1;
+}
+
+.carousel1-pemiluPage .box-indicator-carousel-pemilu1 #btn-right-carousel1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  color: #000;
+  border-radius: 500px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.carousel1-pemiluPage .box-indicator-carousel-pemilu1 #btn-right-carousel1:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=CarouselPemilu1.css.map */

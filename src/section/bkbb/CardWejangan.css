@@ -1,0 +1,53 @@
+.imgWejangan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 42vh;
+  width: 100vw;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.imgWejangan i {
+  display: 15px;
+  color: #fff;
+  margin: 5px;
+}
+
+.imgWejangan .txt1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin: 2px 0 0 0;
+}
+
+.imgWejangan .txt2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+/*# sourceMappingURL=CardWejangan.css.map */

@@ -11,7 +11,13 @@
   width: 100%;
 }
 
-.carousel2-pemiluPage .box-carousel2-pemiluPage .img-2 {
+.carousel2-pemiluPage .box-carousel2-pemiluPage .carousel-item {
+  height: 100%;
+  width: 100%;
+  background: #aaa;
+}
+
+.carousel2-pemiluPage .box-carousel2-pemiluPage .carousel-item .img-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +27,69 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  margin: 20px 0 0 0;
+}
+
+.carousel2-pemiluPage .container-box-indicator-pemilu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel2-pemiluPage .container-box-indicator-pemilu2 .box-indicator-carousel-pemilu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel2-pemiluPage .container-box-indicator-pemilu2 .box-indicator-carousel-pemilu2 #btn-left-carousel2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  color: #000;
+  border-radius: 500px;
+  margin: 0 10px 0 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.carousel2-pemiluPage .container-box-indicator-pemilu2 .box-indicator-carousel-pemilu2 #btn-left-carousel2:hover {
+  opacity: 1;
+}
+
+.carousel2-pemiluPage .container-box-indicator-pemilu2 .box-indicator-carousel-pemilu2 #btn-right-carousel2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  color: #000;
+  border-radius: 500px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.carousel2-pemiluPage .container-box-indicator-pemilu2 .box-indicator-carousel-pemilu2 #btn-right-carousel2:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=CarouselPemilu2.css.map */

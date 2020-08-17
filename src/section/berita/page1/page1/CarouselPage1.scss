@@ -1,0 +1,117 @@
+// INI UTA
+
+// Section2
+.carousel-berita-page1{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    background: #555;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+
+    .carousel-inner{
+        height: 100%;
+        width: 100%;
+
+        .img1{
+            height: 100%;
+            width: 100%;
+            background-image: url(../../../../img/detailartikel2.jpg);
+            background-size: cover;
+        }
+
+        .img2{
+            height: 100%;
+            width: 100%;
+            background: #555;
+        }
+
+        .img3{
+            height: 100%;
+            width: 100%;
+            background: #aaa;
+        }
+    }   
+    // END Carousel
+
+    // Container Box Indicator Carousel
+    .container-box-indicator-page1{
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        // Box Indicator
+        .box-tombol-carousel-page1{
+            display: flex;
+            flex-direction: row-reverse;
+            height: auto;
+            width: 100%;
+
+            #btn-left-page1{
+                display: flex;
+                position: static;
+                height: 50px;
+                width: 50px;
+                margin: 0 0px 0 0;
+                background: #fff;
+
+                .btn-arrow-left-page1{
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../../../../img/detailartikel8.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+
+            #btn-right-page1{
+                display: flex;
+                position: static;
+                height: 50px;
+                width: 50px;
+                margin: 0 1px 0 0;
+                background: #fff;
+
+                .btn-arrow-right-page1{
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../../../../img/detailartikel9.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+
+            // Box Indicator Number
+            .box-indicator-number-page1{
+                display: flex;
+                height: 50px;
+                width: 100px;
+                background: rgba(255, 0, 8, 0.5);
+                justify-content: center;
+                align-items: center;
+
+                .txt-nomer-utama{
+                    display: flex;
+                    font-size: 11px;
+                    color: blue;
+                    margin: 1px;
+                }
+
+                .txt-nomer-target-total{
+                    display: flex;
+                    font-size: 11px;
+                    margin: 1px;
+                    color: #fff;
+                }
+            }
+            // END Box Indicator Number
+        }
+        // END Box Indicator
+    }
+    // END Container Box Indicator Carousel
+}
+// END Section2

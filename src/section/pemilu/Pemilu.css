@@ -1,5 +1,7 @@
 .wrapperPemilu {
   width: 100%;
+  padding: 0 0 50px 0;
+  background: #f3f3f3;
 }
 
 .wrapperPemilu .headers {
@@ -39,8 +41,8 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 40%;
-  margin-top: 20px;
-  padding: 40px 10%;
+  margin-top: 15px;
+  padding: 10px 10%;
 }
 
 .wrapperPemilu .linkedBerita i span {
@@ -68,7 +70,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  height: 95vh;
   width: 100%;
   overflow: hidden;
 }
@@ -81,7 +83,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: auto;
+  height: 100%;
   width: 35%;
   overflow: hidden;
 }
@@ -93,7 +95,6 @@
   height: 50%;
   width: 100%;
   margin: 0 0 20px 0;
-  border: 1px solid blue;
 }
 
 .wrapperPemilu .container-1 .col1-container-1 .row1-col1 .bagian2 {
@@ -102,38 +103,17 @@
   display: flex;
   height: 50%;
   width: 100%;
-  border: 1px solid blue;
 }
 
 .wrapperPemilu .container-1 .col1-container-1 .row2-col1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  height: 100%;
   width: 65%;
   background: #fff;
   margin: 0px 0px 0 20px;
-  padding: 10px 0 0 0;
-  overflow: hidden;
-}
-
-.wrapperPemilu .container-1 .col1-container-1 .row2-col1 .row-bagian1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  width: 25px;
-  overflow: hidden;
-}
-
-.wrapperPemilu .container-1 .col1-container-1 .row2-col1 .row-bagian1 .garis-pinggir-merah {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  width: 100%;
-  background: #d80010;
-  margin: 15px 0 15px 0;
+  padding: 0px 0 0 0;
   overflow: hidden;
 }
 
@@ -152,6 +132,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 20vh;
+  width: 50%;
   background: #d80010;
   margin: 0 20px 0 0;
   -webkit-box-pack: center;
@@ -167,18 +148,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-}
-
-.wrapperPemilu .container-1 .col2-container-1 .row1-col2 .col1-row1 img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  background-position: center;
+  height: 100%;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../img/pemilu25.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  margin: -1px;
   overflow: hidden;
 }
 
@@ -230,6 +209,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 20vh;
+  width: 50%;
   background: #d80010;
   overflow: hidden;
 }
@@ -238,23 +219,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  width: 30%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
-  background-image: url(../../img/pemilu9.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(../../img/pemilu26.jpg);
   background-size: cover;
   overflow: hidden;
-}
-
-.wrapperPemilu .container-1 .col2-container-1 .row2-col2 .col1-row2 img {
-  position: absolute;
-  margin-left: 10px;
 }
 
 .wrapperPemilu .container-1 .col2-container-1 .row2-col2 .col2-row2 {
@@ -266,6 +241,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  width: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -405,7 +381,8 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  font-size: 13px;
+  font-size: 11px;
+  font-weight: bold;
   color: #d80010;
   -webkit-transition: .5s;
   transition: .5s;
@@ -433,4 +410,4 @@
   margin: 40px 0 80px 0;
   overflow: hidden;
 }
-/*# sourceMappingURL=PemiluPage.css.map */
+/*# sourceMappingURL=Pemilu.css.map */

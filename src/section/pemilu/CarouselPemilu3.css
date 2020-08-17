@@ -1,0 +1,107 @@
+.carousel3-pemiluPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
+.carousel3-pemiluPage .box-carousel3-pemiluPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.carousel3-pemiluPage .box-carousel3-pemiluPage .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel3-pemiluPage .box-carousel3-pemiluPage .carousel-item .img1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/pemilu2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel3-pemiluPage .box-carousel3-pemiluPage .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel3-pemiluPage .box-carousel3-pemiluPage .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel3-pemiluPage .container-box-indicator-pemilu3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel3-pemiluPage .container-box-indicator-pemilu3 .box-indicator-carousel-pemilu3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel3-pemiluPage .container-box-indicator-pemilu3 .box-indicator-carousel-pemilu3 #btn-left-carousel3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  color: #000;
+  border-radius: 500px;
+  margin: 0 10px 0 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.carousel3-pemiluPage .container-box-indicator-pemilu3 .box-indicator-carousel-pemilu3 #btn-left-carousel3:hover {
+  opacity: 1;
+}
+
+.carousel3-pemiluPage .container-box-indicator-pemilu3 .box-indicator-carousel-pemilu3 #btn-right-carousel3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  color: #000;
+  border-radius: 500px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.carousel3-pemiluPage .container-box-indicator-pemilu3 .box-indicator-carousel-pemilu3 #btn-right-carousel3:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=CarouselPemilu3.css.map */

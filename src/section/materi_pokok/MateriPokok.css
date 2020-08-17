@@ -1,6 +1,7 @@
 .wrapperMateri {
   width: 100%;
   padding: 40px 10%;
+  background: #f3f3f3;
 }
 
 .wrapperMateri .linkedMateri {
@@ -15,7 +16,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 40%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .wrapperMateri .linkedMateri i span {
@@ -24,20 +25,86 @@
   font-size: 8pt;
 }
 
-.wrapperMateri .bkbbText {
-  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+.wrapperMateri .container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  margin: 0px 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wrapperMateri .bkbbText small {
-  cursor: pointer;
-  color: #d80010;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 8pt;
-  border-bottom: 5.5px solid #d80010;
+.wrapperMateri .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin: 0px 0 20px 0;
+  padding: 0 0%;
+}
+
+.wrapperMateri .container2 .col-card-materi-pokok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin: 40px 0 20px 0;
+}
+
+.wrapperMateri .container2 .col-card-materi-pokok .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.wrapperMateri .container2 .col-card-materi-pokok .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.wrapperMateri .container2 .col-card-materi-pokok .row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.wrapperMateri .container2 .col-pagination-materi-pokok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=MateriPokok.css.map */

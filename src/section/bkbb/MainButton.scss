@@ -1,0 +1,20 @@
+.btn2 {
+    border-radius: 25px;
+    background-color: #d80010;
+    // border: 1px solid #d80010;
+    text-transform: uppercase;
+    // margin-top: 20px;
+    font-size: 7pt;
+    font-weight: 500;
+    color: #ffffff;
+    transition: .5s;
+
+    // @include responSatu() {
+    //     font-size: 6pt;
+    // }
+
+    &:hover {
+        background: #2f3542;
+        color: #ffffff;
+    }
+}

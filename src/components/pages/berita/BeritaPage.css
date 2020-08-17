@@ -308,7 +308,7 @@
   padding: 10px 0 0 0%;
 }
 
-.wrapperBerita .container-1 .col3-cardContent-container-1 .col-cardContent .col15-container-1 {
+.wrapperBerita .container-1 .col3-cardContent-container-1 .col-cardContent {
   height: 100%;
   width: 100%;
   -webkit-box-flex: 1;
@@ -324,7 +324,7 @@
   border-radius: 0px;
 }
 
-.wrapperBerita .container-1 .col3-cardContent-container-1 .col-cardContent .col5-container-1 .col4-container-1:hover {
+.wrapperBerita .container-1 .col3-cardContent-container-1 .col-cardContent:hover {
   background: #d80010;
   color: #fff;
 }

@@ -1,0 +1,47 @@
+// UTA
+
+.cardMedia {
+    width: 100%;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .mediaCard {
+        text-decoration: none;
+        color: #000000;
+        .smallCard {
+            text-transform: uppercase;
+            // font-weight: 700;
+            font-family: 'Open Sans';
+            font-size: 9pt;
+            
+        }
+    }
+    
+    .imgCards {
+        margin-right: 1rem;
+    }
+
+    .siaranLangsung {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .videoDokumentasi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .videoInteraktif {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .siaranPers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

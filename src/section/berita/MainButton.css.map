@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACF,aAAa,EAAE,IAAI;EACnB,gBAAgB,EAAE,OAAO;EAEzB,cAAc,EAAE,SAAS;EAEzB,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,OAAO;EACd,UAAU,EAAE,GAAG;CAUlB;;AAnBD,AAeI,KAfC,AAeA,MAAM,CAAC;EACJ,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,OAAO;CACjB",
+    "sources": [
+        "MainButton.scss"
+    ],
+    "names": [],
+    "file": "MainButton.css"
+}
