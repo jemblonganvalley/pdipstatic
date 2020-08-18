@@ -1,12 +1,31 @@
-$secondary : #f3f3f3;
-@import "../../../utilities/variable/variables.scss";
+// $secondary : #f3f3f3;
+// @import "../../../utilities/variable/variables.scss";
 
+// $smallPhoneSatu : 500px;
+// $smallPhoneDua : 400px;
+// @mixin smallPhone {
+//     @media (max-width : #{$smallPhoneSatu}) {
+//         @content;
+//     }
+// }
+// @mixin smallPhoneDua {
+//     @media (max-width : #{$smallPhoneDua}) {
+//         @content;
+//     }
+// }
+
+@media screen and (max-width:500px){
+    .headers{
+        height: 15vh;
+    }
+}
 
 .wrapperKetuaUmum{
     width: 100%;
+    background: #f3f3f3;
 
     .headers {
-        background: url(../../../img/pemilu8.jpg);
+        background: url(../../img/pemilu8.jpg);
         background-size: cover;
         height: 25vh;
         background-position: center;
@@ -33,7 +52,7 @@ $secondary : #f3f3f3;
         flex-direction: row;
         width: 40%;
         margin-top: 20px;
-        padding: $paddingSmall;
+        padding: 10px 10%;
     }
 
     // Container1
@@ -51,7 +70,7 @@ $secondary : #f3f3f3;
             flex-direction: column;
             height: auto;
             width: 100%;
-            background-image: url(../../../img//ketuaumum6.jpg);
+            background-image: url(../../img//ketuaumum6.jpg);
             background-position: center;
             background-size: cover;
             overflow: hidden;
@@ -147,7 +166,7 @@ $secondary : #f3f3f3;
         // Column5
         .col5-container-1{
             display: flex;
-            height: 65vh;
+            height: 70vh;
             width: 100%;
             margin: 30px 0 0px 0;
             overflow: hidden;
@@ -174,7 +193,7 @@ $secondary : #f3f3f3;
                     display: flex;
                     height: 30%;
                     width: 100%;
-                    background: $colors;
+                    background: #d80010;
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
@@ -196,7 +215,7 @@ $secondary : #f3f3f3;
                 flex-direction: column-reverse;
                 height: 100%;
                 width: 30%;
-                background-image: url(../../../img/img4.jpg);
+                background-image: url(../../img/img4.jpg);
                 background-position: center;
                 background-size: cover;
                 overflow: hidden;
@@ -231,7 +250,7 @@ $secondary : #f3f3f3;
         flex-direction: column;
         height: 45vh;
         width: 100%;
-        background-image: url(../../../img/ketuaumum7.jpg);
+        background-image: url(../../img/ketuaumum7.jpg);
         background-size: cover;
         margin: 50px 0 0px 0;
         overflow: hidden;
@@ -276,13 +295,13 @@ $secondary : #f3f3f3;
                 // For Font Button
                 font-size: 12px;
                 font-weight: 500;
-                color: $colors;
+                color: #d80010;
                 justify-content: center;
                 align-items: center;
                 transition: .5s;
 
                 &:hover{
-                    background: $colors;
+                    background: #d80010;
                     color: #fff;
                 }
             }
@@ -298,12 +317,13 @@ $secondary : #f3f3f3;
         height: auto;
         width: 100%;
         padding: 0 10% 50px 10%;
-        border: 1px solid blue;
+        margin: 10px 0 0 0;
 
         // Column2
         .col2-cardContent-container-3 {
             display: flex;
             flex-direction: row;
+            margin: 10px 0 0 0;
         }
         // END Column2
 

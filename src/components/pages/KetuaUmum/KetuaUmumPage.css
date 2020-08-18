@@ -387,6 +387,7 @@
   height: auto;
   width: 100%;
   padding: 0 10% 50px 10%;
+  border: 1px solid blue;
 }
 
 .wrapperKetuaUmum .container-3 .col2-cardContent-container-3 {
