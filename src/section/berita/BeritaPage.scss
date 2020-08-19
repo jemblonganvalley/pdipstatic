@@ -1,5 +1,18 @@
 // UTA
 
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
 .wrapperBerita{
     width: 100%;
     background: #f3f3f3;
@@ -9,6 +22,15 @@
         background-size: cover;
         height: 25vh;
         background-position: center;
+
+        @include smallPhone(){
+            height: 20vh;
+            border: 1px solid blue;
+        }
+
+        @include smallPhoneDua(){
+            height: 15vh;
+        }
 
         .backgrounds {
             background-color: rgba(255, 0, 8, 0.1);
