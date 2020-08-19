@@ -1,5 +1,18 @@
 // EJA
 
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
 .wrapperPemilu {
     width: 100%;
     padding: 0 0 50px 0;
@@ -10,6 +23,16 @@
         background-size: cover;
         height: 25vh;
         background-position: center;
+
+        @include smallPhone(){
+            height: 20vh;
+            background-attachment: inherit;
+        }
+
+        @include smallPhone(){
+            height: 15vh;
+            background-attachment: inherit;
+        }
 
         .backgrounds {
             width: 100%;
@@ -34,6 +57,11 @@
         margin-top: 15px;
         padding: 10px 10%;
 
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
+
 
         i {
             span {
@@ -54,12 +82,21 @@
         padding: 0 10%;
         overflow: hidden;
 
+        @include smallPhone(){
+            padding: 0 5px;
+        }
+
         // Column1
         .col1-container-1{
             display: flex;
             height: 95vh;
             width: 100%;
             overflow: hidden;
+
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+            }
 
             // Row1
             .row1-col1{
@@ -68,6 +105,11 @@
                 height: 100%;
                 width: 35%;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    height: auto;
+                    width: 100%;
+                }
                 
                 // Bagian1
                 .bagian1{
@@ -75,6 +117,12 @@
                     height: 50%;
                     width: 100%;
                     margin: 0 0 20px 0;
+
+                    @include smallPhone(){
+                        height: 40vh;
+                        width: 100%;
+                        margin: 0 0 10px 0;
+                    }
                 }
                 // END Bagian1
 
@@ -83,6 +131,11 @@
                     display: flex;
                     height: 50%;
                     width: 100%;
+
+                    @include smallPhone(){
+                        height: 40vh;
+                        width: 100%;
+                    }
                 }
                 // END Bagian2
             }
@@ -97,6 +150,12 @@
                 margin: 0px 0px 0 20px;
                 padding: 0px 0 0 0;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    height: 40vh;
+                    width: 100%;
+                    margin: 10px 0 0 0;
+                }
             }
         }
         // END Column1
@@ -109,6 +168,10 @@
             padding: 30px 0 30px 0;
             overflow: hidden;
 
+            @include smallPhone(){
+                flex-direction: column;
+            }
+
             // Row1
             .row1-col2{
                 display: flex;
@@ -120,6 +183,10 @@
                 align-items: center;
                 overflow: hidden;
 
+                @include smallPhone(){
+                    width: 100%;
+                }
+
                 .col1-row1{
                     display: flex;
                     height: 100%;
@@ -129,6 +196,10 @@
                     background-image: url(../../img/pemilu25.jpg);
                     background-size: cover;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        background-position: center;
+                    }
                 }
 
                 .col2-row1{
@@ -141,6 +212,10 @@
                     padding: 5px 20px 5px 20px;
                     overflow: hidden;
 
+                    @include smallPhone(){
+                        padding: 5px 10px 5px 0px;
+                    }
+
                     .txt-title{
                         display: flex;
                         font-size: 18px;
@@ -149,6 +224,10 @@
                         text-align: start;
                         margin: 1px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 15px;
+                        }
                     }
 
                     .txt-desk{
@@ -159,6 +238,10 @@
                         text-align: start;
                         margin: 1px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -172,6 +255,11 @@
                 background: #d80010;
                 overflow: hidden;
 
+                @include smallPhone(){
+                    width: 100%;
+                    margin: 10px 0 0 0;
+                }
+
                 .col1-row2{
                     display: flex;
                     height: 100%;
@@ -181,6 +269,10 @@
                     background-image: url(../../img/pemilu26.jpg);
                     background-size: cover;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        background-position: center;
+                    }
                 }
 
                 .col2-row2{
@@ -192,6 +284,10 @@
                     align-items: center;
                     padding: 5px 20px 5px 20px;
                     overflow: hidden;
+                    
+                    @include smallPhone(){
+                        padding: 5px 10px 5px 0px;
+                    }
 
                     .txt-title{
                         display: flex;
@@ -201,6 +297,10 @@
                         text-align: start;
                         margin: 1px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 15px;
+                        }
                     }
 
                     .txt-desk{
@@ -211,6 +311,10 @@
                         text-align: start;
                         margin: 1px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -232,6 +336,12 @@
         background-size: cover;
         margin: 20px 0 20px 0;
         overflow: hidden;
+
+        @include smallPhone(){
+            height: 30vh;
+            width: 100%;
+            margin: 0;
+        }
 
         img{
             display: flex;
@@ -259,6 +369,12 @@
                 padding: 10px 10px 20px 10px;
                 margin: 0 100px 0 0;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    width: 60%;
+                    padding: 10px;
+                    margin: 0 0 0 50px;
+                }
             }
 
             .txt-jdl{
@@ -268,6 +384,10 @@
                 color: #000;
                 text-align: start;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    font-size: 10px;
+                }
             }
         }
 
@@ -280,6 +400,10 @@
             padding: 0 200px 20px 0;
             z-index: 1;
             overflow: hidden;
+
+            @include smallPhone(){
+                padding: 0 50px 0 0 ;
+            }
 
             .btn-lihat{
                 display: flex;
@@ -318,6 +442,19 @@
         padding: 0 10%;
         margin: 40px 0 80px 0;
         overflow: hidden;
+
+        @include smallPhone(){
+            padding: 0;
+        }
+
+        iframe{
+            display: flex;
+
+            @include smallPhone(){
+                width: 100%;
+                padding: 0 5px;
+            }
+        }
     }
     // END Container3
 }

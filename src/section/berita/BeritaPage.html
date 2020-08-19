@@ -4,14 +4,15 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="BreadCrumbs.css">
 <link rel="stylesheet" href="BeritaPage.css">
-<link rel="stylesheet" href="CarouselBerita.css">
-<link rel="stylesheet" href="CardInformasi.css">
+<link rel="stylesheet" href="./CarouselBerita.css">
+<link rel="stylesheet" href="./CardInformasi.css">
 <link rel="stylesheet" href="./MainCards.css">
-<link rel="stylesheet" href="MainDivider.css">
-<link rel="stylesheet" href="MainButton.css">
+<link rel="stylesheet" href="./MainButton.css">
+<link rel="stylesheet" href="./MainDivider.css">
 
 <!-- Element Berita Page -->
 <div class="wrapperBerita">
@@ -23,23 +24,22 @@
         </div>
     </div>
     <div class="linkedBerita">
-        <!-- <BreadCrumbs link1="Home" to1="/" page2="Berita" /> -->
         <span class="wrapperBread">
-            <ul class="breadcrumb" style="background: none;">
+            <ul class="breadcrumb" style="
+                background : none">
                 <li><i class="fa fa-home customBread"></i></li>
-                <li class="breadcrumb-item customBread"><a href="{to1}">Home</a></li>
-                <li style="color: #6c757d;" class="{`breadcrumb-item" ${active} customBread`}>
-                    <a href="{to2}"></a>&nbsp;/ Berita /
+                <li class="breadcrumb-item customBread"><a href={to1}>Home</a></li>
+                <li style="
+                    color : #6c757d" class={`breadcrumb-item ${active} customBread`}><a href={to2}></a>
                 </li>
+                <li class="breadcrumb-item active customBread">/ Berita</li>
             </ul>
         </span>
     </div>
 
     <!-- Container1 -->
-    <div class="container-1">
+    <div class="container-1-beritaPage">
         <!-- Column1 -->
-        <!-- <CarouselBerita /> -->
-
         <div id="carouselExampleControls" class="carousel carousel-beritaPage slide" data-ride="carousel">
             <div class="carousel-inner box-carousel-beritaPage">
                 <div class="carousel-item active">
@@ -92,19 +92,19 @@
         <div class="cardMedia">
             <a href={to1} class="siaranLangsung mediaCard">
                 <img src="../../img/berita1.png" alt="" width="35" class="imgCards" />
-                <small class="smallCard">BERITA NASIONAL</small>
+                <small class="smallCard">pidato kongres</small>
             </a>
             <a href={to2} class="videoDokumentasi mediaCard">
                 <img src="../../img/berita2.png" alt="" width="35" class="imgCards" />
-                <small class="smallCard">BERITA DAERAH</small>
+                <small class="smallCard">pidato rakernas</small>
             </a>
             <a href={to3} class="videoInteraktif mediaCard">
                 <img src="../../img/berita3.png" alt="" width="35" class="imgCards" />
-                <small class="smallCard">BERITA FOTO</small>
+                <small class="smallCard">pidato rakornas</small>
             </a>
             <a href={to4} class="siaranPers mediaCard">
                 <img src="../../img/berita4.png" alt="" width="35" class="imgCards" />
-                <small class="smallCard">KEGIATAN PARTAi</small>
+                <small class="smallCard">pidato hut</small>
             </a>
         </div>
         <!-- END Column2 -->
@@ -198,11 +198,9 @@
         <!-- END Column3 -->
 
         <!-- Column4 -->
-        <div class="col4-container-1">
-            <!-- <MainDivider text="Berita Foto" garisMerah="7rem" m="1rem 0" /> -->
+        <div class="col4-container-1-beritaPage">
             <div class="col3-container-3" style="
-                margin : 2rem 0; 
-                padding: 0px 0%;">
+            margin : 2rem 0;">
                 <div class="box-jdl-col3">
                     <p class="txt-jdl-col3">
                         BERITA FOTO
@@ -210,7 +208,8 @@
                 </div>
                 <div class="box-garis-lurus-col3">
                     <div class="garis-merah" style="
-                        width: 100px">
+                    width: 150px">
+
                     </div>
                 </div>
             </div>
@@ -218,9 +217,9 @@
         <!-- END Column4 -->
 
         <!-- Column5 -->
-        <div class="col5-container-1">
+        <div class="col5-container-1-beritaPage">
             <!-- Row1 -->
-            <div class="row1-col5">
+            <div class="row1-col5-beritaPage">
                 <div class="box-img">
 
                 </div>
@@ -228,16 +227,16 @@
                     <h1>KONGRES Ke- 5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali</h1>
                 </div>
             </div>
-            <!--* END Row1 -->
+            <!-- END Row1 -->
             <!-- Row2 -->
-            <a href='/page2' class="row2-col5">
+            <a href='/page2' class="row2-col5-beritaPage">
                 <!-- Column1 -->
-                <div class="col1-row2">
+                <div class="col1-row2-beritaPage">
 
                 </div>
                 <!-- END Column1 -->
                 <!-- Column2 -->
-                <div class="col2-row2">
+                <div class="col2-row2-beritaPage">
                     <p class="txt-jdl-col2">
                         Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia
                     </p>
@@ -258,9 +257,9 @@
     <!-- END Container1 -->
 
     <!-- Container2 -->
-    <div class="container-2">
+    <div class="container-2-beritaPage">
         <!-- Column1 -->
-        <div class="col1-container-2 banner-berita">
+        <div class="col1-container-2-beritaPage banner-berita">
             <p class="txt-title-col1">
                 Ut enim ad minim veniam, quis nostrud
                 <br /> exercitation ullamco laboris
@@ -268,14 +267,8 @@
         </div>
         <!-- END Column1 -->
         <!-- Column2 -->
-        <div class="col2-container-2">
-            <!-- <MainButton name="LIHAT" /> -->
-
-            <a class="btn btn2" style="
-                margin : margin;
-                border : borderButton;" to={pages}>
-                <i class={`${btnIcons}`} style="
-                    margin-right : mr"></i>
+        <div class="col2-container-2-beritaPage">
+            <a href="" class="btn btn2">
                 LIHAT
             </a>
         </div>
@@ -284,14 +277,11 @@
     <!-- END Container2 -->
 
     <!-- Container3 -->
-    <div class="container-3">
+    <div class="container-3-beritaPage">
         <!-- Column1 -->
-        <div class="col1-container-3">
-            <!-- <MainDivider text="Berita Daerah" garisMerah="7rem" m="1rem 0" /> -->
-
+        <div class="col1-container-3-beritaPage">
             <div class="col3-container-3" style="
-                margin : 2rem 0; 
-                padding: 0 0%;">
+            margin : 2rem 0;">
                 <div class="box-jdl-col3">
                     <p class="txt-jdl-col3">
                         BERITA DAERAH
@@ -299,7 +289,8 @@
                 </div>
                 <div class="box-garis-lurus-col3">
                     <div class="garis-merah" style="
-                        width: 100px">
+                    width: 150px">
+
                     </div>
                 </div>
             </div>
@@ -307,7 +298,7 @@
         <!-- END Column1 -->
 
         <!-- Column2 -->
-        <div class="col2-cardContent-container-3">
+        <div class="col2-cardContent-container-3-beritaPage">
             <!-- Card1 -->
             <div class="col col-lg-3 cardCustom" style="
                 border-radius : 10px;
@@ -395,12 +386,9 @@
         <!-- END Column2 -->
 
         <!-- Column3 -->
-        <div class="col3-container-3">
-            <!-- <MainDivider text="Kegiatan Partai" garisMerah="7rem" m="1rem 0" /> -->
-
+        <div class="col3-container-3-beritaPage">
             <div class="col3-container-3" style="
-                margin : 2rem 0; 
-                padding: 0 10%;">
+            margin : 2rem 0;">
                 <div class="box-jdl-col3">
                     <p class="txt-jdl-col3">
                         KEGIATAN PARTAI
@@ -408,7 +396,8 @@
                 </div>
                 <div class="box-garis-lurus-col3">
                     <div class="garis-merah" style="
-                        width: 100px">
+                    width: 150px">
+
                     </div>
                 </div>
             </div>
@@ -416,8 +405,8 @@
         <!-- END Column3 -->
 
         <!-- Column4 -->
-        <div class="col4-cardContent-container-3">
-            <div class="col2-cardContent-container-3">
+        <div class="col4-cardContent-container-3-beritaPage">
+            <div class="col2-cardContent-container-3-beritaPage">
                 <!-- Card1 -->
                 <div class="col col-lg-3 cardCustom" style="
             border-radius : 10px;

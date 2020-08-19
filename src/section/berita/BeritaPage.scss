@@ -1,4 +1,4 @@
-// UTA
+// @import "../../../utilities/variable/variables.scss";
 
 $smallPhoneSatu : 500px;
 $smallPhoneDua : 400px;
@@ -13,6 +13,7 @@ $smallPhoneDua : 400px;
     }
 }
 
+
 .wrapperBerita{
     width: 100%;
     background: #f3f3f3;
@@ -25,10 +26,9 @@ $smallPhoneDua : 400px;
 
         @include smallPhone(){
             height: 20vh;
-            border: 1px solid blue;
         }
 
-        @include smallPhoneDua(){
+        @include smallPhone(){
             height: 15vh;
         }
 
@@ -55,10 +55,15 @@ $smallPhoneDua : 400px;
         width: 40%;
         margin-top: 15px;
         padding: 10px 10%;
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
     }
 
     // Container1
-    .container-1{
+    .container-1-beritaPage{
         display: flex;
         flex-direction: column;
         height: auto;
@@ -66,29 +71,36 @@ $smallPhoneDua : 400px;
         padding: 0 10%;
         overflow: hidden;
 
+        @include smallPhone(){
+            padding: 0;
+        }
+
 
         // Column3
         .cardBerita1-col3-container-1 {
             display: flex;
             width: 100%;
-            height: auto;
+            height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: row;
             cursor: pointer;
-            margin: 0;
-            padding: 0px 0 0px 0%;
+
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+            }
         }
         // END Column3
 
         // Column4
-        .col4-container-1{
+        .col4-container-1-beritaPage{
             display: flex;
             flex-direction: column;
             height: 20vh;
             width: 100%;
-            // background: #f3f3f3;
+            background: #f3f3f3;
             align-items: center;
             justify-content: center;
             overflow: hidden;
@@ -96,14 +108,20 @@ $smallPhoneDua : 400px;
         // END Column4
 
         // Column5
-        .col5-container-1{
+        .col5-container-1-beritaPage{
             display: flex;
             height: 70vh;
             width: 100%;
             overflow: hidden;
 
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+                padding: 0 5px;
+            }
+
             // Row1
-            .row1-col5{
+            .row1-col5-beritaPage{
                 display: flex;
                 flex-direction: column;
                 position: relative;
@@ -114,6 +132,12 @@ $smallPhoneDua : 400px;
                 background-size: cover;
                 overflow: hidden;
                 transition: .5s;
+
+                @include smallPhone(){
+                    height: 40vh;
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                }
 
                 &:hover{
                     background: #fff;
@@ -142,13 +166,18 @@ $smallPhoneDua : 400px;
                         font-size: 20px;
                         padding: 20px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 15px;
+                            margin: 1px;
+                        }
                     }
                 }
             }
             // END Row1
 
             // Row2
-            .row2-col5{
+            .row2-col5-beritaPage{
                 display: flex;
                 flex-direction: column;
                 height: 100%;
@@ -159,6 +188,12 @@ $smallPhoneDua : 400px;
                 text-decoration: none;
                 transition: .5s;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    height: 50vh;
+                    width: 100%;
+                    margin: 0;
+                }
                 
                 &:hover{
                     background: #d80010;
@@ -166,7 +201,7 @@ $smallPhoneDua : 400px;
                 }
 
                 // Column1
-                .col1-row2{
+                .col1-row2-beritaPage{
                     display: flex;
                     height: 70%;
                     width: 100%;
@@ -174,17 +209,26 @@ $smallPhoneDua : 400px;
                     background-size: cover;
                     background-position: center;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        height: 60%;
+                    }
                 }
                 // END Column1
 
                 // Column2
-                .col2-row2{
+                .col2-row2-beritaPage{
                     display: flex;
                     flex-direction: column;
                     height: 30%;
                     width: 100%;
                     padding: 20px 35px 5px 35px;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        height: 40%;
+                        padding: 20px 20px 20px 20px;
+                    }
 
                     .txt-jdl-col2{
                         display: flex;
@@ -194,6 +238,10 @@ $smallPhoneDua : 400px;
                         margin: 0 0 5px 0;
                         padding: 0 0 2px 0;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 15px;
+                        }
                     }
 
                     .txt-desk-col2{
@@ -202,6 +250,10 @@ $smallPhoneDua : 400px;
                         text-align: start;
                         padding: 0 0 10px 0;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 10px;
+                        }
                     }
                 }
                 // END Column2
@@ -213,7 +265,7 @@ $smallPhoneDua : 400px;
     // END Container1
 
     // Container2
-    .container-2{
+    .container-2-beritaPage{
         display: flex;
         flex-direction: column;
         height: 55vh;
@@ -225,8 +277,13 @@ $smallPhoneDua : 400px;
         margin: 50px 0 0px 0;
         overflow: hidden;
 
+        @include smallPhone(){
+            height: 32vh;
+            background-attachment: inherit;
+        }
+
         // Column1
-        .col1-container-2{
+        .col1-container-2-beritaPage{
             display: flex;
             flex-direction: column-reverse;
             height: 70%;
@@ -241,12 +298,16 @@ $smallPhoneDua : 400px;
                 color: #fff;
                 text-align: center;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    font-size: 15px;
+                }
             }
         }
         // END Column1
 
         // Column2
-        .col2-container-2{
+        .col2-container-2-beritaPage{
             display: flex;
             height: 30%;
             width: 100%;
@@ -283,25 +344,36 @@ $smallPhoneDua : 400px;
     // END Container2
 
     // Container3
-    .container-3{
+    .container-3-beritaPage{
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
         padding: 0 10% 50px 10%;
 
+        @include smallPhone(){
+            padding: 0 0px;
+        }
+
         // Column1
-        .col1-container-3{
+        .col1-container-3-beritaPage{
             display: flex;
             flex-direction: column;
             height: 20vh;
             width: 100%;
+            justify-content: center;
+            align-items: center;
             overflow: hidden;
+
+            @include smallPhone(){
+                justify-content: center;
+                align-items: center;
+            }
         }
         // END Column1
 
         // Column2
-        .col2-cardContent-container-3 {
+        .col2-cardContent-container-3-beritaPage {
             width: 100%;
             height: auto;
             display: flex;
@@ -311,159 +383,53 @@ $smallPhoneDua : 400px;
             margin-top: 0;
             padding: 0px 0%;
         
-            // .col-cardContent {
-            //     //  border: 1px solid green;
-            //      height: 100%;
-            //      width: 100%;
-            //      flex: auto;
-            //      margin: 0 10px;
-            //      background: #ffffff;
-            //      transition: .5s;
-            //      border-radius: 10px;
-
-            //      &:hover{
-            //          background: #d80010;
-            //          color: #fff;
-            //      }
-        
-            //      .imageContent {
-            //          width: 100%;
-            //          height: 30vh;
-        
-            //          background: url(../../../img/pemilu18.jpg);
-            //          background-size: cover;
-            //          background-position: center;
-            //          border-top-right-radius: 10px;
-            //          border-top-left-radius: 10px;
-            //      }
-        
-            //      .imageTwo {
-            //         width: 100%;
-            //         height: 30vh;
-        
-            //         background: url(../../../img/pemilu19.jpg);
-            //         background-size: cover;
-            //          background-position: center;
-            //          border-top-right-radius: 10px;
-            //          border-top-left-radius: 10px;
-            //      }
-        
-            //      .imageThree {
-            //         width: 100%;
-            //         height: 30vh;
-        
-            //         background: url(../../../img/pemilu20.jpg);
-            //         background-size: cover;
-            //      }
-        
-            //      .textCard {
-            //          width: 100%;
-            //         //  height: 100%;
-            //          padding: 5px 20px;
-        
-            //         //  border:  1px solid blue;
-        
-            //          small {
-            //              font-size: 7pt;
-            //              color: #d80010;
-            //          }
-        
-            //          p {
-            //              font-size: 8pt;
-            //          }
-            //      }
-            // }
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+                padding: 0;
+            }
         }
         // END Column2
 
         // Column3
-        .col3-container-3{
+        .col3-container-3-beritaPage{
             display: flex;
             flex-direction: column;
             height: 20vh;
             width: 100%;
+            justify-content: center;
+            align-items: center;
             overflow: hidden;
+
+            @include smallPhone(){
+                justify-content: center;
+                align-items: center;
+            }
         }
         // END Column3
 
         // Column4
-        .col4-cardContent-container-3 {
+        .col4-cardContent-container-3-beritaPage {
             width: 100%;
             height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: row;
             margin-top: 0;
-            padding: 10px 0%;
+            padding: 0px 0%;
             overflow: hidden;
-        
-            // .col-cardContent {
-            //     //  border: 1px solid green;
-            //      height: 100%;
-            //      width: 100%;
-            //      flex: auto;
-            //      margin: 0 10px;
-            //      background: #ffffff;
-            //      transition: .5s;
-            //      border-radius: 10px;
 
-            //      &:hover{
-            //          background: #d80010;
-            //          color: #fff;
-            //          border-top-right-radius: 10px;
-            //      }
-        
-            //      .imageContent {
-            //          width: 100%;
-            //          height: 30vh;
-        
-            //          background: url(../../../img/pemilu21.jpg);
-            //          background-size: cover;
-            //          background-position: center;
-            //          border-top-right-radius: 10px;
-            //          border-top-left-radius: 10px;
-            //      }
-        
-            //      .imageTwo {
-            //         width: 100%;
-            //         height: 30vh;
-        
-            //         background: url(../../../img/pemilu22.jpg);
-            //         background-size: cover;
-            //         background-position: center;
-            //         border-top-right-radius: 10px;
-            //         border-top-left-radius: 10px;
-            //      }
-        
-            //      .imageThree {
-            //         width: 100%;
-            //         height: 30vh;
-        
-            //         background: url(../../../img/pemilu23.jpg);
-            //         background-size: cover;
-            //         background-position: center;
-            //         border-top-right-radius: 10px;
-            //         border-top-left-radius: 10px;
-            //      }
-        
-            //      .textCard {
-            //          width: 100%;
-            //         //  height: 100%;
-            //          padding: 5px 20px;
-        
-            //         //  border:  1px solid blue;
-        
-            //          small {
-            //              font-size: 7pt;
-            //              color: #d80010;
-            //          }
-        
-            //          p {
-            //              font-size: 8pt;
-            //          }
-            //      }
-            // }
+            @include smallPhone(){
+                height: auto;
+            }
+
+            .col2-cardContent-container-3-beritaPage{
+                display: flex;
+
+                @include smallPhone(){
+                    flex-direction: column;
+                }
+            }
         }
         // END Column4
     }

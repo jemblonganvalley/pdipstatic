@@ -1,5 +1,17 @@
+// @import "../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
 
-
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
 .page-item:first-child .page-link {
     border-radius: 0;
@@ -63,13 +75,12 @@
 .page-item.active .page-link {
     border-radius: 50%;
     background-color: #d80010;
-    font-size: 10pt;
+    font-size: 9pt;
     width: 1.5rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 1.5rem;
-    border-color: #d80010;
-    
+    border-color: #d80010; 
 }

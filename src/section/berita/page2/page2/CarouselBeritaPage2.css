@@ -1,39 +1,48 @@
-.carousel-berita-page1 {
+.carousel-berita-page2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60vh;
-  width: 100%;
+  position: relative;
+  height: 100%;
+  width: 70%;
   background: #555;
-  margin: 20px 0 20px 0;
+  margin: 0px 20px 0px 0;
   overflow: hidden;
 }
 
-.carousel-berita-page1 .carousel-inner {
+@media (max-width: 500px) {
+  .carousel-berita-page2 {
+    height: 40vh;
+    width: 100%;
+  }
+}
+
+.carousel-berita-page2 .carousel-inner {
+  position: relative;
   height: 100%;
   width: 100%;
 }
 
-.carousel-berita-page1 .carousel-inner .img1 {
+.carousel-berita-page2 .carousel-inner .img1 {
   height: 100%;
   width: 100%;
-  background-image: url(../../../../img/detailartikel2.jpg);
+  background-image: url(../../../../img/detailartikel7.jpg);
   background-size: cover;
 }
 
-.carousel-berita-page1 .carousel-inner .img2 {
+.carousel-berita-page2 .carousel-inner .img2 {
   height: 100%;
   width: 100%;
   background: #555;
 }
 
-.carousel-berita-page1 .carousel-inner .img3 {
+.carousel-berita-page2 .carousel-inner .img3 {
   height: 100%;
   width: 100%;
   background: #aaa;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 {
+.carousel-berita-page2 .container-box-indicator-page2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +55,7 @@
   width: 100%;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 {
+.carousel-berita-page2 .container-box-indicator-page2 .box-tombol-carousel-page2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +67,7 @@
   width: 100%;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 #btn-left-page1 {
+.carousel-berita-page2 .container-box-indicator-page2 .box-tombol-carousel-page2 #btn-left-page2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +78,7 @@
   background: #fff;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 #btn-left-page1 .btn-arrow-left-page1 {
+.carousel-berita-page2 .container-box-indicator-page2 .box-tombol-carousel-page2 #btn-left-page2 .btn-arrow-left-page2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +89,7 @@
   background-size: cover;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 #btn-right-page1 {
+.carousel-berita-page2 .container-box-indicator-page2 .box-tombol-carousel-page2 #btn-right-page2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +100,7 @@
   background: #fff;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 #btn-right-page1 .btn-arrow-right-page1 {
+.carousel-berita-page2 .container-box-indicator-page2 .box-tombol-carousel-page2 #btn-right-page2 .btn-arrow-right-page2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +111,7 @@
   background-size: cover;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 .box-indicator-number-page1 {
+.carousel-berita-page2 .container-box-indicator-page2 .box-tombol-carousel-page2 .box-indicator-number-page2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +126,7 @@
           align-items: center;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 .box-indicator-number-page1 .txt-nomer-utama {
+.carousel-berita-page2 .container-box-indicator-page2 .box-tombol-carousel-page2 .box-indicator-number-page2 .txt-nomer-utama {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +135,7 @@
   margin: 1px;
 }
 
-.carousel-berita-page1 .container-box-indicator-page1 .box-tombol-carousel-page1 .box-indicator-number-page1 .txt-nomer-target-total {
+.carousel-berita-page2 .container-box-indicator-page2 .box-tombol-carousel-page2 .box-indicator-number-page2 .txt-nomer-target-total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,4 +143,4 @@
   margin: 1px;
   color: #fff;
 }
-/*# sourceMappingURL=CarouselPage1.css.map */
+/*# sourceMappingURL=CarouselBeritaPage2.css.map */

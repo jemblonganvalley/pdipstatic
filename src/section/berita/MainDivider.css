@@ -38,6 +38,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+  .col3-container-3 .box-jdl-col3 .txt-jdl-col3 {
+    font-size: 8pt;
+  }
+}
+
 .col3-container-3 .box-garis-lurus-col3 {
   display: -webkit-box;
   display: -ms-flexbox;

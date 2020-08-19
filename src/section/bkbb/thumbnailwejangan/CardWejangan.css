@@ -24,6 +24,14 @@
   text-decoration: none;
 }
 
+@media (max-width: 500px) {
+  .imgWejangan {
+    height: 40vh;
+    width: 94vw;
+    margin: 0 10px 10px 10px;
+  }
+}
+
 .imgWejangan i {
   display: 15px;
   color: #fff;

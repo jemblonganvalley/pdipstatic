@@ -68,7 +68,7 @@
   border-radius: 50%;
   background-color: #d80010;
   font-size: 9pt;
-  width: 1.6rem;
+  width: 1.5rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +79,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 1.6rem;
+  height: 1.5rem;
   border-color: #d80010;
 }
 /*# sourceMappingURL=StrukturPaginate.css.map */

@@ -9,10 +9,33 @@
   transition: .5s;
 }
 
+@media (max-width: 500px) {
+  .cardCustom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    margin: .5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cardCustom {
+    margin: .2rem;
+  }
+}
+
 .cardCustom:hover {
   -webkit-box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
           box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
-  background: #d80010;
+  background: #a70000;
   color: #ffffff;
 }
 
@@ -31,6 +54,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 500px) {
+  .cardCustom .imageCard {
+    border-radius: 10px;
+    height: auto;
+    width: 70%;
+    background-position: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .cardCustom .imageCard .VBMusic {
@@ -65,13 +100,21 @@
           align-items: flex-start;
 }
 
+@media (max-width: 500px) {
+  .cardCustom .text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 .cardCustom .text .textSmall {
   font-size: 8pt;
 }
 
-@media (max-width: 1085px) {
+@media (max-width: 500px) {
   .cardCustom .text .textSmall {
-    font-size: 6pt;
+    font-size: 5pt;
   }
 }
 
@@ -79,19 +122,18 @@
   margin-top: 1rem;
 }
 
-@media (max-width: 1085px) {
+@media (max-width: 500px) {
   .cardCustom .text .textH5 {
     font-size: 12pt;
+    margin-top: .5rem;
   }
+}
+
+.cardCustom .text .textH6 {
+  font-size: 12pt;
 }
 
 .cardCustom .text .paragrap {
   font-size: 7pt;
-}
-
-@media (max-width: 1085px) {
-  .cardCustom .text .paragrap {
-    font-size: 6pt;
-  }
 }
 /*# sourceMappingURL=MainCards.css.map */

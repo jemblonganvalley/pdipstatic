@@ -1,5 +1,5 @@
 .cardCustom {
-  height: 105%;
+  height: 100%;
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -7,6 +7,29 @@
   background: #ffffff;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+@media (max-width: 500px) {
+  .cardCustom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    margin: .5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cardCustom {
+    margin: .2rem;
+  }
 }
 
 .cardCustom:hover {
@@ -31,6 +54,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 500px) {
+  .cardCustom .imageCard {
+    border-radius: 10px;
+    height: auto;
+    width: 70%;
+    background-position: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .cardCustom .imageCard .VBMusic {
@@ -65,19 +100,40 @@
           align-items: flex-start;
 }
 
+@media (max-width: 500px) {
+  .cardCustom .text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 .cardCustom .text .textSmall {
   font-size: 8pt;
+}
+
+@media (max-width: 500px) {
+  .cardCustom .text .textSmall {
+    font-size: 5pt;
+  }
 }
 
 .cardCustom .text .textH5 {
   margin-top: 1rem;
 }
 
-.cardCustom .text .textH5 .textH6 {
+@media (max-width: 500px) {
+  .cardCustom .text .textH5 {
+    font-size: 12pt;
+    margin-top: .5rem;
+  }
+}
+
+.cardCustom .text .textH6 {
   font-size: 12pt;
 }
 
-.cardCustom .text .textH5 .paragrap {
-  font-size: 8pt;
+.cardCustom .text .paragrap {
+  font-size: 7pt;
 }
 /*# sourceMappingURL=MainCards.css.map */

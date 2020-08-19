@@ -1,8 +1,26 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
 
 .wrapperMateri {
     width: 100%;
     padding: 40px 10%;
     background: #f3f3f3;
+
+    @include smallPhone(){
+        margin: 0;
+        padding: 10px 0;
+    }
 
     .linkedMateri {
         display: flex;
@@ -11,6 +29,11 @@
         width: 40%;
         margin-top: 15px;
         // padding: 10px 10%;
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
 
         i {
             span {
@@ -75,6 +98,11 @@
             height: auto;
             width: 100%;
             padding: 10px 0;
+
+            @include smallPhone(){
+                flex-direction: column;
+                padding: 0 0 10px 0;
+            }
         }
         // END Row1
 
@@ -84,6 +112,11 @@
             height: auto;
             padding: 10px 0;
             width: 100%;
+
+            @include smallPhone(){
+                flex-direction: column;
+                padding: 0 0 10px 0;
+            }
         }
         // END Row2
 
@@ -93,6 +126,11 @@
             height: auto;
             padding: 10px 0;
             width: 100%;
+
+            @include smallPhone(){
+                flex-direction: column;
+                padding: 0;
+            }
         }
         // END Row3
     }

@@ -1,25 +1,44 @@
-// UTA
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
-// Row1
-.carousel-berita-page2{
+
+// Section2
+.carousel-berita-page1{
     display: flex;
-    position: relative;
-    height: 100%;
+    height: 60vh;
     width: 100%;
     background: #555;
-    margin: 0px 0px 0px 0;
+    margin: 20px 0 20px 0;
     overflow: hidden;
 
+    @include smallPhone(){
+        height: 40vh;
+    }
+
     .carousel-inner{
-        position: relative;
         height: 100%;
         width: 100%;
 
         .img1{
             height: 100%;
             width: 100%;
-            background-image: url(../../../../img/detailartikel7.jpg);
+            background-image: url(../../../../img/detailartikel2.jpg);
             background-size: cover;
+
+            @include smallPhone(){
+                background-attachment: inherit;
+                background-position: center;
+            }
         }
 
         .img2{
@@ -33,11 +52,11 @@
             width: 100%;
             background: #aaa;
         }
-    }
+    }   
     // END Carousel
 
     // Container Box Indicator Carousel
-    .container-box-indicator-page2{
+    .container-box-indicator-page1{
         display: flex;
         flex-direction: column-reverse;
         position: absolute;
@@ -45,13 +64,13 @@
         width: 100%;
 
         // Box Indicator
-        .box-tombol-carousel-page2{
+        .box-tombol-carousel-page1{
             display: flex;
             flex-direction: row-reverse;
             height: auto;
             width: 100%;
 
-            #btn-left-page2{
+            #btn-left-page1{
                 display: flex;
                 position: static;
                 height: 50px;
@@ -59,7 +78,7 @@
                 margin: 0 0px 0 0;
                 background: #fff;
 
-                .btn-arrow-left-page2{
+                .btn-arrow-left-page1{
                     display: flex;
                     height: 100%;
                     width: 100%;
@@ -69,16 +88,15 @@
                 }
             }
 
-            #btn-right-page2{
+            #btn-right-page1{
                 display: flex;
                 position: static;
                 height: 50px;
                 width: 50px;
                 margin: 0 1px 0 0;
                 background: #fff;
-                
 
-                .btn-arrow-right-page2{
+                .btn-arrow-right-page1{
                     display: flex;
                     height: 100%;
                     width: 100%;
@@ -89,7 +107,7 @@
             }
 
             // Box Indicator Number
-            .box-indicator-number-page2{
+            .box-indicator-number-page1{
                 display: flex;
                 height: 50px;
                 width: 100px;
@@ -117,4 +135,4 @@
     }
     // END Container Box Indicator Carousel
 }
-// END Row1
+// END Section2

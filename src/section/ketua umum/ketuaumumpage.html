@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="./BreadCrumbs.css">
 <link rel="stylesheet" href="./CardInformasi.css">
@@ -14,31 +15,30 @@
 
 
 <div class="wrapperKetuaUmum">
-    <div class="headers">
+    <div class="headers-ketuaumum">
         <div class="backgrounds">
             <div class="textBackgroundBerita">
             </div>
         </div>
     </div>
-    <div class="linkedBerita">
-        <!-- <BreadCrumbs link1="Home" />-->
+    <div class="linkedKetuaumum">
         <span class="wrapperBread">
-            <ul class="breadcrumb" style="background: none;">
+            <ul class="breadcrumb" style="
+                background : none">
                 <li><i class="fa fa-home customBread"></i></li>
-                <li class="breadcrumb-item customBread"><a href="{to1}">Home</a></li>
-                <li style="color: #6c757d;" class="{`breadcrumb-item" ${active} customBread`}>
-                    <a href="{to2}"></a>&nbsp;/ Ketua Umum /
+                <li class="breadcrumb-item customBread"><a href={to1}>Home</a></li>
+                <li style="
+                    color : #6c757d" class={`breadcrumb-item ${active} customBread`}><a href={to2}></a>
                 </li>
+                <li class="breadcrumb-item active customBread">/ Ketua Umum</li>
             </ul>
         </span>
-
-
     </div>
-    <!-- {/* Container1 */} -->
-    <div class="container-1">
-        <!-- {/* Column1 */} -->
-        <!-- <CarouselKetuaUmumPage /> -->
-        <div id="carouselExampleControls" class="carousel box-carousel-ketuaUmumPage slide" data-ride="carousel">
+    <!-- Container1 -->
+    <div class="container-1-ketuaUmum">
+        <!-- Column1 -->
+        <div id="carouselExampleIndicators" class="carousel container-carousel-ketuaUmumPage slide"
+            data-ride="carousel">
             <div class="carousel-inner carousel-ketuaUmumPage">
                 <div class="carousel-item active">
                     <div class="col1-container-1">
@@ -49,70 +49,74 @@
                                 </div>
                             </div>
                             <div class="col2-img">
-                                <div class="garis-strip-col2"></div>
+                                <div class="garis-strip-col2">
+
+                                </div>
                                 <div class="box-txt-desk-col2">
                                     <p class="txt-admin">
                                         Admin PDI Perjuangan | 1 Januari
                                     </p>
 
                                     <p class="txt-desk-col2">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Similique quidem ad iure harum optio corporis eligendi amet
-                                        vitae dolor enim? Molestiae magnam voluptas fuga quo dolores
-                                        harum dignissimos autem sint distinctio maiores quasi nemo
-                                        reprehenderit maxime sunt quaerat, aliquam eligendi quas
-                                        consequuntur delectus nulla eius ex, aspernatur quisquam. Error,
-                                        voluptatibus.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quidem ad
+                                        iure harum optio corporis eligendi amet vitae dolor enim? Molestiae magnam
+                                        voluptas fuga quo dolores harum dignissimos autem sint distinctio maiores quasi
+                                        nemo reprehenderit maxime sunt quaerat, aliquam eligendi quas consequuntur
+                                        delectus nulla eius ex, aspernatur quisquam. Error, voluptatibus.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item"></div>
-                <div class="carousel-item"></div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Second slide" />
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true" />
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true" />
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <!-- END Column1 -->
 
-
+        <!-- Column2 -->
         <div class="cardMedia">
-            <div class="siaranLangsung mediaCard">
+            <a href={to1} class="siaranLangsung mediaCard">
                 <img src="../../img/ketuaumum1.png" alt="" width="35" class="imgCards" />
                 <small class="smallCard">pidato kongres</small>
-            </div>
-            <div class="videoDokumentasi mediaCard">
+            </a>
+            <a href={to2} class="videoDokumentasi mediaCard">
                 <img src="../../img/ketuaumum2.png" alt="" width="35" class="imgCards" />
                 <small class="smallCard">pidato rakernas</small>
-            </div>
-            <div class="videoInteraktif mediaCard">
+            </a>
+            <a href={to3} class="videoInteraktif mediaCard">
                 <img src="../../img/ketuaumum3.png" alt="" width="35" class="imgCards" />
-                <small class="smallCard">pidato rakernas</small>
-            </div>
-            <div class="siaranPers mediaCard">
+                <small class="smallCard">pidato rakornas</small>
+            </a>
+            <a href={to4} class="siaranPers mediaCard">
                 <img src="../../img/ketuaumum4.png" alt="" width="35" class="imgCards" />
                 <small class="smallCard">pidato hut</small>
-            </div>
+            </a>
         </div>
+        <!-- END Column2 -->
 
-
-
-
+        <!-- Column3 -->
         <div class="cardKetuaUmum">
-
+            <!-- Card1 -->
             <div class="col col-lg-3 cardCustom" style="
                 border-radius : 10px;
                 width : width;
             ">
 
-                <div class="imageCard" style="background-image: url(../../img/megawati5.jpg);">
+                <div class="imageCard" style="background-image: url(../../img/pemilu13.jpg);">
 
 
 
@@ -125,61 +129,85 @@
     ">
                         Lorem ipsum dolor, sit amet consectetur adipisicing.
                     </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
+                    <p class="paragrap" style="font-size: 8pt;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum
                         temporibus. Ipsa at fugit rerum veritatis sint?
                     </p>
                 </div>
+
             </div>
+            <!-- END Card1 -->
 
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
+            <!-- Card2 -->
+            <div class="col col-lg-3 cardCustom" style="
+                border-radius : 10px;
+                width : width;
+            ">
 
-                <div class="imageCard" style="background-image: url(../../img/megawati6.jpg);">
+                <div class="imageCard" style="background-image: url(../../img/pemilu14.jpg);">
+
+
 
                 </div>
                 <div class="text">
                     <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5 class="textH5" style="font-size: h5Font; font-weight: h5Weight;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-
+                    <h5 class="textH5" style="
+        font-size: h5Font;
+        font-weight: h5Weight;
+    ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
                     </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
+                    <p class="paragrap" style="font-size: 8pt;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum
                         temporibus. Ipsa at fugit rerum veritatis sint?
                     </p>
                 </div>
+
             </div>
+            <!-- END Card2 -->
 
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
+            <!-- Card3 -->
+            <div class="col col-lg-3 cardCustom" style="
+                border-radius : 10px;
+                width : width;
+            ">
 
-                <div class="imageCard" style="background-image: url(../../img/megawati7.jpg);">
+                <div class="imageCard" style="background-image: url(../../img/pemilu15.jpg);">
+
+
 
                 </div>
                 <div class="text">
                     <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5 class="textH5" style="font-size: h5Font; font-weight: h5Weight;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-
+                    <h5 class="textH5" style="
+        font-size: h5Font;
+        font-weight: h5Weight;
+    ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
                     </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
+                    <p class="paragrap" style="font-size: 8pt;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum
                         temporibus. Ipsa at fugit rerum veritatis sint?
                     </p>
                 </div>
+
             </div>
+            <!-- END Card3 -->
+
         </div>
+        <!-- END Column3 -->
 
-        <!-- {/* Column5 */} -->
-        <div class="col5-container-1">
-            <!-- {/* Row1 */} -->
+        <!-- Column5 -->
+        <div class="col5-container-1-ketuaumum">
+            <!-- Row1 -->
             <div class="row1-video-youtube">
-                <iframe width="100%" height="120%" src="https://www.youtube.com/embed/ChkKZ3hq1Nw" frameborder="0"
+                <iframe width="100%" height="117%" src="https://www.youtube.com/embed/ChkKZ3hq1Nw" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <!-- {/* END Row1 */} -->
+            <!-- END Row1 -->
 
-            <!-- {/* Row2 */} -->
+            <!-- Row2 -->
             <div class="row2-img">
                 <div class="col-txt">
                     <p class="jdl">
@@ -189,95 +217,120 @@
                     </p>
                 </div>
             </div>
-            <!-- {/* END Row2 */} -->
+            <!-- END Row2 -->
         </div>
-        <!-- {/* END Column5 */} -->
+        <!-- END Column5 -->
     </div>
-    <!-- {/* END Container1 */} -->
+    <!-- END Container1 -->
 
-
-
-
-    <div class="container-3">
-
-        <!-- <MainDivider text="Berita Daerah"/> -->
+    <!-- Container2 -->
+    <div class="container-2-ketuaumum">
         <div class="col3-container-3" style="
-    margin : 2rem 0;
-    padding : 0px 10%;
-">
+            margin : 2rem 0;">
             <div class="box-jdl-col3">
                 <p class="txt-jdl-col3">
-                    Berita Terkait
+                    BERITA TERKAIT
                 </p>
             </div>
             <div class="box-garis-lurus-col3">
                 <div class="garis-merah" style="
-            width : 100px
-        ">
+                    width: 150px">
 
                 </div>
             </div>
         </div>
+    </div>
+    <!-- END Container2 -->
+
+    <!-- Container3 -->
+    <div class="container-3-ketuaumum">
+        <!-- Column4 -->
+        <div class="col4-cardContent-container-3">
+            <!-- Card1 -->
+            <div class="col col-lg-3 cardCustom" style="
+                border-radius : 10px;
+                width : width;
+            ">
+
+                <div class="imageCard" style="background-image: url(../../img/pemilu18.jpg);">
 
 
-        <!-- {/* Column2 */} -->
-        <div class="col2-cardContent-container-3">
-
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <div class="imageCard" style="background-image: url(../../img/megawati5.jpg);">
-
-                </div>
-                <div class="text">
-                    <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5 class="textH5" style="font-size: h5Font; font-weight: h5Weight;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum
-                        temporibus. Ipsa at fugit rerum veritatis sint?
-                    </p>
-                </div>
-            </div>
-
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <div class="imageCard" style="background-image: url(../../img/megawati6.jpg);">
 
                 </div>
                 <div class="text">
                     <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5 class="textH5" style="font-size: h5Font; font-weight: h5Weight;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-
+                    <h5 class="textH5" style="
+        font-size: h5Font;
+        font-weight: h5Weight;
+    ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
                     </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
+                    <p class="paragrap" style="font-size: 8pt;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum
                         temporibus. Ipsa at fugit rerum veritatis sint?
                     </p>
                 </div>
+
             </div>
+            <!-- END Card1 -->
 
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
+            <!-- Card2 -->
+            <div class="col col-lg-3 cardCustom" style="
+                border-radius : 10px;
+                width : width;
+            ">
 
-                <div class="imageCard" style="background-image: url(../../img/megawati7.jpg);">
+                <div class="imageCard" style="background-image: url(../../img/pemilu19.jpg);">
+
+
 
                 </div>
                 <div class="text">
                     <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5 class="textH5" style="font-size: h5Font; font-weight: h5Weight;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-
+                    <h5 class="textH5" style="
+        font-size: h5Font;
+        font-weight: h5Weight;
+    ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
                     </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
+                    <p class="paragrap" style="font-size: 8pt;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum
                         temporibus. Ipsa at fugit rerum veritatis sint?
                     </p>
                 </div>
+
             </div>
+            <!-- END Card2 -->
+
+            <!-- Card3 -->
+            <div class="col col-lg-3 cardCustom" style="
+                border-radius : 10px;
+                width : width;
+            ">
+
+                <div class="imageCard" style="background-image: url(../../img/pemilu20.jpg);">
+
+
+
+                </div>
+                <div class="text">
+                    <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                    <h5 class="textH5" style="
+        font-size: h5Font;
+        font-weight: h5Weight;
+    ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
+                    </h5>
+                    <p class="paragrap" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum
+                        temporibus. Ipsa at fugit rerum veritatis sint?
+                    </p>
+                </div>
+
+            </div>
+            <!-- END Card3 -->
         </div>
-        <!-- {/* END Column2 */} -->
+        <!-- END Column6 -->
     </div>
 </div>
 
