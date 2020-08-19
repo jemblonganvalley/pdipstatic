@@ -217,6 +217,12 @@
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  .wrapperKetuaUmum .container-2-ketuaumum {
+    padding: 0 10px;
+  }
+}
+
 .wrapperKetuaUmum .container-3-ketuaumum {
   display: -webkit-box;
   display: -ms-flexbox;

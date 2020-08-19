@@ -621,6 +621,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 500px) {
+  .wrapperBeritaPage1 .container-1-beritaPage1 .col2-container-1-beritaPage1 .section6-beritaPage1 .col1-section6-beritaPage1 {
+    padding: 0 10px;
+  }
+}
+
 .wrapperBeritaPage1 .container-1-beritaPage1 .col2-container-1-beritaPage1 .section6-beritaPage1 .col1-section6-beritaPage1 .col-title-berita-terbaru-beritaPage1 {
   display: -webkit-box;
   display: -ms-flexbox;

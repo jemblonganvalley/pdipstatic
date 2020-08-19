@@ -104,6 +104,10 @@ $smallPhoneDua : 400px;
             align-items: center;
             justify-content: center;
             overflow: hidden;
+
+            @include smallPhone(){
+                padding: 0 10px;
+            }
         }
         // END Column4
 
@@ -366,6 +370,7 @@ $smallPhoneDua : 400px;
             overflow: hidden;
 
             @include smallPhone(){
+                padding: 0 10px;
                 justify-content: center;
                 align-items: center;
             }
@@ -402,6 +407,7 @@ $smallPhoneDua : 400px;
             overflow: hidden;
 
             @include smallPhone(){
+                padding: 0 10px;
                 justify-content: center;
                 align-items: center;
             }
