@@ -1,92 +1,88 @@
-<!-- EJA -->
-        <div class="wrapperDetail">
-            <!-- {/* HEADERS */} -->
-            <div class="detailHead">
-                <div class="backHead">
-                    <div class="textBackHead">
-                        <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
-                    </div>
-                </div>
-            </div>
-            <!-- {/* END */} -->
-            
-            <!-- {/* LINK PARTAI */} -->
-            <div class="linkedDetail">
-                <!-- <BreadCrumbs link1="Home"
-                                to1="/"
-                                link2="Partai"
-                                to2="/partai"
-                                page3="Struktur Pengurus"
-                                 /> -->
-                                 <span class="wrapperBread">
-                                    <ul class="breadcrumb" style="background:none;">
-                                        <li><i class="fa fa-home customBread"></i></li>
-                                        <li class="breadcrumb-item customBread"><a href=""></a></li>
-                                        <li style="color: #6c757d;"class="breadcrumb-item ${active} customBread"><a href=""> </a></li>
-                                        <li class="breadcrumb-item active customBread"><a href=""></a></li>
-                                    </ul>
-                                </span>
-            </div>
-            <!-- {/* END */} -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <div class="pengurus">
-                <!-- <MainDivider text="Pengurus"
-                                garisMerah="4rem" /> -->
-                                <div class="col3-container-3" style="margin: 2rem; padding :0px 10%;">
-                                    <div class="box-jdl-col3">
-                                        <p class="txt-jdl-col3">
-                                            
-                                        </p>
-                                    </div>
-                                    <div class="box-garis-lurus-col3">
-                                        <div class="garis-merah" style="width:100px;">
-                        
-                                        </div>
-                                    </div>
-                                </div>
-                <div class="bidangTextHead">
-                    <h2>Bidang Ekonomi Kreatif dan<br/>Ekonomi Digital</h2>
-                </div>
-                <div class="profilPengurus">
-                    <div class="kolum1">
-                        <img src={profil} alt="" width="200" />
-                        <div class="textProfil">
-                            <div class="ketua profilText">
-                                <small class="ketuaText">Ketua</small>
-                                <h6 class="namaProfil">muhammad Prananda Prabowo</h6>
-                            </div>
-                            <div class="tanggalLahir profilText">
-                                <small class="smallTanggal">Tempat Lahir/Tanggal Lahir</small>
-                                <h6 class="tanggal">23 April 1970</h6>
-                            </div>
-                            <div class="agama profilText">
-                                <small class="agamaHead">Agama</small>
-                                <h6 class="text">Islam</h6>
-                            </div>
-                            <div class="email profilText">
-                                <small class="emailHead">Email</small>
-                                <h6 class="emailText">email@pdiperjuangan.id</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="kolum2">
-                        <div class="descProfil">
-                            <h6 class="biografi">biografi singkat</h6>
-                            <p>Prabowo dikenal sebagai ideolog dan peminat teknologi komunikasi dan informasi. Ia pertama kali muncul saat Megawati mengajaknya dalam konferensi pers bersama sang adik, Puan Maharani, menjelang pembukaan Kongres III PDIP 2010 di Bali[3][4][5]. Di PDI-Perjuangan, ia ditempatkan sebagai Kepala Ruang Pengendali dan Analisis Situasi (Situation Room) DPP PDI-Perjuangan.</p>
-                            <p>Ia adalah konseptor beberapa pidato politik Megawati. Salah satu sentuhan pidatonya yang dianggap cukup bisa menggambarkan cara pandangnya terhadap dunia politik adalah ketika ia menyisipkan penggalan nasihat dari Kitab Bhagawad Gita, "karmanye vadhikaraste ma phaleshu kada chana" ("kerjakan seluruh kewajibanmu dengan sungguh-sungguh tanpa menghitung untung-rugi"). Pidato yang dibacakan pada Pembukaan Kongres III PDI Perjuangan tahun 2010 tersebut memang kemudian menjadi salah satu pidato Megawati yang paling banyak mendapatkan pujian dari berbagai pihak.
-                            </p>
-                            <h6 class="descBidang">Bidang Ekonomi Kreatif dan Ekonomi Digital</h6>
-                            <p>DPP PDI Perjuangan bidang Ekonomi Kreatif (PDIPKreatif), mengembangkan ekonomi kreatif berbasis seni-budaya; warisan budaya nasional, serta mengedepankan kreativitas dan inovasi. Dari 16 subsektor ekonomi kreatif, kuliner Indonesia menjadi bagian perhatian bidang Ekonomi Kreatif. Selain perlu diperkenalkan, didata, dan didokumentasikan, PDIPKreatif menilai kekayaan kuliner Indonesia dapat menjadi penggerak ekonomi masyarakat.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="textPengurus">
-                    <div class="borderBottom"></div>
-                </div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+  integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
+<link rel="stylesheet" href="./DetailPengurus.css">
+<link rel="stylesheet" href="./BreadCrumbs.css">
+<link rel="stylesheet" href="./MainDivider.css">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapperDetail">
+    <div class="detailHead">
+        <div class="backHead">
+            <div class="textBackHead">
+                <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
             </div>
         </div>
-    )
-}
+    </div>
 
+    <div class="linkedDetail">
+            <span class="wrapperBread">
+            <ul class="breadcrumb" style="background: none;">
+                <li><i class="fa fa-home customBread"></i></li>
+                <li class="breadcrumb-item customBread"><a href="#home">Home</a></li>
+                <li class="breadcrumb-item customBread"><a href="#partai">Partai</a></li>
+                <li style="color: #6c757d;" class="breadcrumb-item customBread">Struktur Pengurus</li>
+            </ul>
+        </span>
+    </div>
+
+    <div class="pengurus">
+            <div class="col3-container-3" style="margin: 2rem 0;">
+                <div class="box-jdl-col3">
+                    <p class="txt-jdl-col3">
+                        Pengurus
+                    </p>
+                </div>
+                <div class="box-garis-lurus-col3">
+                    <div class="garis-merah" style="width: 100px;">
+
+                    </div>
+                </div>
+            </div>
+        <div class="bidangTextHead">
+            <h2>Bidang Ekonomi Kreatif dan<br/>Ekonomi Digital</h2>
+        </div>
+        <div class="profilPengurus">
+            <div class="kolum1">
+                <img src="../../../img/profil.png" alt="" width="200" />
+                <div class="textProfil">
+                    <div class="ketua profilText">
+                        <small class="ketuaText">Ketua</small>
+                        <h6 class="namaProfil">muhammad Prananda Prabowo</h6>
+                    </div>
+                    <div class="tanggalLahir profilText">
+                        <small class="smallTanggal">Tempat Lahir/Tanggal Lahir</small>
+                        <h6 class="tanggal">23 April 1970</h6>
+                    </div>
+                    <div class="agama profilText">
+                        <small class="agamaHead">Agama</small>
+                        <h6 class="text">Islam</h6>
+                    </div>
+                    <div class="email profilText">
+                        <small class="emailHead">Email</small>
+                        <h6 class="emailText">email@pdiperjuangan.id</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="kolum2">
+                <div class="descProfil">
+                    <h6 class="biografi">biografi singkat</h6>
+                    <p>Prabowo dikenal sebagai ideolog dan peminat teknologi komunikasi dan informasi. Ia pertama kali muncul saat Megawati mengajaknya dalam konferensi pers bersama sang adik, Puan Maharani, menjelang pembukaan Kongres III PDIP 2010 di Bali[3][4][5]. Di PDI-Perjuangan, ia ditempatkan sebagai Kepala Ruang Pengendali dan Analisis Situasi (Situation Room) DPP PDI-Perjuangan.</p>
+                    <p>Ia adalah konseptor beberapa pidato politik Megawati. Salah satu sentuhan pidatonya yang dianggap cukup bisa menggambarkan cara pandangnya terhadap dunia politik adalah ketika ia menyisipkan penggalan nasihat dari Kitab Bhagawad Gita, "karmanye vadhikaraste ma phaleshu kada chana" ("kerjakan seluruh kewajibanmu dengan sungguh-sungguh tanpa menghitung untung-rugi"). Pidato yang dibacakan pada Pembukaan Kongres III PDI Perjuangan tahun 2010 tersebut memang kemudian menjadi salah satu pidato Megawati yang paling banyak mendapatkan pujian dari berbagai pihak.
+                    </p>
+                    <h6 class="descBidang">Bidang Ekonomi Kreatif dan Ekonomi Digital</h6>
+                    <p>DPP PDI Perjuangan bidang Ekonomi Kreatif (PDIPKreatif), mengembangkan ekonomi kreatif berbasis seni-budaya; warisan budaya nasional, serta mengedepankan kreativitas dan inovasi. Dari 16 subsektor ekonomi kreatif, kuliner Indonesia menjadi bagian perhatian bidang Ekonomi Kreatif. Selain perlu diperkenalkan, didata, dan didokumentasikan, PDIPKreatif menilai kekayaan kuliner Indonesia dapat menjadi penggerak ekonomi masyarakat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="textPengurus">
+            <div class="borderBottom"></div>
+        </div>
+
+    </div>
+</div>

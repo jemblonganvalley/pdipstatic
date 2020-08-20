@@ -1,191 +1,267 @@
 .wrapperDetail .detailHead {
-  background: url(../../../img/kampanye.jpg);
-  background-size: cover;
-  height: 25vh;
-  background-position: center;
-}
-
-.wrapperDetail .detailHead .backHead {
-  background-color: rgba(216, 0, 16, 0.8);
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ffffff;
-}
-
-.wrapperDetail .detailHead .backHead .textBackHead {
-  width: 30%;
-  height: 50%;
-  margin-left: 13rem;
-}
-
-.wrapperDetail .linkedDetail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 20px;
-  padding: 5px 10%;
-}
-
-.wrapperDetail .linkedDetail i span {
-  margin-left: 5px;
-  font-style: italic;
-  font-size: 8pt;
-}
-
-.wrapperDetail .pengurus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px 10%;
-}
-
-.wrapperDetail .pengurus .textPengurus {
-  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.wrapperDetail .pengurus .textPengurus small {
-  cursor: pointer;
-  color: #d80010;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 8pt;
-  border-bottom: 5.5px solid #d80010;
-}
-
-.wrapperDetail .pengurus .bidangTextHead {
-  margin: 2rem 0;
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-}
-
-.wrapperDetail .pengurus .profilPengurus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  padding: 40px 10%;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum1 {
-  width: 30vw;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 70%;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText {
-  margin: 10px;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText small {
-  color: #d80010;
-  font-size: 8pt;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText .namaProfil {
-  text-transform: uppercase;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText h6 {
-  font-weight: bold;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil .biografi {
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 1.5rem;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil p {
-  margin-top: 1rem;
-  font-size: 10pt;
-}
-
-.wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil .descBidang {
-  font-weight: bold;
-  margin-top: 1.5rem;
-}
-
-.wrapperDetail .pengurus .borderBottom {
-  width: 10%;
-  height: 5px;
-  background-color: #d80010;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-/*# sourceMappingURL=DetailPengurus.css.map */
+    background: url(../../../img/kampanye.jpg);
+    background-size: cover;
+    height: 25vh;
+    background-position: center;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .detailHead {
+      height: 20vh;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .wrapperDetail .detailHead {
+      height: 15vh;
+    }
+  }
+  
+  .wrapperDetail .detailHead .backHead {
+    background-color: rgba(216, 0, 16, 0.8);
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #ffffff;
+  }
+  
+  .wrapperDetail .detailHead .backHead .textBackHead {
+    width: 30%;
+    height: 50%;
+    margin-left: 13rem;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .detailHead .backHead .textBackHead {
+      width: auto;
+      margin-left: 0;
+      padding: 0 10%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .wrapperDetail .detailHead .backHead .textBackHead h2 {
+      font-size: 15pt;
+    }
+  }
+  
+  .wrapperDetail .linkedDetail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 20px;
+    padding: 5px 10%;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .linkedDetail {
+      width: 100%;
+      padding: 0 2%;
+    }
+  }
+  
+  .wrapperDetail .pengurus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 10%;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .pengurus {
+      padding: 0 2%;
+    }
+  }
+  
+  .wrapperDetail .pengurus .bidangTextHead {
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .pengurus .bidangTextHead {
+      margin: 1rem 0;
+    }
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 10%;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .pengurus .profilPengurus {
+      padding: 0 2%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: auto;
+    }
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum1 {
+    width: 30vw;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .pengurus .profilPengurus .kolum1 {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .pengurus .profilPengurus .kolum1 img {
+      width: 180px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .wrapperDetail .pengurus .profilPengurus .kolum1 img {
+      width: 150px;
+    }
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText {
+    margin: 10px;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText {
+      margin: 5px;
+    }
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText small {
+    color: #d80010;
+    font-size: 8pt;
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText .namaProfil {
+    text-transform: uppercase;
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText h6 {
+    font-weight: bold;
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil {
+      text-align: center;
+    }
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil .biografi {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil p {
+    margin-top: 1rem;
+    font-size: 10pt;
+  }
+  
+  .wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil .descBidang {
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+  
+  .wrapperDetail .pengurus .borderBottom {
+    width: 10%;
+    height: 5px;
+    background-color: #d80010;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  /*# sourceMappingURL=DetailPengurus.css.map */

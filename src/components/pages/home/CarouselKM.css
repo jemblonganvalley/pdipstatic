@@ -1,0 +1,203 @@
+.KM {
+  width: 100%;
+  height: 60vh;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 400px) {
+  .KM {
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM {
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: auto;
+  }
+}
+
+.KM .row > * {
+  padding-right: 0;
+}
+
+.KM .row {
+  --bs-gutter-x: 0;
+}
+
+.KM .rowCustom {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .KM .rowCustom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .rowCustom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 1rem;
+  }
+}
+
+.KM .banner {
+  background: url(../../../img/megawati4.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .KM .banner {
+    background: url(../../../img/megawati4.jpg);
+    height: 40vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .banner {
+    background: url(../../../img/megawati4.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+  }
+}
+
+.KM .carousels .kmCarousel {
+  width: 100%;
+  height: 100%;
+  background: #960001;
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel {
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel {
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-indicators {
+  right: 0;
+}
+
+.KM .carousels .kmCarousel .carousel-indicators li {
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.KM .carousels .kmCarousel .carousel-inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item {
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item {
+    padding: 1rem;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item .textCarousel {
+  margin: 2rem 0;
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item .textCarousel {
+    margin: .8rem 0;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item h5 {
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item h5 {
+    font-size: 9pt;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item h5 {
+    font-size: 8pt;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item h3 {
+  font-size: 15pt;
+  font-weight: 300;
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item p {
+  font-size: 8pt;
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item p {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item p {
+    display: none;
+  }
+}
+/*# sourceMappingURL=CarouselKM.css.map */

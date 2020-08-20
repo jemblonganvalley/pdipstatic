@@ -1,0 +1,126 @@
+.cardMedia {
+    width: 100%;
+    padding: 40px 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  @media (max-width: 500px) {
+    .cardMedia {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0 2%;
+    }
+  }
+  
+  .cardMedia .mediaCard {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  @media (max-width: 500px) {
+    .cardMedia .mediaCard {
+      width: 100%;
+      margin: .5rem 0;
+      height: 10vh;
+      background: #ffff;
+      border-radius: 10px;
+    }
+  }
+  
+  .cardMedia .mediaCard .smallCard {
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-size: 9pt;
+  }
+  
+  @media (max-width: 500px) {
+    .cardMedia .mediaCard .smallCard {
+      margin-right: 1rem;
+    }
+  }
+  
+  .cardMedia .imgCards {
+    margin-right: 1rem;
+  }
+  
+  @media (max-width: 500px) {
+    .cardMedia .imgCards {
+      margin-right: .5rem;
+    }
+  }
+  
+  .cardMedia .siaranLangsung {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .cardMedia .videoDokumentasi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  @media (max-width: 500px) {
+    .cardMedia .videoDokumentasi {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+    }
+  }
+  
+  .cardMedia .videoInteraktif {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .cardMedia .siaranPers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  @media (max-width: 500px) {
+    .cardMedia .siaranPers {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+    }
+  }
+  /*# sourceMappingURL=CardInformasi.css.map */

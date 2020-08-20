@@ -1,0 +1,695 @@
+.containerDua {
+    padding: 40px 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  @media (max-width: 500px) {
+    .containerDua {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .containerDua {
+      padding: 0 2%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      border: 1px solid blue;
+    }
+  }
+  
+  .containerDua .contentDua {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 500px) {
+    .containerDua .contentDua {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #c60605;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2.5rem 7%;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .plyr {
+    width: 100%;
+    height: 6.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url(../../../img/megawati10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14pt;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic:hover {
+    width: 45px;
+    height: 45px;
+    font-size: 16pt;
+    background: #2d3436;
+    color: #ffffff;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic i {
+    margin-left: 2px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download .downloadContent {
+    padding: 1rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download .downloadContent img {
+    cursor: pointer;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download .downloadContent .downloadSpan {
+    margin-left: 1rem;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-weight: 700;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 {
+    margin-left: 2rem;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik small {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 9pt;
+    letter-spacing: .8;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik .judulLagu {
+    font-size: 15pt;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: .8px;
+    font-weight: 300;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik .lirik {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p {
+    font-size: 10pt;
+    letter-spacing: .8px;
+    margin-top: 1rem;
+    height: 50vh;
+    overflow: scroll;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 7% 2.5rem 7%;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic {
+    width: 90%;
+    height: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton {
+    width: 20%;
+    height: 100%;
+    background: #960001;
+    padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .playbtn {
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .playbtn:hover {
+    background-color: #ffffff;
+    color: #d80010;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .playbtn i {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    height: 100%;
+    background: #ffffff;
+    padding: 1rem;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .judulPlay {
+    padding: 5px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .judulPlay .judulPlays {
+    font-size: 10pt;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .judulPlay i {
+    color: #d80010;
+    position: absolute;
+    right: 0;
+    font-size: 9pt;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    padding: 5px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    font-size: 7pt;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay i {
+    color: #bbbbbb;
+    margin: 0 .3rem;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay i span {
+    margin: 0 .3rem;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay .times {
+    position: absolute;
+    right: 0;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider {
+    height: 12px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider:focus {
+    outline: none;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 0px #000000;
+            box-shadow: 0px 0px 0px #000000;
+    background: rgba(189, 195, 199, 0.8);
+    border-radius: 5px;
+    border: 0px solid #000000;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-webkit-slider-thumb {
+    -webkit-box-shadow: 0px 0px 1px #000000;
+            box-shadow: 0px 0px 1px #000000;
+    border: 0px solid #000000;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    background: #D80010;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -2.5px;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider:focus::-webkit-slider-runnable-track {
+    background: rgba(189, 195, 199, 0.5);
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: rgba(189, 195, 199, 0.5);
+    border-radius: 5px;
+    border: 0px solid #000000;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-moz-range-thumb {
+    box-shadow: 0px 0px 1px #000000;
+    border: 0px solid #000000;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    background: #D80010;
+    cursor: pointer;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-ms-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-ms-fill-lower {
+    background: rgba(189, 195, 199, 0.5);
+    border: 0px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-ms-fill-upper {
+    background: rgba(189, 195, 199, 0.5);
+    border: 0px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 1px #000000;
+    border: 0px solid #000000;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    background: #D80010;
+    cursor: pointer;
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider:focus::-ms-fill-lower {
+    background: rgba(189, 195, 199, 0.5);
+  }
+  
+  .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic input[type=range].song-slider:focus::-ms-fill-upper {
+    background: rgba(189, 195, 199, 0.5);
+  }
+  
+  .containerDua .contentDua .musicList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #ffffff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .containerDua .contentDua .musicList .judulList {
+    text-transform: uppercase;
+  }
+  
+  .containerDua .contentDua .musicList .headersList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 20vh;
+    border-top-right-radius: 10px;
+    background: #960001;
+    color: #ffff;
+  }
+  
+  .containerDua .contentDua .musicList .headersList img {
+    margin-right: 10px;
+  }
+  
+  .containerDua .contentDua .musicList .headersList .textHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  
+  .containerDua .contentDua .musicList .headersList .textHeader h4 {
+    font-size: 18pt;
+    font-weight: 700;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listSatu {
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #c70000;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 20px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listSatu:hover {
+    background: #ba0003;
+    color: #ffffff;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listSatu h5 {
+    font-size: 11pt;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listSatu h5:nth-child(0) {
+    color: #9e0000;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listSatu p {
+    margin-top: 5px;
+    font-size: 9pt;
+    letter-spacing: .8px;
+    font-weight: 300;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listDua {
+    color: #c70000;
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 20px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listDua:hover {
+    background: #ba0003;
+    color: #ffffff;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listDua h5 {
+    font-size: 11pt;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listDua h5:nth-child(0) {
+    color: #9e0000;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listDua p {
+    margin-top: 5px;
+    font-size: 8pt;
+    letter-spacing: .8px;
+    font-weight: 300;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listTiga {
+    color: #c70000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 20px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listTiga:hover {
+    background: #ba0003;
+    color: #ffffff;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listTiga h5 {
+    font-size: 11pt;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listTiga h5:nth-child(0) {
+    color: #9e0000;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listTiga p {
+    margin-top: 5px;
+    font-size: 8pt;
+    letter-spacing: .8px;
+    font-weight: 300;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listEmpat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 20vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 20px;
+    border-bottom-right-radius: 10px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #c70000;
+    cursor: pointer;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listEmpat:hover {
+    background: #ba0003;
+    color: #ffffff;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listEmpat h5 {
+    font-size: 11pt;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listEmpat h5:nth-child(0) {
+    color: #9e0000;
+  }
+  
+  .containerDua .contentDua .musicList .listMusic .listEmpat p {
+    margin-top: 5px;
+    font-size: 8pt;
+    letter-spacing: .8px;
+    font-weight: 300;
+  }
+  /*# sourceMappingURL=MusicPdi.css.map */

@@ -1,37 +1,102 @@
-<!-- dedi -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+  integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+<link rel="stylesheet" href="./VideoMedia.css">
+<link rel="stylesheet" href="./BreadCrumbs.css">
+<link rel="stylesheet" href="./Vmedia.css">
+<link rel="stylesheet" href="./MainCards.css">
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <div class="wrapperVideo">
   <div class="linkedVideo">
-    <!-- <BreadCrumbs link1="Home"
-    to1="/" link2="Multimedia" to2="/multimedia" page3="Video" /> -->
+        <span class="wrapperBread">
+          <ul class="breadcrumb" style="background: none;">
+              <li><i class="fa fa-home customBread"></i></li>
+              <li class="breadcrumb-item customBread"><a href="#home">Home</a></li>
+              <li class="breadcrumb-item customBread"><a href="#multimedia">Multimedia</a></li>
+              <li style="color: #6c757d;" class="breadcrumb-item customBread">Video</li>
+          </ul>
+      </span>
   </div>
 
-  <!-- <VMedia headline="Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri Meresmikan 20 Kantor Partai" /> -->
+
+  <div class="wrapperPlayVid">
+    <div class="kolumVideo">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V4pM1xY9ntY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div class="descVideo">
+        <div class="textTop">
+            <small>Admin PDI Perjuangan | 1 Januari 2019</small>
+            <div class="countLove">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <small>0</small>
+            </div>
+        </div>
+        <h5 class="headline">Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri Meresmikan 20 Kantor Partai</h5>
+        <p class="descline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati, optio hic sequi similique tenetur ratione cumque molestias quaerat porro deleniti minus, laudantium deserunt, velit quia aliquid eveniet alias doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati, optio hic sequi similique tenetur ratione cumque molestias quaerat porro deleniti minus, laudantium deserunt, velit quia aliquid eveniet alias doloribus!</p>
+        <div class="share">
+            <small class="marginShare">SHARE : </small>
+            <i class="fa fa-facebook marginShare" aria-hidden="true"></i>
+            <i class="fa fa-twitter marginShare" aria-hidden="true"></i>
+            <i class="fa fa-instagram marginShare" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp marginShare" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+
+
 
   <div class="dividerVideo">
-    <div class="borderVideo"></div>
+      <div class="borderVideo"></div>
   </div>
-  <div
-    class="wrapperCard"
-    style="display: 'flex'; flex-direction: 'row'; margin-top: '2rem';"
-  >
-    <!-- <Cards imageCard={megawati}
-    TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-    dolor, tempora optio at nam eaque!" h5Font="10pt" h5Weight="bold"
-    borderRadius="10px" />
-    <Cards imageCard={megawati}
-    TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-    dolor, tempora optio at nam eaque!" h5Font="10pt" h5Weight="bold"
-    borderRadius="10px" />
-    <Cards imageCard={megawati}
-    TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-    dolor, tempora optio at nam eaque!" h5Font="10pt" h5Weight="bold"
-    borderRadius="10px" />
-    <Cards imageCard={megawati}
-    TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-    dolor, tempora optio at nam eaque!" h5Font="10pt" h5Weight="bold"
-    borderRadius="10px" /> -->
+  <div class="wrapperCardVideo" style="display: flex; flex-direction : row; margin-top : 2rem;">
+      
+
+              <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+                <a href="#" class="imageCard" style="background-image: url(../../../img/megawati1.jpg); text-decoration: none;" >
+                    
+                </a>
+                <div class="text">
+                    <h5 class="textH5" style="font-size: 10pt; font-weight: bold;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!</h5>
+                </div>
+            </div>
+
+            <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+              <a href="#" class="imageCard" style="background-image: url(../../../img/megawati1.jpg); text-decoration: none;" >
+                  
+              </a>
+              <div class="text">
+                  <h5 class="textH5" style="font-size: 10pt; font-weight: bold;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!</h5>
+              </div>
+          </div>
+
+          <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+            <a href="#" class="imageCard" style="background-image: url(../../../img/megawati1.jpg); text-decoration: none;" >
+                
+            </a>
+            <div class="text">
+                <h5 class="textH5" style="font-size: 10pt; font-weight: bold;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!</h5>
+            </div>
+        </div>
+
+        <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+          <a href="#" class="imageCard" style="background-image: url(../../../img/megawati1.jpg); text-decoration: none;" >
+              
+          </a>
+          <div class="text">
+              <h5 class="textH5" style="font-size: 10pt; font-weight: bold;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!</h5>
+          </div>
+      </div>
   </div>
 </div>
-)
 
-<!-- export default VideoMedia -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>

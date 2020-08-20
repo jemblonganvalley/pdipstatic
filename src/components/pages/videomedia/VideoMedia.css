@@ -1,37 +1,72 @@
 .wrapperVideo {
-  width: 100%;
-  padding: 10px 10%;
-}
-
-.wrapperVideo .linkedVideo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 40%;
-  margin-top: 20px;
-}
-
-.wrapperVideo .dividerVideo {
-  margin-top: 3.5rem;
-  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-  width: 100%;
-  text-align: center;
-}
-
-.wrapperVideo .dividerVideo .borderVideo {
-  width: 5%;
-  height: 5px;
-  background-color: #d80010;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-/*# sourceMappingURL=VideoMedia.css.map */
+    width: 100%;
+    padding: 10px 10%;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperVideo {
+      padding: 0 2%;
+    }
+  }
+  
+  .wrapperVideo .linkedVideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 40%;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperVideo .linkedVideo {
+      width: 100%;
+      padding: 0 2%;
+    }
+  }
+  
+  .wrapperVideo .dividerVideo {
+    margin-top: 3.5rem;
+    border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .wrapperVideo .dividerVideo .borderVideo {
+    width: 5%;
+    height: 5px;
+    background-color: #d80010;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .wrapperVideo .wrapperCardVideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 2rem;
+    padding: 0 2%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  @media (max-width: 500px) {
+    .wrapperVideo .wrapperCardVideo {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+  }
+  /*# sourceMappingURL=VideoMedia.css.map */
