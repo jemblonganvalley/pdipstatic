@@ -1,39 +1,61 @@
-<!-- ----CEPOT---- -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+  integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+<link rel="stylesheet" href="./dpd.css">
+<link rel="stylesheet" href="./BreadCrumbs.css">
+<link rel="stylesheet" href="./MainDivider.css">
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="dpdWrapper">
-    <!-- {/* HEADERS */} -->
     <div class="dpdHead">
         <div class="backDpd">
             <div class="textDpdHead">
-                <h2>Solid Bergerak Untuk<br />Indonesia Raya </h2>
+                <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
             </div>
         </div>
     </div>
-    <!-- {/* END */} -->
 
-    <!-- {/* LINK PARTAI */} -->
     <div class="linkedDetail">
-        <i class="fa fa-home">
-            <span>Home / Partai /</span>
-        </i>
+
+        <span class="wrapperBread">
+            <ul class="breadcrumb" style="background: none;">
+                <li><i class="fa fa-home customBread"></i></li>
+                <li class="breadcrumb-item customBread"><a href="#home">Home</a></li>
+                <li class="breadcrumb-item customBread"><a href="#partai">Partai</a></li>
+                <li style="color: #6c757d;" class="breadcrumb-item customBread">Dewan Pimpinan</li>
+            </ul>
+        </span>
     </div>
-    <!-- {/* END */} -->
 
     <div class="pengurus">
-        <div class="textPengurus">
-            <small>Pengurus</small>
+        <div class="col3-container-3" style="margin: 2rem 0;">
+            <div class="box-jdl-col3">
+                <p class="txt-jdl-col3">
+                    Dewan Pimpinan
+                </p>
+            </div>
+            <div class="box-garis-lurus-col3">
+                <div class="garis-merah" style="width: 100px;">
+
+                </div>
+            </div>
         </div>
+
         <div class="dpdTextHead">
-            <h1>Dewan Pimpinan Daerah PDI Perjuangan<br />Provinsi Bali</h1>
+            <h1>Dewan Pimpinan Daerah PDI Perjuangan<br/>Provinsi Bali</h1>
         </div>
         <div class="profilDpd">
             <div class="kolum1">
-                <img src={image} alt="" width="200" />
+                <img src="../../img/bali.png" alt="" width="200" />
                 <div class="textDpd">
                     <div class="alamat dpdText">
                         <small class="alamatText">Alamat</small>
-                        <h6 class="namaProfil">Jl. Banteng Baru kelurahan no.4, renon, kec. denpasar sel., kota
-                            denpasar, bali 80234</h6>
+                        <h6 class="namaProfil">Jl. Banteng Baru kelurahan no.4, renon, kec. denpasar sel., kota denpasar, bali 80234</h6>
                     </div>
                     <div class="telpon dpdText">
                         <small class="smallTanggal">Telepon</small>
@@ -82,3 +104,6 @@
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>

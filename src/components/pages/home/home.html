@@ -1,282 +1,623 @@
-<!-- dedi -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
   integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
-<link rel="stylesheet" href="./HomePage.css">
-<link rel="stylesheet" href="./MainSlider.css">
-<link rel="stylesheet" href="./MainDivider.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./HomePage.css">
+  <link rel="stylesheet" href="./MainSlider.css">
+  <link rel="stylesheet" href="./MainDivider.css">
+  <link rel="stylesheet" href="./MainCards.css">
+  <link rel="stylesheet" href="./MainButton.css">
+  <link rel="stylesheet" href="./CarouselKM.css">
+  <link rel="stylesheet" href="./MusicPdi.css">
+  <link rel="stylesheet" href="./WidgetBerita.css">
+  <link rel="stylesheet" href="./MusicMobile.css">
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="homepage">
+<div class="homepage" style="overflow-x: hidden;">
 
-  <!-- <Section Main Carousel/> -->
-  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="0">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="0">
 
-
-    <div class="carousel-indicators">
-      <small data-target="#carouselExampleIndicators" data-slide-to=0 class="active indikator">01</small>
-      <small data-target="#carouselExampleIndicators" data-slide-to=1 class="indikator">02</small>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row image1">
-          <div class="col col-lg-6 mr-auto text1">
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum
-              velit, fugit nostrum ratione modi praesentium. Praesentium tempora a dicta fugiat numquam quidem
-              consequuntur ad sint.</p>
-
-          </div>
+    
+        <div class="carousel-indicators">
+                <div data-target="#carouselExampleIndicators" data-slide-to="0" class="active indikator" ><small class="indicatorText">
+                01</small></div>
+                <div data-target="#carouselExampleIndicators" data-slide-to="1" class="indikator"><small class="indicatorText">
+                02</small></div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row image2">
-          <div class="col col-lg-6 mr-auto text2">
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non suscipit exercitationem enim
-              nesciunt, esse, hic accusantium in blanditiis repellat at aperiam magni ab? Ullam sequi possimus
-              mollitia, maiores assumenda facilis!</p>
-          </div>
+        
+        <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row image1 images" style="background: url(../../../img/slider.jpg);background-size: cover;">
+                            <div class="col col-lg-6 mr-auto text1">
+                                    <h1>olid bergerak untuk Indonesia raya</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row image1 images" style="background: url(../../../img/slider2.jpg);background-size: cover;">
+                            <div class="col col-lg-6 mr-auto text1">
+                                    <h1>olid bergerak untuk Indonesia raya</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium.</p>
+                            </div>
+                        </div>
+                    </div>
+                )
+            })}
+            
         </div>
-      </div>
-    </div>
 
-
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <div class="prev-text">
-        <span>PREV</span>
-        <img src='../../../img/arrowkiri.png' alt="" width="35" />
-
-      </div>
-    </a>
-
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <div class="prev-text">
-        <span>NEXT</span>
-        <img src='../../../img/arrowkanan.png' alt="" width="35" />
-      </div>
-
-    </a>
-  </div>
-
-  <!-- <Section information/> -->
-  <div class="homePageTwo">
-
-    <div class="customRow">
-      <div class="col col-lg-4 custom">
-        <div class="customBorder">
-          <img src="../../../img/informasii-01.png" alt="" width="50" height="50" />
-          <h3>INFORMASI DAN DOKUMENTASI PUBLIK</h3>
-        </div>
-      </div>
-      <div class="col col-lg-4 custom">
-        <div class="customBorder">
-          <img src="../../../img/rekening.png" alt="" width="50" height="50" />
-          <h3>REKENING GOTONG ROYONG</h3>
-        </div>
-      </div>
-      <div class="col col-lg-4 custom">
-        <div class="customBorder calendar">
-          <img src="../../../img/calendarr.png" alt="" width="50" height="50" />
-          <h3>KALENDER KEGIATAN PARTAI</h3>
-        </div>
-      </div>
-    </div>
-    <div class="videoPage">
-
-      <!--Main Divider-->
-      <div class="col3-container-3" style="
-            margin : 2rem 0;
-            padding : 0px 10%;
-        ">
-        <div class="box-jdl-col3">
-          <p class="txt-jdl-col3">
-            VIDEO
-          </p>
-        </div>
-        <div class="box-garis-lurus-col3">
-          <div class="garis-merah" style="
-                    width : 100px
-                ">
-
-          </div>
-        </div>
-      </div>
-
-      <!--SECTION VIDEO-->
-      <div class="paragrapVideo">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          fugiat consequuntur dicta quam sequi facere eligendi voluptatibus
-          aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?
-        </p>
-      </div>
-      <div class="bannerYoutube">
-        <div class="textYoutube">
-          <div class="wrapperText">
-            <ul class="circleYoutube">
-              <li>
-                <a href="youtube"><i class="fa fa-play"></i></a>
-              </li>
-            </ul>
-            <div class="textInfoYT">
-              <h3 class="videoTerbaru">Video Terbaru</h3>
-              <br />
-              <h6 class="siaranHut">
-                Siaran langsung HUT ke-47 PDI Perjuangan Kemayoran Jakarta. 10
-                Januari 2020
-              </h6>
+        
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            
+            <div class="arrowsLeft">
+                <img src="../../../img/arrowsLeft.png" alt=""/>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardContainer">
-        <!-- <Cards imageCard={megawati1}
-        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum
-        dolor, sit amet consectetur adipisicing." borderRadius="10px" />
-        <Cards imageCard={megawati2}
-        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum
-        dolor, sit amet consectetur adipisicing." borderRadius="10px" />
-        <Cards imageCard={megawati3}
-        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum
-        dolor, sit amet consectetur adipisicing." borderRadius="10px" />
-      </div> -->
-
-        <!-- <MainButton name="lihat semua"
-                                margin="1rem 0" /> -->
-      </div>
-
-      <div class="beritaPage">
-        <!-- <MainDivider text="berita"
-                                    garisMerah="2.5rem"
-                                    m="1rem 0" /> -->
-        <div class="paragrapBerita">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-            fugiat consequuntur dicta quam sequi facere eligendi voluptatibus
-            aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?
-          </p>
-        </div>
-      </div>
+        </a>
+        
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                
+                <div class="arrowsRight">
+                    <img src="../../../img/arrows.png" alt=""/>
+                </div>
+            
+        </a>
     </div>
 
-    <div class="ketuaUmum">
-      <div class="row rowCustom">
-        <div class="col-lg-6 carousels">
-          <div id="carouselnih" class="carousel slide kmCarousel" data-ride="carousel" data-interval="0">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselnih" data-slide-to="{0}" class="active" />
-              <li data-target="#carouselnih" data-slide-to="{1}" />
-              <li data-target="#carouselnih" data-slide-to="{2}" />
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <h5>Ketua Umum PDI PERJUANGAN</h5>
-                <br />
-                <h3>
-                  Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati
-                </h3>
-                <br />
-                <br />
-                <p>
-                  Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup
-                  Pelatihan <br />
-                  kader Fungsional Bertugas di Kantor Partai, sekaligus <br />
-                  membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP
-                  PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
-                </p>
-              </div>
-              <div class="carousel-item">
-                <h5>Ketua Umum PDI PERJUANGAN</h5>
-                <br />
-                <h3>
-                  Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati
-                </h3>
-                <br />
-                <br />
-                <p>
-                  Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup
-                  Pelatihan <br />
-                  kader Fungsional Bertugas di Kantor Partai, sekaligus <br />
-                  membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP
-                  PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
-                </p>
-              </div>
-              <div class="carousel-item">
-                <h5>Ketua Umum PDI PERJUANGAN</h5>
-                <br />
-                <h3>
-                  Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati
-                </h3>
-                <br />
-                <br />
-                <p>
-                  Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup
-                  Pelatihan <br />
-                  kader Fungsional Bertugas di Kantor Partai, sekaligus <br />
-                  membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP
-                  PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
-                </p>
-              </div>
+    <div class="homePageTwo">
+        <div class="customRow">
+            <div class="col-lg-4 custom">
+                <div class="customBorder">
+                    <img src="../../../img/informasii-01.png" alt="" width="50" height="50" />
+                    <h3>informasi dan dokumentasi publik</h3>
+                </div>
             </div>
-          </div>
+            <div class="col-lg-4 custom">
+                <div class="customBorder">
+                    <img src="../../../img/rekening.png" alt="" width="50" height="50" />
+                    <h3>rekening gotong royong</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 custom">
+                <div class="customBorder calendar">
+                    <img src="../../../img/calendarr.png" alt="" width="50" height="50" />
+                    <h3>kalender kegiatan partai</h3>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6 banner"></div>
-      </div>
+        <div class="videoPage">
+
+            <div class="col3-container-3" style="margin: 2rem 0;">
+                <div class="box-jdl-col3">
+                    <p class="txt-jdl-col3">
+                        Video
+                    </p>
+                </div>
+                <div class="box-garis-lurus-col3">
+                    <div class="garis-merah" style="width: 100px;">
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="paragrapVideo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
+            </div>
+            <div class="bannerYoutube">
+                <div class="textYoutube">
+                    <div class="wrapperText">
+                        <ul class="circleYoutube">
+                            <li>
+                                <a href="youtube"><i class="fa fa-play"></i></a>
+                            </li>
+                        </ul>
+                        <div class="textInfoYT">
+                            <h3 class="videoTerbaru">Video Terbaru</h3>
+                            <br/>
+                            <h6 class="siaranHut">Siaran langsung HUT ke-47 PDI Perjuangan Kemayoran Jakarta. 10 Januari 2020</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardContainer">
+                <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+                    <a href="" class="imageCard" style="background-image: url(../../../img/megawati1.jpg);" >
+                    </a>
+                    <div class="text">
+                        <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                        <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+                    <a href="" class="imageCard" style="background-image: url(../../../img/megawati2.jpg);" >
+                    </a>
+                    <div class="text">
+                        <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                        <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+                    <a href="" class="imageCard" style="background-image: url(../../../img/megawati3.jpg);" >
+                    </a>
+                    <div class="text">
+                        <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                        <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn2" style="margin: 1rem 0;" href="" >lihat semua</a>
+        </div>
+
+        <div class="beritaPage">
+            <div class="col3-container-3" style="margin: 2rem 0;">
+                <div class="box-jdl-col3">
+                    <p class="txt-jdl-col3">
+                        berita
+                    </p>
+                </div>
+                <div class="box-garis-lurus-col3">
+                    <div class="garis-merah" style="width: 100px;">
+    
+                    </div>
+                </div>
+            </div>
+            <div class="paragrapBerita">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
+            </div>
+        </div>
     </div>
+
+    <!-- <CarouselKM /> -->
+    <div class="wrapperKM">
+        <div class="KM">
+            <div class="row rowCustom">
+                <div class="col-lg-6 carousels">
+                    
+
+                <div id="carouselnih" class="carousel slide kmCarousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselnih" data-slide-to="0" class="active" >
+                            <li data-target="#carouselnih" data-slide-to="1" >
+                            <li data-target="#carouselnih" data-slide-to="2" >
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h5 class="textCarousel">Ketua Umum PDI Perjuangan</h5>
+                                <h3 class="textCarousel">Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati</h3>
+                                <p class="textCarousel">
+                                Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup Pelatihan <br/> kader Fungsional Bertugas di Kantor Partai, sekaligus <br/> membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
+                                </p>
+                            </div>
+                            <div class="carousel-item ">
+                                <h5 class="textCarousel">Ketua Umum PDI Perjuangan</h5>
+                                <h3 class="textCarousel">Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati</h3>
+                                <p class="textCarousel">
+                                Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup Pelatihan <br/> kader Fungsional Bertugas di Kantor Partai, sekaligus <br/> membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
+                                </p>
+                            </div>
+                            <div class="carousel-item ">
+                                <h5 class="textCarousel">Ketua Umum PDI Perjuangan</h5>
+                                <h3 class="textCarousel">Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati</h3>
+                                <p class="textCarousel">
+                                Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup Pelatihan <br/> kader Fungsional Bertugas di Kantor Partai, sekaligus <br/> membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+                <div class="col-lg-6 banner"></div>
+            </div>
+        </div>
+    </div>
+    
 
     <div class="cardContent">
-      <!-- <Cards imageCard={megawati5} 
-    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor,
-    sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Eius consequatur neque minima eum temporibus.
-    Ipsa at fugit rerum veritatis sint?" borderRadius="10px" />
-    <Cards imageCard={megawati6} 
-    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor,
-    sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Eius consequatur neque minima eum temporibus.
-    Ipsa at fugit rerum veritatis sint?" borderRadius="10px" />
-    <Cards imageCard={megawati7} 
-    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor,
-    sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Eius consequatur neque minima eum temporibus.
-    Ipsa at fugit rerum veritatis sint?" borderRadius="10px" /> -->
+        <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+            <a href="" class="imageCard" style="background-image: url(../../../img/megawati5.jpg);" >
+            </a>
+            <div class="text">
+                <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                <p class="paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?</p>
+            </div>
+        </div>
+        <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+            <a href="" class="imageCard" style="background-image: url(../../../img/megawati6.jpg);" >
+            </a>
+            <div class="text">
+                <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                <p class="paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?</p>
+            </div>
+        </div>
+        <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+            <a href="" class="imageCard" style="background-image: url(../../../img/megawati7.jpg);" >
+            </a>
+            <div class="text">
+                <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                <p class="paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?</p>
+            </div>
+        </div>
+        
     </div>
     <div class="cardContent">
-      <!-- <Cards imageCard={megawati5} 
-    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor,
-    sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Eius consequatur neque minima eum temporibus.
-    Ipsa at fugit rerum veritatis sint?" borderRadius="10px" />
-    <Cards imageCard={megawati5} 
-    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor,
-    sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Eius consequatur neque minima eum temporibus.
-    Ipsa at fugit rerum veritatis sint?" borderRadius="10px" />
-    <Cards imageCard={megawati5} 
-    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor,
-    sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Eius consequatur neque minima eum temporibus.
-    Ipsa at fugit rerum veritatis sint?" borderRadius="10px" /> -->
+    
+        <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+            <a href="" class="imageCard" style="background-image: url(../../../img/megawati5.jpg);" >
+            </a>
+            <div class="text">
+                <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                <p class="paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?</p>
+            </div>
+        </div>
+        <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+            <a href="" class="imageCard" style="background-image: url(../../../img/megawati6.jpg);" >
+            </a>
+            <div class="text">
+                <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                <p class="paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?</p>
+            </div>
+        </div>
+        <div class="col col-lg-3 cardCustom" style="border-radius: 10px;">
+            <a href="" class="imageCard" style="background-image: url(../../../img/megawati7.jpg);" >
+            </a>
+            <div class="text">
+                <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+                <h5 class="textH5">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                <p class="paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?</p>
+            </div>
+        </div>
     </div>
 
     <div class="btnSize">
-      <!-- <MainButton name="lihat semua" /> -->
+        <a class="btn btn2" style="margin: 1rem 0;" href="" >lihat semua</a>
     </div>
 
     <!-- <MusicPdi/> -->
-    <!-- {/* <CardMaps/> */} -->
+    <div class="musiPdi">
+        <div class="containerDua">
+            <div class="contentDua">
+        <div class="col col-md-8 musicPlayer">
+            <div class="wrapperContentMusic">
+            <div class="contentMusic">
+                <div class="col-sm-4">
+                    <div class="plyr">
+                        <div class="backplyr">
+                            <div class="iconMusic">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <div class="partitur downloadContent">
+                            <img src="../../../img/downloadSatu.png" alt="" width="35" />
+                            <span class="downloadSpan">Download</span>
+                        </div>
+                        <div class="minusOn downloadContent">
+                        <img src="../../../img/downloadDua.png" alt="" width="35" />
+                        <span class="downloadSpan">Download</span>
+                        </div>
+                        <div class="minusOn downloadContent">
+                        <img src="../../../img/downloadTiga.png" alt="" width="35" />
+                        <span class="downloadSpan">Download</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="containerLirik">
+                        <small>lagu perjuangan</small>
+                        <span class="judulLagu" id="songTitle">
+                            mars pdi perjuangan
+                        </span>
+                        <span class="lirik">lirik</span>
+                        <p class="isiLirik">Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telat Sepakat Bersatu<br/>Bersatu Dalam Satu Rampak Barisan<br/>Menentang Kemiskinan
+                        <br/><br/>
+                        Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa
+                        <br/><br/>
+                        Bersama PDI Perjuangan<br/>Bersama PDI Perjuangan<br/>Wadah Kedaulatan Rakyat Indonesia<br/>Atas Berkat dan Kemurahan Yang Maha Esa<br/>PDI Perjuangan Jaya!
+                        
+                        Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telat Sepakat Bersatu<br/>Bersatu Dalam Satu Rampak Barisan<br/>Menentang Kemiskinan
+                        <br/><br/>
+                        Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa
+                        <br/><br/>
+                        Bersama PDI Perjuangan<br/>Bersama PDI Perjuangan<br/>Wadah Kedaulatan Rakyat Indonesia<br/>Atas Berkat dan Kemurahan Yang Maha Esa<br/>PDI Perjuangan Jaya! </p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-12 playerMusic">
+                    <div class="wrapperPlayerMusic">
+                        <div class="playButton">
+                            <div class="playbtn" id="play-btn" >
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="playMusic">
+                            <audio id="player" class="audio-wrapper">
+                                <source src="http://www.lukeduncan.me/oslo.mp3" type="audio/mp3" />
+                            </audio>
+                            <div class="judulPlay">
+                            <h5 class="judulPlays">{judul}</h5>
+                            <i class="fa fa-heart"></i>
+                            </div>
+                            <input type="range" id="songSlider" class="song-slider" min="0" step="1" />
+                            <div class="iconsPlay">
+                                <i class="fa fa-play"><span class="textPlay">0</span></i>
+                                <i class="fa fa-heart"><span class="textPlay">0</span></i>
+                                <i class="fa fa-comment"><span class="textPlay">0</span></i>
+                                <div class="times">
+                                    <span class="current-time time" id="currentTime">00:00 /</span>
+                                    <span class="duration time" id="duration"> 00:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+                <div class=" col-md-4 musicList">
+                    <div class="headersList">
+                        <img src="../../../img/laguperjuangan.png" alt="" width="75" />
+                        <div class="textHeader">
+                            <h4>Lagu<br/>Perjuangan</h4>
+                        </div>
+                    </div>
+                    <div class="listMusic">
+                        <div class="listSatu list">
+                            <h5 class="judulList">Mars PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div class="listDua list">
+                            <h5 class="judulList">Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div class="listTiga list">
+                            <h5 class="judulList">Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div class="listEmpat list">
+                            <h5 class="judulList">Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <MusicMobile /> -->
+    <div class="musicPdiMobile">
+        <div class="wrapperMobileMusic">
+            <div class="headlineMusic">
+                <img src="../../../img/laguperjuangan.png" alt="" width="70" />
+                <span class="headlineText">Lagu Perjuangan</span>
+            </div>
+            <div class="judulMusic">
+                <h6 class="judul" >Mars PDI Perjuangan</h6>
+                <span class="judulDesc" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, numquam?</span>
+            </div>
+            <div class="lirikMobile">
+                <div class="lirikMobileContainer">
+                    <span>LIRIK</span>
+                    <div class="wrapperLirik">
+                        <span class="liriks">Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telah Sepakat Bersatu<br/>Bersatu Dalam Rampak Barisa<br/>Menentang Kemiskinan</span>
+                        <span class="liriks">Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa</span>
+                        <span class="liriks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ab sit nobis maxime. Nihil magni, illo voluptate quibusdam quaerat necessitatibus doloremque veritatis fugit reiciendis, numquam praesentium, error autem adipisci blanditiis.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapperDownload">
+                <img src="../../../img/downloadSatu.png" alt="" width="50" />
+                <img src="../../../img/downloadDua.png" alt="" width="50" />
+                <img src="../../../img/downloadTiga.png" alt="" width="50" />
+            </div>
+            <div class="playlist">
+                <div class="playlistSatu playlistCustom">
+                    <strong>Hymne PDI Perjuangan</strong>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                </div>
+                <div class="playlistDua playlistCustom">
+                    <strong>Hymne PDI Perjuangan</strong>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                </div>
+                <div class="playlistTiga playlistCustom">
+                    <strong>Hymne PDI Perjuangan</strong>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                </div>
+                <div class="playlistEmpat playlistCustom">
+                    <strong>Hymne PDI Perjuangan</strong>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                </div>
+            </div>
+            <div class="playMusicMobile">
+                <div class="player-track">
+                    <div class="time" ></div>
+                    <div class="progress-bar">
+                        <div class="fillBar" ></div>
+                    </div>
+                </div>
+                <div class="playerControl">
+                    <i class="fa fa-backward" id="prev"></i>
+                    <i class="fa fa-play" id="play"></i>
+                    <i class="fa fa-forward" id="next"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- <MainDivider text="Berita Terbaru "/> -->
+    <div class="beritaTerbaru" style="display: flex; justify-content: center; align-items: center;">
+        <!-- <MainDivider text="Berita Terbaru "/> -->
+        <div class="col3-container-3" style="margin: 2rem 0;">
+            <div class="box-jdl-col3">
+                <p class="txt-jdl-col3">
+                    berita terbaru
+                </p>
+            </div>
+            <div class="box-garis-lurus-col3">
+                <div class="garis-merah" style="width: 100px;">
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="wrapperWidget">
-      <!-- <WidgetBerita name="berita" col='8'/>
-                <WidgetBerita name="beritaFoto" col='4'/> -->
-    </div>
-  </div>
+        <div class="col" style="width: 70%;">
+        <div id="berita" class="carousel slide" data-ride="carousel" >
+        <div class="carousel-inner">
+            <div class="carousel-item wbCarousel active">
+                <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati1.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                    <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                </div>
+            </div>
+            <div class="carousel-item wbCarousel">
+                <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati2.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                    <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                </div>
+            </div>
+            <div class="carousel-item wbCarousel">
+                <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati3.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                    <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                </div>
+            </div>
 
+         
+
+         
+
+        </div>
+        <a class="carousel-control-prev" href="#berita" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" >
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#berita" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" >
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+    </div>
+    <div class="col" style="width: 30%;">
+        <div id="beritaFoto" class="carousel slide" data-ride="carousel" >
+        <div class="carousel-inner">
+            <div class="carousel-item wbCarousel active">
+                <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati1.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                    <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                </div>
+            </div>
+            <div class="carousel-item wbCarousel">
+                <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati2.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                    <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                </div>
+            </div>
+            <div class="carousel-item wbCarousel">
+                <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati3.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                    <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                </div>
+            </div>
+
+         
+
+         
+
+        </div>
+        <a class="carousel-control-prev" href="#beritaFoto" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" >
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#beritaFoto" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" >
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+    </div>
+    </div>
+
+    <div class="widgetMobile">
+        <div class="col" style="width: 100%;">
+            <div id="berita" class="carousel slide" data-ride="carousel" >
+            <div class="carousel-inner">
+                <div class="carousel-item wbCarousel active">
+                    <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati1.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                        <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                    </div>
+                </div>
+                <div class="carousel-item wbCarousel">
+                    <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati2.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                        <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                    </div>
+                </div>
+                <div class="carousel-item wbCarousel">
+                    <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati3.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                        <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                    </div>
+                </div>
+    
+             
+    
+             
+    
+            </div>
+            <a class="carousel-control-prev" href="#berita" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" >
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#berita" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" >
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        </div>
+        <div class="col" style="width: 100%; margin: .5rem 0;">
+            <div id="berita" class="carousel slide" data-ride="carousel" >
+            <div class="carousel-inner">
+                <div class="carousel-item wbCarousel active">
+                    <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati1.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                        <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                    </div>
+                </div>
+                <div class="carousel-item wbCarousel">
+                    <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati2.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                        <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                    </div>
+                </div>
+                <div class="carousel-item wbCarousel">
+                    <div class="d-block w-100 imageWidget" alt="..." style="background-size : cover; height: 40vh; background-position: center; background: url(../../../img/megawati3.jpg); padding: 20px; position: relative; background-repeat: no-repeat; width: 100%;">
+                        <h3 style="position: absolute; bottom: 0; color: #ffffff;">Lorem ipsum dolor sit amet</h3>
+                    </div>
+                </div>
+    
+             
+    
+             
+    
+            </div>
+            <a class="carousel-control-prev" href="#berita" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" >
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#berita" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" >
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    
 </div>
 
 
