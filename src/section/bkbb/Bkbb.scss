@@ -1,4 +1,18 @@
-// $secondary : #f3f3f3;
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
+$secondary : #f3f3f3;
 // @import "../../../utilities/variable/variables.scss";
 
 
@@ -8,9 +22,9 @@
     .lahirnyaPancasila{
         padding: 0px 8%;
 
-        // @include smallPhone(){
-        //     padding: 0 10px;
-        // }
+        @include smallPhone(){
+            padding: 0 10px;
+        }
       
         .box-lahirnyaPancasila{
             height: 75.1vh;
@@ -19,10 +33,10 @@
             padding: 0px;
             position: relative;
 
-            // @include smallPhone(){
-            //     height: 50vh;
-            //     background-position: center;
-            // }
+            @include smallPhone(){
+                height: 50vh;
+                background-position: center;
+            }
 
             .redBox{
              width: 100%;
@@ -38,9 +52,9 @@
             border-left: .2px solid white;
             transition: .3s;
 
-            // @include smallPhone(){
-            //     height: 35%;
-            // }
+            @include smallPhone(){
+                height: 35%;
+            }
 
             &:hover {
                 // background: rgba(47, 53, 66, .8);
@@ -62,10 +76,10 @@
                 h2{
                     display: flex;
 
-                    // @include smallPhone(){
-                    //     font-size: 13px;
-                    //     padding: 0;
-                    // }
+                    @include smallPhone(){
+                        font-size: 13px;
+                        padding: 0;
+                    }
                 }
             }
 
@@ -80,12 +94,12 @@
                 p{
                     font-size: 15px;
 
-                    // @include smallPhone(){
-                    //     font-size: 11px;
-                    //     justify-content: center;
-                    //     align-items: center;
-                    //     margin: 1px;
-                    // }
+                    @include smallPhone(){
+                        font-size: 11px;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 1px;
+                    }
                 }
             }
         }
@@ -97,7 +111,7 @@
     }
 
     //section Video Bung Karno
-    .videoBungKarno{
+    .videoBungKarno-bkbbPage{
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -106,19 +120,19 @@
         padding: 60px 8%;
         // background-color: #bebebe;
 
-        // @include smallPhone(){
-        //     height: 60vh;
-        //     padding: 30px 10px;
-        // }
+        @include smallPhone(){
+            height: 60vh;
+            padding: 30px 10px;
+        }
     
         iframe{
             height: 80vh;
             width: 100%;
 
-            // @include smallPhone(){
-            //     height: 50vh;
-            //     width: 100%;
-            // }
+            @include smallPhone(){
+                height: 50vh;
+                width: 100%;
+            }
         }
     }
 
@@ -174,12 +188,11 @@
           position: absolute;
           top: 44.3rem;
           z-index: -1;
-          border: 1px solid blue;
 
-        //   @include smallPhone(){
-        //       height: 65vh;
-        //       top: 27.5rem;
-        //   }
+          @include smallPhone(){
+              height: 65vh;
+              top: 27.5rem;
+          }
       }
    
     .headers-bkbbPage {
@@ -188,13 +201,13 @@
         height: 25vh;
         background-position: center;
 
-        // @include smallPhone(){
-        //     height: 20vh;
-        // }
+        @include smallPhone(){
+            height: 20vh;
+        }
 
-        // @include smallPhoneDua(){
-        //     height: 15vh;
-        // }
+        @include smallPhoneDua(){
+            height: 15vh;
+        }
 
         .backgrounds-bkbb {
             background-color: #0000;
@@ -220,10 +233,10 @@
         margin-top: 20px;
         padding: 5px 10%;
 
-        // @include smallPhone(){
-        //     width: 100%;
-        //     padding: 0 2%;
-        // }
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
     }
 
     .wrapper3-bkbbPage {
@@ -231,6 +244,10 @@
         width: 100%;
         padding: 20px 10%;
         flex-direction: column;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
     }
     
     .wrapperCard-bkbbPage {
@@ -239,26 +256,25 @@
         width: 100%;
         // border: 1px solid blue;
         padding: 20px 10%;
-        border: 1px solid blue;
 
-        // @include smallPhone(){
-        //     height: auto;
-        //     flex-direction: column;
-        //     padding: 0;
-        // }
+        @include smallPhone(){
+            height: auto;
+            flex-direction: column;
+            padding: 0;
+        }
 
         .cardKolum {
             width: 100%;
             display: flex;
             flex-direction: row;
 
-            // @include smallPhone(){
-            //     height: auto;
-            //     flex-direction: column;
-            // }
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+            }
         }
     }
-    .btnLihatSemua {
+    .btnLihatSemua-bkbbPage {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -267,7 +283,7 @@
         text-decoration: none;
     }
 
-    .bannerBkbb {
+    .bannerBkbbPage {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -275,7 +291,7 @@
         width: 100%;
         height: 70vh;
 
-        background: url(../../../img/kids.png);
+        background: url(../../img/kids.png);
         background-size: contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -284,33 +300,31 @@
         // font-family: 'Josefin Sans';
         z-index: 100000;
 
-        // @include smallPhone(){
-        //     height: 50vh;
-        //     background-size: cover;
-        //     background-attachment: inherit;
-        //     padding: 10px 0 0 0;
-        // }
+        @include smallPhone(){
+            height: 50vh;
+            background-size: cover;
+            background-attachment: inherit;
+            padding: 10px 0 0 0;
+        }
 
         i{
             font-size: 30px;
 
-            // @include smallPhone(){
-            //     font-size: 20px;
-            // }
+            @include smallPhone(){
+                font-size: 20px;
+            }
         }
 
         h4{
-            display: flex;
-            // @include smallPhone(){
-            //     font-size: 15px;
-            // }
+            @include smallPhone(){
+                font-size: 15px;
+            }
         }
 
         h5{
-            display: flex;
-            // @include smallPhone(){
-            //     font-size: 15px;
-            // }
+            @include smallPhone(){
+                font-size: 15px;
+            }
         }
 
         .custom {
@@ -319,9 +333,9 @@
             font-family: 'Roboto';
             font-weight: bold;
 
-            // @include smallPhone(){
-            //     margin: 1.2rem;
-            // }
+            @include smallPhone(){
+                margin: 1.2rem;
+            }
         }
         small {
             margin: 1rem;
@@ -340,10 +354,10 @@
         align-items: center;
         padding: 50px 10% 0 10%;
 
-        // @include smallPhone(){
-        //     padding: 0;
-        //     margin: 40px 0 0 0;  
-        // }
+        @include smallPhone(){
+            padding: 0;
+            margin: 40px 0 0 0;  
+        }
 
         // Box1 Image
         .box1-image{
@@ -352,11 +366,11 @@
             width: 100%;
             padding: 10px 0 10px 0;
 
-            // @include smallPhone(){
-            //     flex-direction: column;
-            //     height: auto;
-            //     padding: 0;
-            // }
+            @include smallPhone(){
+                flex-direction: column;
+                height: auto;
+                padding: 0;
+            }
         }
         // END Box1 Image
     }

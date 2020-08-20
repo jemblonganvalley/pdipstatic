@@ -6,12 +6,25 @@
   padding: 0px 8%;
 }
 
+@media (max-width: 500px) {
+  .wrapperBkbbPage .lahirnyaPancasila {
+    padding: 0 10px;
+  }
+}
+
 .wrapperBkbbPage .lahirnyaPancasila .box-lahirnyaPancasila {
   height: 75.1vh;
   background-image: url(../../img/BKBB_BungKarno.jpg);
   background-size: cover;
   padding: 0px;
   position: relative;
+}
+
+@media (max-width: 500px) {
+  .wrapperBkbbPage .lahirnyaPancasila .box-lahirnyaPancasila {
+    height: 50vh;
+    background-position: center;
+  }
 }
 
 .wrapperBkbbPage .lahirnyaPancasila .box-lahirnyaPancasila .redBox {
@@ -32,6 +45,12 @@
   border-left: .2px solid white;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media (max-width: 500px) {
+  .wrapperBkbbPage .lahirnyaPancasila .box-lahirnyaPancasila .redBox {
+    height: 35%;
+  }
 }
 
 .wrapperBkbbPage .lahirnyaPancasila .box-lahirnyaPancasila .redBox:hover {
@@ -62,6 +81,13 @@
   display: flex;
 }
 
+@media (max-width: 500px) {
+  .wrapperBkbbPage .lahirnyaPancasila .box-lahirnyaPancasila .redBox .red-box-title h2 {
+    font-size: 13px;
+    padding: 0;
+  }
+}
+
 .wrapperBkbbPage .lahirnyaPancasila .box-lahirnyaPancasila .redBox .txt2-redBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,7 +107,20 @@
   font-size: 15px;
 }
 
-.wrapperBkbbPage .videoBungKarno {
+@media (max-width: 500px) {
+  .wrapperBkbbPage .lahirnyaPancasila .box-lahirnyaPancasila .redBox .txt2-redBox p {
+    font-size: 11px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1px;
+  }
+}
+
+.wrapperBkbbPage .videoBungKarno-bkbbPage {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -96,9 +135,23 @@
   padding: 60px 8%;
 }
 
-.wrapperBkbbPage .videoBungKarno iframe {
+@media (max-width: 500px) {
+  .wrapperBkbbPage .videoBungKarno-bkbbPage {
+    height: 60vh;
+    padding: 30px 10px;
+  }
+}
+
+.wrapperBkbbPage .videoBungKarno-bkbbPage iframe {
   height: 80vh;
   width: 100%;
+}
+
+@media (max-width: 500px) {
+  .wrapperBkbbPage .videoBungKarno-bkbbPage iframe {
+    height: 50vh;
+    width: 100%;
+  }
 }
 
 .wrapperBkbbPage .materiPokokPendukung {
@@ -152,7 +205,13 @@
   position: absolute;
   top: 44.3rem;
   z-index: -1;
-  border: 1px solid blue;
+}
+
+@media (max-width: 500px) {
+  .wrapperBkbbPage .backGroundGray {
+    height: 65vh;
+    top: 27.5rem;
+  }
 }
 
 .wrapperBkbbPage .headers-bkbbPage {
@@ -160,6 +219,18 @@
   background-size: cover;
   height: 25vh;
   background-position: center;
+}
+
+@media (max-width: 500px) {
+  .wrapperBkbbPage .headers-bkbbPage {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapperBkbbPage .headers-bkbbPage {
+    height: 15vh;
+  }
 }
 
 .wrapperBkbbPage .headers-bkbbPage .backgrounds-bkbb {
@@ -197,6 +268,13 @@
   padding: 5px 10%;
 }
 
+@media (max-width: 500px) {
+  .wrapperBkbbPage .linkedBkbbPage {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
 .wrapperBkbbPage .wrapper3-bkbbPage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,13 +287,29 @@
           flex-direction: column;
 }
 
+@media (max-width: 500px) {
+  .wrapperBkbbPage .wrapper3-bkbbPage {
+    padding: 0 10px;
+  }
+}
+
 .wrapperBkbbPage .wrapperCard-bkbbPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px 10%;
-  border: 1px solid blue;
+}
+
+@media (max-width: 500px) {
+  .wrapperBkbbPage .wrapperCard-bkbbPage {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
 }
 
 .wrapperBkbbPage .wrapperCard-bkbbPage .cardKolum {
@@ -229,7 +323,17 @@
           flex-direction: row;
 }
 
-.wrapperBkbbPage .btnLihatSemua {
+@media (max-width: 500px) {
+  .wrapperBkbbPage .wrapperCard-bkbbPage .cardKolum {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.wrapperBkbbPage .btnLihatSemua-bkbbPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +348,7 @@
   text-decoration: none;
 }
 
-.wrapperBkbbPage .bannerBkbb {
+.wrapperBkbbPage .bannerBkbbPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,7 +364,7 @@
           flex-direction: column;
   width: 100%;
   height: 70vh;
-  background: url(../../../img/kids.png);
+  background: url(../../img/kids.png);
   background-size: contain;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -269,30 +373,51 @@
   z-index: 100000;
 }
 
-.wrapperBkbbPage .bannerBkbb i {
+@media (max-width: 500px) {
+  .wrapperBkbbPage .bannerBkbbPage {
+    height: 50vh;
+    background-size: cover;
+    background-attachment: inherit;
+    padding: 10px 0 0 0;
+  }
+}
+
+.wrapperBkbbPage .bannerBkbbPage i {
   font-size: 30px;
 }
 
-.wrapperBkbbPage .bannerBkbb h4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (max-width: 500px) {
+  .wrapperBkbbPage .bannerBkbbPage i {
+    font-size: 20px;
+  }
 }
 
-.wrapperBkbbPage .bannerBkbb h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (max-width: 500px) {
+  .wrapperBkbbPage .bannerBkbbPage h4 {
+    font-size: 15px;
+  }
 }
 
-.wrapperBkbbPage .bannerBkbb .custom {
+@media (max-width: 500px) {
+  .wrapperBkbbPage .bannerBkbbPage h5 {
+    font-size: 15px;
+  }
+}
+
+.wrapperBkbbPage .bannerBkbbPage .custom {
   margin: 1rem;
   text-align: center;
   font-family: 'Roboto';
   font-weight: bold;
 }
 
-.wrapperBkbbPage .bannerBkbb small {
+@media (max-width: 500px) {
+  .wrapperBkbbPage .bannerBkbbPage .custom {
+    margin: 1.2rem;
+  }
+}
+
+.wrapperBkbbPage .bannerBkbbPage small {
   margin: 1rem;
   font-size: 8pt;
   font-style: italic;
@@ -317,6 +442,13 @@
   padding: 50px 10% 0 10%;
 }
 
+@media (max-width: 500px) {
+  .wrapperBkbbPage .col-card-wejangan-bungkarno {
+    padding: 0;
+    margin: 40px 0 0 0;
+  }
+}
+
 .wrapperBkbbPage .col-card-wejangan-bungkarno .box1-image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,4 +457,15 @@
   width: 100%;
   padding: 10px 0 10px 0;
 }
-/*# sourceMappingURL=Bkbb.css.map */
+
+@media (max-width: 500px) {
+  .wrapperBkbbPage .col-card-wejangan-bungkarno .box1-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=bkbb.css.map */
