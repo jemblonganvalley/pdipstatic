@@ -1,8 +1,21 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
 .imgWejangan{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 42vh;
+    height: 100%;
     width: 100vw;
     background-size: cover;
     justify-content: center;
@@ -12,6 +25,12 @@
     margin: 0px 10px 0px 10px;
     cursor: pointer;
     text-decoration: none;
+
+    @include smallPhone(){
+        height: 40vh;
+        width: 94vw;
+        margin: 0 10px 10px 10px;
+    }
 
 
     i{
