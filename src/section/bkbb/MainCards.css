@@ -7,6 +7,7 @@
   background: #ffffff;
   -webkit-transition: .5s;
   transition: .5s;
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -54,6 +55,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -85,6 +87,7 @@
   text-align: center;
   color: #ffffff;
   font-size: 10pt;
+  overflow: hidden;
 }
 
 .cardCustom .imageCard .VBMusic:hover {
@@ -98,6 +101,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -110,6 +114,7 @@
 
 .cardCustom .text .textSmall {
   font-size: 8pt;
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -120,6 +125,7 @@
 
 .cardCustom .text .textH5 {
   margin-top: 1rem;
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -131,9 +137,11 @@
 
 .cardCustom .text .textH6 {
   font-size: 12pt;
+  overflow: hidden;
 }
 
 .cardCustom .text .paragrap {
   font-size: 7pt;
+  overflow: hidden;
 }
 /*# sourceMappingURL=MainCards.css.map */

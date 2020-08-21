@@ -15,12 +15,15 @@ $smallPhoneDua : 400px;
 $secondary : #f3f3f3;
 // @import "../../../utilities/variable/variables.scss";
 
+*{
+    overflow-x: hidden;
+}
 
 .wrapperBkbbPage {
     width: 100%;
     // section lahirnya pancasil
     .lahirnyaPancasila{
-        padding: 0px 8%;
+        padding: 0px 10%;
 
         @include smallPhone(){
             padding: 0 10px;
@@ -51,6 +54,7 @@ $secondary : #f3f3f3;
             color: #ffff;
             border-left: .2px solid white;
             transition: .3s;
+            overflow: hidden;
 
             @include smallPhone(){
                 height: 35%;
@@ -72,9 +76,11 @@ $secondary : #f3f3f3;
                 align-items: center;
                 padding: 15px;
                 margin: 1px;
+                overflow: hidden;
 
                 h2{
                     display: flex;
+                    overflow: hidden;
 
                     @include smallPhone(){
                         font-size: 13px;
@@ -90,6 +96,7 @@ $secondary : #f3f3f3;
                 justify-content: center;
                 align-items: center;
                 padding: 15px;
+                overflow: hidden;
 
                 p{
                     font-size: 15px;
@@ -111,26 +118,28 @@ $secondary : #f3f3f3;
     }
 
     //section Video Bung Karno
-    .videoBungKarno-bkbbPage{
+    .videoBungKarno{
         width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 60px 8%;
+        overflow: hidden;
         // background-color: #bebebe;
 
         @include smallPhone(){
-            height: 60vh;
+            height: auto;
             padding: 30px 10px;
         }
     
         iframe{
             height: 80vh;
             width: 100%;
+            overflow: hidden;
 
             @include smallPhone(){
-                height: 50vh;
+                height: 55vh;
                 width: 100%;
             }
         }
@@ -186,12 +195,12 @@ $secondary : #f3f3f3;
           height: 100vh;
           background-color: #5d5d5d;
           position: absolute;
-          top: 44.3rem;
+          top: 36.8rem;
           z-index: -1;
 
           @include smallPhone(){
               height: 65vh;
-              top: 27.5rem;
+              top: 22.7rem;
           }
       }
    
@@ -239,7 +248,7 @@ $secondary : #f3f3f3;
         }
     }
 
-    .wrapper3-bkbbPage {
+    .wrapper3 {
         display: flex;
         width: 100%;
         padding: 20px 10%;
@@ -250,7 +259,7 @@ $secondary : #f3f3f3;
         }
     }
     
-    .wrapperCard-bkbbPage {
+    .wrapperCard {
         display: flex;
         // flex-direction: row;
         width: 100%;
@@ -274,7 +283,7 @@ $secondary : #f3f3f3;
             }
         }
     }
-    .btnLihatSemua-bkbbPage {
+    .btnLihatSemua {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -283,7 +292,7 @@ $secondary : #f3f3f3;
         text-decoration: none;
     }
 
-    .bannerBkbbPage {
+    .bannerBkbb {
         display: flex;
         justify-content: center;
         align-items: center;

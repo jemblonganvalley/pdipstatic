@@ -23,6 +23,7 @@ $smallPhoneDua : 400px;
         margin: 0 10px;
         background: #ffffff;
         transition: .5s;
+        overflow: hidden;
 
         @include smallPhone() {
             flex-direction: row;
@@ -51,6 +52,7 @@ $smallPhoneDua : 400px;
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
 
             @include smallPhone() {
                 border-radius: 10px;
@@ -76,6 +78,7 @@ $smallPhoneDua : 400px;
                 text-align: center;
                 color: #ffffff;
                 font-size: 10pt;
+                overflow: hidden;
 
                 &:hover {
                     background: #ffffff;
@@ -88,6 +91,7 @@ $smallPhoneDua : 400px;
             width: 100%;
             padding: 10px 20px;
             align-items: flex-start;
+            overflow: hidden;
 
             @include smallPhone() {
                 flex: 1;
@@ -97,6 +101,7 @@ $smallPhoneDua : 400px;
 
             .textSmall {
                 font-size: 8pt;
+                overflow: hidden;
 
                 @include smallPhone() {
                     font-size: 5pt;
@@ -106,6 +111,7 @@ $smallPhoneDua : 400px;
 
             .textH5 {
                 margin-top: 1rem;
+                overflow: hidden;
 
                 @include smallPhone() {
                     font-size: 12pt;
@@ -115,10 +121,12 @@ $smallPhoneDua : 400px;
 
             .textH6{
                 font-size: 12pt;
+                overflow: hidden;
             }
 
             .paragrap {
                 font-size: 7pt;
+                overflow: hidden;
             }
         }
     }
