@@ -54,168 +54,8 @@
     <!-- {/* Container2 */} -->
     <div class="container2-pidato-hut">
         <!-- {/* Column Card */} -->
-        <div class="column-card-pidato-hut">
-            <!-- Image1 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
+        <div class="column-card-pidato-hut" id="column-card">
 
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu13.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image1 -->
-
-            <!-- Image2 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu14.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image2 -->
-
-            <!-- Image3 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu15.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image3 -->
-
-            <!-- Image4 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu13.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image4 -->
-
-            <!-- Image5 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu14.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image5 -->
-
-            <!-- Image6 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu15.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image6 -->
-
-            <!-- Image7 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu13.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image7 -->
-
-            <!-- Image8 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu14.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image8 -->
-
-            <!-- Image9 -->
-            <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
-
-                <a href="#" class="imageCard" style="background-image: url(../../../img/pemilu15.jpg);">
-
-                </a>
-                <div class="text">
-                    <h5 class="textH5" style="font-weight: bold;">
-                        PIDATO HUT
-
-                    </h5>
-                    <p class="paragrap" style="font-size : paragrapSize;">
-
-                    </p>
-                </div>
-            </div>
-            <!-- END Image9 -->
         </div>
         <!-- {/* END Column Card */} -->
 
@@ -228,6 +68,108 @@
     <!-- {/* END Container2 */} -->
 </div>
 <!-- END Element HTML -->
+
+<!-- Script JS -->
+<script>
+    // Create Element Card
+    const cardPidatoHut = (pageHref, image, txtTitle, txtParagraf) => {
+        return (`
+        <div class="col col-lg-3 cardCustom" style="border-radius : 10px; width : width;">
+            <a href="${pageHref}" class="imageCard" style="background-image: url(${image});">
+
+            </a>
+            <div class="text">
+                <h5 class="textH5" style="font-weight: bold;">
+                    ${txtTitle}
+                </h5>
+                <p class="paragrap" style="font-size : paragrapSize;">
+                    ${txtParagraf}
+                </p>
+            </div>
+        </div>
+        `)
+    }
+    // END Create Element Card
+
+    // Create Database Card
+    const dataCard = [
+        {
+            id: 1,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+        {
+            id: 2,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+        {
+            id: 3,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+        {
+            id: 4,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+        {
+            id: 5,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+        {
+            id: 6,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+        {
+            id: 7,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+        {
+            id: 8,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+        {
+            id: 9,
+            pageHref: '#',
+            image: '',
+            txtTitle: 'PIDATO HUT',
+            txtParagraf: ''
+        },
+    ]
+    // END Create Database Card
+
+    // Get Element HTML
+    const columnCard = document.getElementById('column-card')
+    // END Get Element HTML
+
+    // Inject Element
+    dataCard.map(function (e) {
+        return columnCard.innerHTML += cardPidatoHut(e.pageHref, e.image, e.txtTitle, e.txtParagraf)
+    })
+    // END Inject Element
+</script>
+<!-- END Script JS -->
 
 <!-- script js bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
