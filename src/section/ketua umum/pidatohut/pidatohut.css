@@ -1,17 +1,17 @@
-.wrapperMateri {
+.wrapper-pidato-hut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
   width: 100%;
-  padding: 40px 10%;
   background: #f3f3f3;
 }
 
-@media (max-width: 500px) {
-  .wrapperMateri {
-    margin: 0;
-    padding: 10px 0;
-  }
-}
-
-.wrapperMateri .linkedMateri {
+.wrapper-pidato-hut .linked-pidato-hut {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,45 +22,40 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 40%;
+  width: 100%;
   margin-top: 15px;
+  padding: 10px 10%;
 }
 
 @media (max-width: 500px) {
-  .wrapperMateri .linkedMateri {
+  .wrapper-pidato-hut .linked-pidato-hut {
     width: 100%;
     padding: 0 2%;
   }
 }
 
-.wrapperMateri .linkedMateri i span {
-  margin-left: 5px;
-  font-style: italic;
-  font-size: 8pt;
-}
-
-.wrapperMateri .container1 {
+.wrapper-pidato-hut .container1-pidato-hut {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: auto;
   width: 100%;
-  margin: 0px 0 0 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 10%;
 }
 
 @media (max-width: 500px) {
-  .wrapperMateri .container1 {
+  .wrapper-pidato-hut .container1-pidato-hut {
     padding: 0 10px;
   }
 }
 
-.wrapperMateri .container2 {
+.wrapper-pidato-hut .container2-pidato-hut {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,30 +65,17 @@
           flex-direction: column;
   height: auto;
   width: 100%;
-  margin: 0px 0 20px 0;
-  padding: 0 0%;
+  padding: 0 10%;
+  margin: 30px 0 0 0;
 }
 
-.wrapperMateri .container2 .col-card-materi-pokok {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: auto;
-  width: 100%;
-  margin: 40px 0 20px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (max-width: 500px) {
+  .wrapper-pidato-hut .container2-pidato-hut {
+    padding: 0px;
+  }
 }
 
-.wrapperMateri .container2 .col-card-materi-pokok .column-card-materi-pk {
+.wrapper-pidato-hut .container2-pidato-hut .column-card-pidato-hut {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,10 +83,21 @@
       flex-wrap: wrap;
   height: auto;
   width: 100%;
-  border: 1px solid blue;
 }
 
-.wrapperMateri .container2 .col-pagination-materi-pokok {
+@media (max-width: 500px) {
+  .wrapper-pidato-hut .container2-pidato-hut .column-card-pidato-hut {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.wrapper-pidato-hut .container2-pidato-hut .column-pagination-pidato-hut {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,4 +110,4 @@
       -ms-flex-align: center;
           align-items: center;
 }
-/*# sourceMappingURL=MateriPokok.css.map */
+/*# sourceMappingURL=pidatohut.css.map */

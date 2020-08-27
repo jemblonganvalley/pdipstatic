@@ -95,48 +95,16 @@ $smallPhoneDua : 400px;
         height: auto;
         width: 100%;
         margin: 40px 0 20px 0;
+        justify-content: center;
+        align-items: center;
 
-        // Row1
-        .row1{
+        .column-card-materi-pk{
             display: flex;
+            flex-wrap: wrap;
             height: auto;
             width: 100%;
-            padding: 10px 0;
-
-            @include smallPhone(){
-                flex-direction: column;
-                padding: 0 0 10px 0;
-            }
+            border: 1px solid blue;
         }
-        // END Row1
-
-        // Row2
-        .row2{
-            display: flex;
-            height: auto;
-            padding: 10px 0;
-            width: 100%;
-
-            @include smallPhone(){
-                flex-direction: column;
-                padding: 0 0 10px 0;
-            }
-        }
-        // END Row2
-
-        // Row3
-        .row3{
-            display: flex;
-            height: auto;
-            padding: 10px 0;
-            width: 100%;
-
-            @include smallPhone(){
-                flex-direction: column;
-                padding: 0;
-            }
-        }
-        // END Row3
     }
     // END Column Card Materi Pokok
 
