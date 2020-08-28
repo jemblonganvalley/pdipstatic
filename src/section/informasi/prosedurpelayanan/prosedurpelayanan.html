@@ -1,0 +1,190 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Link -->
+<link rel="stylesheet" href="./prosedurpelayanan.css">
+<link rel="stylesheet" href="./breadcrumbs.css">
+<link rel="stylesheet" href="./maindivider.css">
+<link rel="stylesheet" href="./maincards.css">
+<!-- END Link -->
+
+<div class="wrapperProsedur">
+    <div class="linkedProsedur">
+        <span class="wrapperBread">
+            <ul class="breadcrumb" style="
+                    background : none">
+                <li><i class="fa fa-home customBread"></i></li>
+                <li class="breadcrumb-item customBread"><a href="">Home</a></li>
+                <li style="
+                        color : #6c757d" class="breadcrumb-item active customBread"><a
+                        href="http://127.0.0.1:5500/src/section/bkbb/bkbb.html">Informasi Publik</a>
+                </li>
+                <li class="breadcrumb-item active customBread">
+                    Prosedur Pelayanan
+                </li>
+            </ul>
+        </span>
+    </div>
+
+    <div class="dividerProsedur">
+        <div class="col3-container-3" style="
+    margin : 2rem 0;
+    padding : 0px 0%;
+">
+            <div class="box-jdl-col3">
+                <p class="txt-jdl-col3">
+                    Prosedur Pelayanan
+                </p>
+            </div>
+            <div class="box-garis-lurus-col3">
+                <div class="garis-merah" style="
+            width : 150px
+        ">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardProsedur">
+        <div class="listProsedur" id="column-card">
+
+        </div>
+    </div>
+</div>
+
+<!-- Script JS -->
+<script>
+    // Create Card Element
+    const cardProsedurPelayanan = (pageHref, images, headline, isi) => {
+        return (`
+        <div class="cardInfo">
+            <a href="${pageHref}" class="imgCardInfo" style="
+                background : url(${images});
+                background-size : cover;
+                text-decoration : none;
+                ">            
+            </a>
+
+            <div class="textInfo">
+                <small class="textSmall">${headline}</small>
+                <h5 class="textH5">${isi}</h5>
+            </div>
+        </div>
+        `)
+    }
+    // END Create Card Element
+
+    // Create Database Card
+    const dataCard = [
+        {
+            id: 1,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 2,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 3,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 4,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 5,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 6,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 7,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 8,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 9,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 10,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 11,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 12,
+            pageHref: '#',
+            images: '../../../img/megawati12.png',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+    ]
+    // END Create Database Card
+
+    // Get Element HTML
+    const columnCard = document.getElementById('column-card');
+    // END Get Element HTML
+
+    // Inject Element
+    dataCard.map(function (e) {
+        return columnCard.innerHTML += cardProsedurPelayanan(e.pageHref, e.images, e.headline, e.isi)
+    })
+    // END Inject Element
+</script>
+<!-- END Script JS -->
+
+<!-- script js bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+<!-- END Script JS bootstrap -->

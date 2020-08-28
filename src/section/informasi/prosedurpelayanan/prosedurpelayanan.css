@@ -1,0 +1,48 @@
+.wrapperProsedur {
+  width: 100%;
+  padding: 10px 10%;
+  background: #f3f3f3;
+}
+
+@media (max-width: 500px) {
+  .wrapperProsedur {
+    padding: 0 2%;
+  }
+}
+
+.wrapperProsedur .linkedProsedur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .wrapperProsedur .linkedProsedur {
+    width: 100%;
+    padding: 0 2%;
+    margin: 0;
+  }
+}
+
+.wrapperProsedur .cardProsedur {
+  max-width: 100%;
+}
+
+.wrapperProsedur .cardProsedur .listProsedur {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=prosedurpelayanan.css.map */

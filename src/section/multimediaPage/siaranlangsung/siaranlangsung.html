@@ -1,0 +1,235 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./siaranlangsung.css">
+<link rel="stylesheet" href="./breadcrumbs.css">
+<link rel="stylesheet" href="./maindivider.css">
+<link rel="stylesheet" href="./vmedia.css">
+<link rel="stylesheet" href="./maincards.css">
+
+<div class="wrapperSL">
+    <div class="linkedSL">
+        <span class="wrapperBread">
+            <ul class="breadcrumb" style="
+                    background : none">
+                <li><i class="fa fa-home customBread"></i></li>
+                <li class="breadcrumb-item customBread"><a href="">Home</a></li>
+                <li style="
+                        color : #6c757d" class="breadcrumb-item active customBread"><a
+                        href="http://127.0.0.1:5500/src/section/bkbb/bkbb.html">Multimedia</a>
+                </li>
+                <li class="breadcrumb-item active customBread">
+                    Siaran Langsung
+                </li>
+            </ul>
+        </span>
+    </div>
+
+    <div class="SiaranLangsung">
+        <div class="wrapperPlayVid">
+            <div class="kolumVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4Y9vU1dCk78" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="descVideo">
+                <div class="textTop">
+                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
+                    <div class="countLove">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <small>0</small>
+                    </div>
+                </div>
+                <h5 class="headline">Megawati Soekarnoputri, Ketua Umum PDI Perjuangan</h5>
+                <p class="descline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati, optio
+                    hic sequi similique tenetur ratione cumque molestias quaerat porro deleniti minus, laudantium
+                    deserunt, velit quia aliquid eveniet alias doloribus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati, optio hic sequi
+                    similique tenetur ratione cumque molestias quaerat porro deleniti minus, laudantium deserunt, velit
+                    quia aliquid eveniet alias doloribus!</p>
+                <div class="share">
+                    <small class="marginShare">SHARE : </small>
+                    <i class="fa fa-facebook marginShare" aria-hidden="true"></i>
+                    <i class="fa fa-twitter marginShare" aria-hidden="true"></i>
+                    <i class="fa fa-instagram marginShare" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp marginShare" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dividerSL">
+        <div class="col3-container-3" style="
+    margin : 2rem 0;
+    padding : 0px 0%;
+">
+            <div class="box-jdl-col3">
+                <p class="txt-jdl-col3">
+                    Siaran Langsung
+                </p>
+            </div>
+            <div class="box-garis-lurus-col3">
+                <div class="garis-merah" style="
+            width : 150px
+        ">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardSL">
+        <div class="listSL">
+            <div class="wrapperSiaran" style="display: flex; justify-content: center; flex-wrap: wrap;"
+                id="column-card">
+
+
+
+            </div>
+
+            <nav aria-label="Page navigation example"
+                style="margin-top: 10px; width: 100%; display: flex; justify-content: center;">
+
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script>
+    const cardSiaranLangsung = (image, pageHref, headline, isi) => {
+        return (`
+        <div class="cardMultimedia">
+            <a class="imgCard" style="
+                background : url(${image});
+                background-size : cover;
+                text-decoration : none;
+                ">
+
+                <a class="VidPlay" href="${pageHref}" style="
+                    text-decoration : none;">
+                    <i class="fa fa-play" style="
+                        text-decoration: none;"></i>
+                </a>
+            </a>
+
+            <div class="textMultimedia">
+                <small class="textSmall">${headline}</small>
+                <h5 class="textH5">${isi}</h5>
+            </div>
+        </div>
+        `)
+    }
+
+    // Database
+    const dataCard = [
+        {
+            id: 1,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 2,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 3,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 4,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 5,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 6,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 7,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 8,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 9,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 10,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 11,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+        {
+            id: 12,
+            image: '../../../bkbb5.jpg',
+            pageHref: '#',
+            headline: 'Admin PDI Perjuangan | 1 Januari 2019',
+            isi: 'lorem ipsum dolor sit amet.'
+        },
+
+    ]
+
+    // Get Element HTML
+    const columnCard = document.getElementById('column-card');
+
+    // Inject Element
+    dataCard.map(function (e) {
+        return columnCard.innerHTML += cardSiaranLangsung(e.image, e.pageHref, e.headline, e.isi)
+    })
+
+</script>
+
+<!-- script js bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+<!-- END Script JS bootstrap -->
