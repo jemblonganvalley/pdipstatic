@@ -1,0 +1,47 @@
+.wrapperWW {
+  width: 100%;
+  padding: 10px 10%;
+  background: #f3f3f3;
+}
+
+@media (max-width: 500px) {
+  .wrapperWW {
+    padding: 0 2%;
+  }
+}
+
+.wrapperWW .linkedWW {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .wrapperWW .linkedWW {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+.wrapperWW .cardWW {
+  max-width: 100%;
+}
+
+.wrapperWW .cardWW .listWW {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=wawancara.css.map */

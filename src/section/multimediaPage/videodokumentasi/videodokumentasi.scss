@@ -1,0 +1,46 @@
+@import "../../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+.wrapperVD {
+    width: 100%;
+    padding: $paddingSmall;
+    background: #f3f3f3;
+    @include smallPhone() {
+        padding: $paddingMobile;
+    }
+
+    .linkedVD {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+        @include smallPhone() {
+            // border: 1px solid crimson;
+            width: 100%;
+            padding: $paddingMobile;
+        }
+    }
+
+    .cardVD {
+        max-width: 100%;
+
+        .listVD {
+            flex-wrap: wrap;
+            width: 100%;
+            display: flex;
+            
+        }
+    }
+}

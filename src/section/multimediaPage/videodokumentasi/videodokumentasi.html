@@ -5,15 +5,17 @@
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="./siaranlangsung.css">
+<!-- Link -->
+<link rel="stylesheet" href="./videodokumentasi.css">
 <link rel="stylesheet" href="./breadcrumbs.css">
 <link rel="stylesheet" href="./maindivider.css">
 <link rel="stylesheet" href="./vmedia.css">
 <link rel="stylesheet" href="./maincards.css">
-<link rel="stylesheet" href="./siaranpagination.css">
 
-<div class="wrapperSL">
-    <div class="linkedSL">
+<!-- END Link -->
+
+<div class="wrapperVD">
+    <div class="linkedVD">
         <span class="wrapperBread">
             <ul class="breadcrumb" style="
                     background : none">
@@ -24,13 +26,13 @@
                         href="http://127.0.0.1:5500/src/section/bkbb/bkbb.html">Multimedia</a>
                 </li>
                 <li class="breadcrumb-item active customBread">
-                    Siaran Langsung
+                    Video Dokumentasi
                 </li>
             </ul>
         </span>
     </div>
 
-    <div class="SiaranLangsung">
+    <div class="videoDokumen">
         <div class="wrapperPlayVid">
             <div class="kolumVideo">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4Y9vU1dCk78" frameborder="0"
@@ -64,46 +66,55 @@
         </div>
     </div>
 
-    <div class="dividerSL">
+    <div class="dividerVD">
         <div class="col3-container-3" style="
-    margin : 2rem 0;
-    padding : 0px 0%;
-">
+        margin : 2rem 0;
+        padding : 0px 0%;
+    ">
             <div class="box-jdl-col3">
                 <p class="txt-jdl-col3">
-                    Siaran Langsung
+                    Video Dokumentasi
                 </p>
             </div>
             <div class="box-garis-lurus-col3">
                 <div class="garis-merah" style="
-            width : 150px
-        ">
+                width : 150px
+            ">
 
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="cardSL">
-        <div class="listSL">
-            <div class="wrapperSiaran" style="display: flex; justify-content: center; flex-wrap: wrap;"
-                id="column-card">
+    <div class="cardVD">
+        <div class="listVD">
+            <!-- Dokumen Pagination -->
+            <div class="wrapperDokumen" style="
+                display : flex;
+                justify-content : center;
+                flex-wrap : wrap;" id="column-card">
 
-
+                <!-- Body Component Card Multimedia -->
 
             </div>
 
-            <nav aria-label="Page navigation example"
-                style="margin-top: 10px; width: 100%; display: flex; justify-content: center;">
+            <nav aria-label="Page navigation example" style="
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: center;">
 
 
             </nav>
         </div>
+        <!-- END Dokumen Pagination -->
     </div>
 </div>
 
+<!-- Script JS -->
 <script>
-    const cardSiaranLangsung = (pageHref, image, btnPlay, headline, isi) => {
+    // Create Card Element
+    const cardVideoDokumentasi = (pageHref, image, btnPlay, headline, isi) => {
         return (`
         <div class="cardMultimedia">
             <a href="${pageHref}" class="imgCard" style="
@@ -126,8 +137,9 @@
         </div>
         `)
     }
+    // END Create Card Element
 
-    // Database
+    // Create Database Card
     const dataCard = [
         {
             id: 1,
@@ -226,16 +238,19 @@
             isi: 'lorem ipsum dolor sit amet.'
         },
     ]
+    // END Create Database Card
 
     // Get Element HTML
     const columnCard = document.getElementById('column-card');
+    // END Get Element HTML
 
     // Inject Element
     dataCard.map(function (e) {
-        return columnCard.innerHTML += cardSiaranLangsung(e.pageHref, e.image, e.btnPlay, e.headline, e.isi)
+        return columnCard.innerHTML += cardVideoDokumentasi(e.pageHref, e.image, e.btnPlay, e.headline, e.isi)
     })
-
+    // END Inject Element
 </script>
+<!-- END Script JS -->
 
 <!-- script js bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
