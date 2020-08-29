@@ -72,7 +72,6 @@ $smallPhoneDua : 400px;
 
             @include smallPhone(){
                 flex-direction: column;
-                align-items: center;
             }
         }
         // END Column Card

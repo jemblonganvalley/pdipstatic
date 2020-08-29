@@ -23,14 +23,6 @@
     display: -ms-flexbox;
     display: flex;
     height: auto;
-    width: 94vw;
-    margin: .5rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .cardCustom {
-    margin: .2rem;
   }
 }
 

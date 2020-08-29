@@ -30,13 +30,7 @@ $smallPhoneDua : 400px;
             flex: auto;
             display: flex;
             height: auto;
-            width: 94vw;
-            margin: .5rem;
         }
-        @include smallPhoneDua() {
-            margin: .2rem;
-        }
-        
         &:hover {
             box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
             background: #a70000;
