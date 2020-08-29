@@ -23,6 +23,10 @@ $smallPhoneDua : 400px;
     border-radius: 10px;
     width: 20vw;
 
+    @include smallPhone(){
+        width: 100%;
+        margin: 10px 0;
+    }
 
     &:hover {
         box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);

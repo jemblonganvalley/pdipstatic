@@ -31,6 +31,7 @@ $smallPhoneDua : 400px;
             // border: 1px solid crimson;
             width: 100%;
             padding: $paddingMobile;
+            margin: 0;
         }
     }
 
@@ -41,7 +42,10 @@ $smallPhoneDua : 400px;
             flex-wrap: wrap;
             width: 100%;
             display: flex;
-            
+         
+            @include smallPhone(){
+                flex-direction: column;
+            }
         }
     }
 }
