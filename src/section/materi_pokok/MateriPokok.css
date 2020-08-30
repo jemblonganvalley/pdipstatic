@@ -101,7 +101,16 @@
       flex-wrap: wrap;
   height: auto;
   width: 100%;
-  border: 1px solid blue;
+}
+
+@media (max-width: 500px) {
+  .wrapperMateri .container2 .col-card-materi-pokok .column-card-materi-pk {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px 10px 10px;
+  }
 }
 
 .wrapperMateri .container2 .col-pagination-materi-pokok {

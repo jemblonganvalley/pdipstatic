@@ -44,25 +44,6 @@ $smallPhoneDua : 400px;
         }
     }
 
-    // .bkbbText {
-    //     border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-    //     width: 100%;
-    //     text-align: center;
-    //     // height: 10vh;
-    //     margin-top: 0px;
-
-    //     small {
-    //         cursor: pointer;
-    //         color: $colors;
-    //         // width: 100%;
-    //         text-align: center;
-    //         text-transform: uppercase;
-    //         font-weight: bold;
-    //         font-size: 8pt;
-    //         border-bottom: 5.5px solid $colors;
-    //     }
-    // }
-
 
 // Container1
 .container1{
@@ -103,7 +84,11 @@ $smallPhoneDua : 400px;
             flex-wrap: wrap;
             height: auto;
             width: 100%;
-            border: 1px solid blue;
+
+            @include smallPhone(){
+                flex-direction: column;
+                padding: 0 10px 10px 10px;
+            }
         }
     }
     // END Column Card Materi Pokok

@@ -25,14 +25,11 @@ $smallPhoneDua : 400px;
         margin: 10px;
 
         @include smallPhone() {
-            flex-direction: row;
-            flex: auto;
+            flex-direction: column;
             display: flex;
             height: auto;
-            margin: .5rem;
-        }
-        @include smallPhoneDua() {
-            margin: .2rem;
+            width: 100%;
+            margin: 10px 0;
         }
         
         &:hover {
@@ -49,19 +46,6 @@ $smallPhoneDua : 400px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             display: flex;
-
-            @include smallPhone() {
-                border-radius: 10px;
-                height: auto;
-                width: 70%;
-                background-position: center;
-                flex: 1;
-            }
-            @include smallPhoneDua() {
-
-            }
-
-            
 
             .VBMusic {
                 width: 35px;
