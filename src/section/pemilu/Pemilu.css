@@ -54,7 +54,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 40%;
+  width: 100%;
   margin-top: 15px;
   padding: 10px 10%;
 }
@@ -418,14 +418,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   position: relative;
   height: 60vh;
   width: 100%;
   background-image: url(../../img/pemilu5.jpg);
-  background-position: center;
   background-size: cover;
   margin: 20px 0 20px 0;
   overflow: hidden;
@@ -439,72 +438,6 @@
   }
 }
 
-.wrapperPemilu .container-2 img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  height: 100%;
-  width: 150%;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.wrapperPemilu .container-2 .jdl-col1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  height: 70%;
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.wrapperPemilu .container-2 .jdl-col1 .box-txt-jdl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  height: 100%;
-  width: 500px;
-  padding: 10px 10px 20px 10px;
-  margin: 0 100px 0 0;
-  overflow: hidden;
-}
-
-@media (max-width: 500px) {
-  .wrapperPemilu .container-2 .jdl-col1 .box-txt-jdl {
-    width: 60%;
-    padding: 10px;
-    margin: 0 0 0 50px;
-  }
-}
-
-.wrapperPemilu .container-2 .jdl-col1 .txt-jdl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-  text-align: start;
-  overflow: hidden;
-}
-
-@media (max-width: 500px) {
-  .wrapperPemilu .container-2 .jdl-col1 .txt-jdl {
-    font-size: 10px;
-  }
-}
-
 .wrapperPemilu .container-2 .btn-col2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,19 +446,19 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  height: 30%;
+  height: 50%;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 200px 20px 0;
+  padding: 0 150px 20px 0;
   z-index: 1;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperPemilu .container-2 .btn-col2 {
-    padding: 0 50px 0 0;
+    padding: 0 20px 0 0;
   }
 }
 

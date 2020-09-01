@@ -53,7 +53,7 @@ $smallPhoneDua : 400px;
         display: flex;
         align-items: center;
         flex-direction: row;
-        width: 40%;
+        width: 100%;
         margin-top: 15px;
         padding: 10px 10%;
 
@@ -327,12 +327,11 @@ $smallPhoneDua : 400px;
     // Container2
     .container-2{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         position: relative;
         height: 60vh;
         width: 100%;
         background-image: url(../../img/pemilu5.jpg);
-        background-position: center;
         background-size: cover;
         margin: 20px 0 20px 0;
         overflow: hidden;
@@ -343,66 +342,66 @@ $smallPhoneDua : 400px;
             margin: 0;
         }
 
-        img{
-            display: flex;
-            position: absolute;
-            height: 100%;
-            width: 150%;
-            background-position: center;
-            background-size: cover;
-            overflow: hidden;
-        }
+        // img{
+        //     display: flex;
+        //     position: absolute;
+        //     height: 100%;
+        //     width: 150%;
+        //     background-position: center;
+        //     background-size: cover;
+        //     overflow: hidden;
+        // }
 
-        .jdl-col1{
-            display: flex;
-            flex-direction: row-reverse;
-            height: 70%;
-            width: 100%;
-            overflow: hidden;
-            z-index: 1;
+        // .jdl-col1{
+        //     display: flex;
+        //     flex-direction: row-reverse;
+        //     height: 70%;
+        //     width: 100%;
+        //     overflow: hidden;
+        //     z-index: 1;
 
-            .box-txt-jdl{
-                display: flex;
-                flex-direction: column-reverse;
-                height: 100%;
-                width: 500px;
-                padding: 10px 10px 20px 10px;
-                margin: 0 100px 0 0;
-                overflow: hidden;
+        //     .box-txt-jdl{
+        //         display: flex;
+        //         flex-direction: column-reverse;
+        //         height: 100%;
+        //         width: 500px;
+        //         padding: 10px 10px 20px 10px;
+        //         margin: 0 100px 0 0;
+        //         overflow: hidden;
 
-                @include smallPhone(){
-                    width: 60%;
-                    padding: 10px;
-                    margin: 0 0 0 50px;
-                }
-            }
+        //         @include smallPhone(){
+        //             width: 60%;
+        //             padding: 10px;
+        //             margin: 0 0 0 50px;
+        //         }
+        //     }
 
-            .txt-jdl{
-                display: flex;
-                font-size: 20px;
-                font-weight: bold;
-                color: #000;
-                text-align: start;
-                overflow: hidden;
+        //     .txt-jdl{
+        //         display: flex;
+        //         font-size: 20px;
+        //         font-weight: bold;
+        //         color: #000;
+        //         text-align: start;
+        //         overflow: hidden;
 
-                @include smallPhone(){
-                    font-size: 10px;
-                }
-            }
-        }
+        //         @include smallPhone(){
+        //             font-size: 10px;
+        //         }
+        //     }
+        // }
 
         .btn-col2{
             display: flex;
             flex-direction: row-reverse;
-            height: 30%;
+            height: 50%;
             width: 100%;
             align-items: center;
-            padding: 0 200px 20px 0;
+            padding: 0 150px 20px 0;
             z-index: 1;
             overflow: hidden;
 
             @include smallPhone(){
-                padding: 0 50px 0 0 ;
+                padding: 0 20px 0 0 ;
             }
 
             .btn-lihat{

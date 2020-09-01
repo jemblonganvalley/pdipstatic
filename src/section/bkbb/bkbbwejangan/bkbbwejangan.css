@@ -1,5 +1,6 @@
 .wrapperBkbbWejangan {
   width: 100%;
+  background: #f3f3f3;
 }
 
 .wrapperBkbbWejangan .headersBkbbWejangan {
@@ -218,6 +219,7 @@
           flex-direction: column;
   height: 100%;
   width: 60%;
+  overflow-y: auto;
 }
 
 @media (max-width: 500px) {

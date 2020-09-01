@@ -16,6 +16,7 @@ $secondary : #f3f3f3;
 
 .wrapperBkbbWejangan{
     width: 100%;
+    background: $secondary;
 
     .headersBkbbWejangan {
         background: url(../../../img/BKBB.jpg);
@@ -167,6 +168,7 @@ $secondary : #f3f3f3;
                 flex-direction: column;
                 height: 100%;
                 width: 60%;
+                overflow-y: auto;
 
                 @include smallPhone(){
                     width: 100%;

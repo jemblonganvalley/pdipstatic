@@ -1,5 +1,5 @@
 .cardCustom {
-  height: 50vh;
+  height: auto;
   width: 20vw;
   -webkit-box-flex: 1;
       -ms-flex: auto;
