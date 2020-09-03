@@ -61,6 +61,7 @@
     <div class="col-card-materi-pokok">
       <div class="column-card-materi-pk" id="body-card">
 
+
       </div>
     </div>
     <!-- END Column Card Materi Pokok -->
@@ -176,14 +177,66 @@
   })
 
   // Setting Pagination
-  let currentPage2 = setCurrentPage2(1)
-  let itemEventPerPage = (9)
 
-  const indexOfLastPost = currentPage2 * itemEventPerPage
-  const indexOfFirstPost = indexOfLastPost - itemEventPerPage
-  const currentPosts = dataCardMateriPk.slice(indexOfFirstPost, indexOfLastPost)
+  // Get Element Paginate
+  const paginateElement = document.getElementById('wrapper-pagination');
+  // END Get Element Paginate
 
-  const paginate = (pageNumber) => setCurrentPage2(pageNumber)
+  let currentPage = 1;
+  let rows = 2;
+
+  function DisplayData(items, wrapper, rowsPerPage, page) {
+    wrapper.innerHTML = "";
+    page--;
+
+    let start = rowsPerPage * page;
+    let end = start + rowsPerPage;
+    let paginatedItems = items.slice(start, end);
+
+    for (let i = 0; i < paginatedItems.length; i++) {
+      let item = paginatedItems[i];
+
+      // Create Card Element
+      let itemElement = document.createElement('div');
+      itemElement.classList.add('column-card-materi-pk');
+      itemElement.innerText = item;
+      // END Create Card Element
+
+      wrapper.appendChild(itemElement);
+    }
+  }
+
+  function SetupPagination(items, wrapper, rowsPerPage) {
+    wrapper.innerHTML = "";
+
+    let pageCount = Math.ceil(items.length / rowsPerPage);
+
+    for (let i = 1; i < pageCount + 1; i++) {
+      let btn = PaginationButton(i, items);
+      wrapper.appendChild(btn);
+    }
+
+  }
+
+  function PaginationButton(page, items) {
+    // Create Angka Pagination
+    let button = document.createElement('button');
+    button.innerText = page;
+
+    if (currentPage == page) button.classList.add('active');
+
+    button.addEventListener('click', function () {
+      currentPage = page;
+      DisplayData(items, bodyCard, rows, currentPage);
+    });
+
+    return button;
+    // END Create Angka Pagination
+  }
+
+  DisplayData(dataCardMateriPk, bodyCard, rows, currentPage);
+  SetupPagination(dataCardMateriPk, paginateElement, rows)
+
   // END Setting Pagination
 
 </script>

@@ -101,6 +101,7 @@
       flex-wrap: wrap;
   height: auto;
   width: 100%;
+  border: 1px solid blue;
 }
 
 @media (max-width: 500px) {

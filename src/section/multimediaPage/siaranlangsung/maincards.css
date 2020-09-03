@@ -42,6 +42,7 @@
 }
 
 .cardMultimedia .imgCard .VidPlay {
+  position: absolute;
   width: 35px;
   height: 35px;
   border: 1px solid #ffffff;
@@ -63,6 +64,10 @@
 .cardMultimedia .imgCard .VidPlay:hover {
   background: #ffffff;
   color: #d80010;
+}
+
+.cardMultimedia .imgCard .VidPlay i {
+  color: red;
 }
 
 .cardMultimedia .textMultimedia {

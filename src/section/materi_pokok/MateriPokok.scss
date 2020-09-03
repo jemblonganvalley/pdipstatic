@@ -84,6 +84,7 @@ $smallPhoneDua : 400px;
             flex-wrap: wrap;
             height: auto;
             width: 100%;
+            border: 1px solid blue;
 
             @include smallPhone(){
                 flex-direction: column;
