@@ -42,10 +42,10 @@ $smallPhoneDua : 400px;
             flex-wrap: wrap;
             width: 100%;
             display: flex;
-         
+
             @include smallPhone(){
                 flex-direction: column;
-            }
+            }   
         }
     }
 }

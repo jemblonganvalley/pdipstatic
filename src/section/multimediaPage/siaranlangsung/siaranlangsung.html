@@ -5,13 +5,16 @@
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Link -->
 <link rel="stylesheet" href="./siaranlangsung.css">
 <link rel="stylesheet" href="./breadcrumbs.css">
 <link rel="stylesheet" href="./maindivider.css">
-<link rel="stylesheet" href="./vmedia.css">
 <link rel="stylesheet" href="./maincards.css">
+<link rel="stylesheet" href="./vmedia.css">
 <link rel="stylesheet" href="./siaranpagination.css">
+<!-- END Link -->
 
+<!-- Element HTML -->
 <div class="wrapperSL">
     <div class="linkedSL">
         <span class="wrapperBread">
@@ -31,6 +34,7 @@
     </div>
 
     <div class="SiaranLangsung">
+        <!-- Card Video Media -->
         <div class="wrapperPlayVid">
             <div class="kolumVideo">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4Y9vU1dCk78" frameborder="0"
@@ -62,13 +66,15 @@
                 </div>
             </div>
         </div>
+        <!-- END Card Video Media -->
     </div>
 
     <div class="dividerSL">
+        <!-- Card MainDivider -->
         <div class="col3-container-3" style="
-    margin : 2rem 0;
-    padding : 0px 0%;
-">
+        margin : 2rem 0;
+        padding : 0px 0%;
+    ">
             <div class="box-jdl-col3">
                 <p class="txt-jdl-col3">
                     Siaran Langsung
@@ -76,46 +82,58 @@
             </div>
             <div class="box-garis-lurus-col3">
                 <div class="garis-merah" style="
-            width : 150px
-        ">
+                width : 150px
+            ">
 
                 </div>
             </div>
         </div>
+        <!-- END Card MainDivider -->
     </div>
 
     <div class="cardSL">
         <div class="listSL">
-            <div class="wrapperSiaran" style="display: flex; justify-content: center; flex-wrap: wrap;"
-                id="column-card">
+            <!-- Siaran Pagination -->
+            <div class="wrapperSiaran" id="column-card" style="
+                display : flex;
+                justify-content : center;
+                flex-wrap : wrap;">
 
-
+                <!-- Body Component Card Multimedia -->
 
             </div>
 
-            <nav aria-label="Page navigation example"
-                style="margin-top: 10px; width: 100%; display: flex; justify-content: center;">
+            <nav aria-label="Page navigation example" style="
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: center;">
 
+                <!-- Body Component Card Angka Pagination -->
 
             </nav>
+            <!-- END Siaran Pagination -->
         </div>
     </div>
 </div>
+<!-- END Element HTML -->
 
+<!-- Script JS -->
 <script>
-    const cardSiaranLangsung = (pageHref, image, btnPlay, headline, isi) => {
+    // Create Element Card
+    const cardSiaranLangsung = (pageHref, images, btnPlay, headline, isi) => {
         return (`
         <div class="cardMultimedia">
             <a href="${pageHref}" class="imgCard" style="
-                background : url(${image});
+                background : url(${images});
                 background-size : cover;
-                text-decoration : none;
-                ">
+                text-decoration : none;">
 
                 <a class="VidPlay" href="${btnPlay}" style="
                     text-decoration : none;">
-                    <i class="fas fa-play" style="
-                        text-decoration: none;"></i>
+                    <i class="fa fa-play" style="
+                        text-decoration: none;">
+                    </i>
                 </a>
             </a>
 
@@ -126,13 +144,14 @@
         </div>
         `)
     }
+    // END Create Element Card
 
-    // Database
+    // Create Database Card
     const dataCard = [
         {
             id: 1,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -140,7 +159,7 @@
         {
             id: 2,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -148,7 +167,7 @@
         {
             id: 3,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -156,7 +175,7 @@
         {
             id: 4,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -164,7 +183,7 @@
         {
             id: 5,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -172,7 +191,7 @@
         {
             id: 6,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -180,7 +199,7 @@
         {
             id: 7,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -188,7 +207,7 @@
         {
             id: 8,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -196,7 +215,7 @@
         {
             id: 9,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -204,7 +223,7 @@
         {
             id: 10,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -212,7 +231,7 @@
         {
             id: 11,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
@@ -220,22 +239,25 @@
         {
             id: 12,
             pageHref: '#',
-            image: '../../../img/megawati12.png',
+            images: '../../../img/megawati12.png',
             btnPlay: '#',
             headline: 'Admin PDI Perjuangan | 1 Januari 2019',
             isi: 'lorem ipsum dolor sit amet.'
         },
     ]
+    // END Create Database Card
 
-    // Get Element HTML
+    // Get Element
     const columnCard = document.getElementById('column-card');
+    // END Get Element
 
     // Inject Element
-    dataCard.map(function (e) {
-        return columnCard.innerHTML += cardSiaranLangsung(e.pageHref, e.image, e.btnPlay, e.headline, e.isi)
+    dataCard.map((e) => {
+        return columnCard.innerHTML += cardSiaranLangsung(e.pageHref, e.images, e.btnPlay, e.headline, e.isi)
     })
-
+    // END Inject Element
 </script>
+<!-- END Script JS -->
 
 <!-- script js bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
