@@ -54,7 +54,7 @@
           flex-direction: row;
   width: 100%;
   margin-top: 15px;
-  padding: 10px 10%;
+  padding: 10px 20%;
 }
 
 @media (max-width: 500px) {
@@ -74,7 +74,7 @@
           flex-direction: column;
   height: auto;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 20%;
   overflow: hidden;
 }
 
@@ -126,12 +126,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px 0 0 0;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperBerita .container-1-beritaPage .col4-container-1-beritaPage {
-    padding: 0 10px;
+    height: auto;
+    padding: 30px 10px 0 10px;
   }
 }
 
@@ -216,17 +218,16 @@
   overflow: hidden;
 }
 
-.wrapperBerita .container-1-beritaPage .col5-container-1-beritaPage .row1-col5-beritaPage .box-jdl-row1 h1 {
+.wrapperBerita .container-1-beritaPage .col5-container-1-beritaPage .row1-col5-beritaPage .box-jdl-row1 h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
   padding: 20px;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
-  .wrapperBerita .container-1-beritaPage .col5-container-1-beritaPage .row1-col5-beritaPage .box-jdl-row1 h1 {
+  .wrapperBerita .container-1-beritaPage .col5-container-1-beritaPage .row1-col5-beritaPage .box-jdl-row1 h5 {
     font-size: 15px;
     margin: 1px;
   }
@@ -307,7 +308,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
   font-weight: 500;
   text-align: start;
   margin: 0 0 5px 0;
@@ -325,7 +325,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 12px;
   text-align: start;
   padding: 0 0 10px 0;
   overflow: hidden;
@@ -357,7 +356,7 @@
 
 @media (max-width: 500px) {
   .wrapperBerita .container-2-beritaPage {
-    height: 32vh;
+    height: 40vh;
     background-attachment: inherit;
   }
 }
@@ -370,7 +369,7 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  height: 70%;
+  height: 60%;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -399,7 +398,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 30%;
+  height: 40%;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -420,7 +419,7 @@
           flex-direction: column;
   height: auto;
   width: 100%;
-  padding: 0 10% 50px 10%;
+  padding: 0 20% 50px 20%;
 }
 
 @media (max-width: 500px) {
@@ -441,18 +440,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0 0 0;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperBerita .container-3-beritaPage .col1-container-3-beritaPage {
-    padding: 0 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: auto;
+    padding: 30px 10px 0 10px;
   }
 }
 
@@ -499,18 +494,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0 0 0;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperBerita .container-3-beritaPage .col3-container-3-beritaPage {
-    padding: 0 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: auto;
+    padding: 30px 10px 0 10px;
   }
 }
 

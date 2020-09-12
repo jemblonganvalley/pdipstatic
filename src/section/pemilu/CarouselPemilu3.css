@@ -26,9 +26,6 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-image: url(../../img/pemilu2.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .carousel3-pemiluPage .box-carousel3-pemiluPage .carousel-item {

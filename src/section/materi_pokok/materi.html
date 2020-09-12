@@ -61,7 +61,6 @@
     <div class="col-card-materi-pokok">
       <div class="column-card-materi-pk" id="body-card">
 
-
       </div>
     </div>
     <!-- END Column Card Materi Pokok -->
@@ -164,7 +163,7 @@
       imgMateriPk: '../../img/bkbb7.jpg',
       txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
       txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
-    }
+    },
   ]
   // END Database Card Materi Pokok
 
@@ -183,10 +182,12 @@
   // END Get Element Paginate
 
   let currentPage = 1;
-  let rows = 2;
+  let rows = 4;
 
   function DisplayData(items, wrapper, rowsPerPage, page) {
+    // Element Card yg akan di tampilkan
     wrapper.innerHTML = "";
+    // END Element Card yg akan di tampilkan
     page--;
 
     let start = rowsPerPage * page;
@@ -198,7 +199,7 @@
 
       // Create Card Element
       let itemElement = document.createElement('div');
-      itemElement.classList.add('column-card-materi-pk');
+      itemElement.classList.add('cardCustom');
       itemElement.innerText = item;
       // END Create Card Element
 
@@ -215,7 +216,6 @@
       let btn = PaginationButton(i, items);
       wrapper.appendChild(btn);
     }
-
   }
 
   function PaginationButton(page, items) {
@@ -241,9 +241,6 @@
 
 </script>
 <!-- END Data Materi Pokok -->
-
-
-
 
 <!-- script js bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
