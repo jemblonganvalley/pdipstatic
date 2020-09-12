@@ -15,7 +15,7 @@ $smallPhoneDua : 400px;
 
 .wrapperWejangan {
     width: 100%;
-    padding: 40px 10%;
+    padding: 40px 20%;
     background: #f3f3f3;
 
     @include smallPhone(){
@@ -29,7 +29,7 @@ $smallPhoneDua : 400px;
         flex-direction: row;
         width: 100%;
         margin-top: 15px;
-        // padding: 10px 10%;
+        padding: 10px 0%;
 
         @include smallPhone(){
             width: 100%;
@@ -70,7 +70,7 @@ $smallPhoneDua : 400px;
     display: flex;
     height: auto;
     width: 100%;
-    margin: 0px 0 0 0;
+    padding: 20px 0% 0 0%;
     justify-content: center;
     align-items: center;
 
@@ -95,7 +95,7 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: auto;
         width: 100%;
-        margin: 40px 0 20px 0;
+        margin: 0px 0 20px 0;
 
         // Row1
         .row1{

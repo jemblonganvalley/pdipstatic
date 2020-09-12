@@ -52,8 +52,8 @@ $secondary : #f3f3f3;
         align-items: center;
         flex-direction: row;
         width: 100%;
-        margin-top: 20px;
-        padding: 10px 10%;
+        margin-top: 15px;
+        padding: 10px 20%;
 
         @include smallPhone(){
             width: 100%;
@@ -75,7 +75,7 @@ $secondary : #f3f3f3;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 10%;
+        padding: 0 20%;
 
         @include smallPhone(){
             padding: 0 0px;
@@ -84,7 +84,7 @@ $secondary : #f3f3f3;
         // Column1
         .col1-container-1-bkbbWejangan{
             display: flex;
-            height: 55vh;
+            height: auto;
             width: 100%;
 
             @include smallPhone(){
@@ -96,7 +96,7 @@ $secondary : #f3f3f3;
             .row1-bkbbWejangan{
                 display: flex;
                 flex-direction: column;
-                height: 100%;
+                height: auto;
                 width: 40%;
                 background-image: url(../../../img/bkbb1.jpg);
                 justify-content: center;
@@ -125,7 +125,7 @@ $secondary : #f3f3f3;
 
                 .txt1{
                     display: flex;
-                    font-size: 25px;
+                    // font-size: 25px;
                     font-weight: 500;
                     margin: 1px;
                     text-align: center;
@@ -137,7 +137,7 @@ $secondary : #f3f3f3;
 
                 .txt2{
                     display: flex;
-                    font-size: 15px;
+                    // font-size: 15px;
                     font-weight: 500;
                     margin: 1px;
                     text-align: center;
@@ -149,7 +149,7 @@ $secondary : #f3f3f3;
 
                 .txt3{
                     display: flex;
-                    font-size: 15px;
+                    // font-size: 15px;
                     justify-content: center;
                     align-items: center;
                     margin: 20px 0 0 0;
@@ -191,7 +191,7 @@ $secondary : #f3f3f3;
 
                 .txt2{
                     display: flex;
-                    font-size: 18px;
+                    // font-size: 18px;
                     font-weight: 500;
                     text-align: start;
                     color: #000;
@@ -208,7 +208,7 @@ $secondary : #f3f3f3;
 
                 .txt3{
                     display: flex;
-                    font-size: 13px;
+                    // font-size: 13px;
                     text-align: start;
                     color: #000;
 
@@ -222,7 +222,7 @@ $secondary : #f3f3f3;
 
                 .txt4{
                     display: flex;
-                    font-size: 13px;
+                    // font-size: 13px;
                     text-align: start;
                     color: #000;
 
@@ -287,9 +287,9 @@ $secondary : #f3f3f3;
     .container-2-bkbbWejangan{
         display: flex;
         flex-direction: column;
-        height: 65vh;
+        height: 70vh;
         width: 100%;
-        padding: 0 10%;
+        padding: 0 20%;
         margin: 30px 0 0 0;
         background: #333;
 
@@ -301,9 +301,9 @@ $secondary : #f3f3f3;
         // Column1
         .col1-container-2-bkbbWejangan{
             display: flex;
-            height: 75%;
+            height: 80%;
             width: 100%;
-            padding: 10px 10px 25px 10px;
+            padding: 10px 0px 0px 0px;
             align-items: center;
 
             @include smallPhone(){
@@ -317,7 +317,7 @@ $secondary : #f3f3f3;
         // Column2
         .col2-container-2{
             display: flex;
-            height: 25%;
+            height: 20%;
             width: 100%;
             justify-content: center;
             align-items: center;

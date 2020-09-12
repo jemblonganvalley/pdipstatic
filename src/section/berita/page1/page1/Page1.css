@@ -39,8 +39,22 @@
 
 .wrapperBeritaPage1 .headers-BeritaPage1 .backgrounds .textBackgroundBerita {
   width: 30%;
-  height: 50%;
-  margin-left: 5rem;
+  height: auto;
+  margin-left: 13rem;
+}
+
+@media (max-width: 500px) {
+  .wrapperBeritaPage1 .headers-BeritaPage1 .backgrounds .textBackgroundBerita {
+    width: auto;
+    margin-left: 0;
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapperBeritaPage1 .headers-BeritaPage1 .backgrounds .textBackgroundBerita .txt-backg-beritaPage1 {
+    font-size: 12pt;
+  }
 }
 
 .wrapperBeritaPage1 .linkedBeritaPage1 {
@@ -56,7 +70,7 @@
           flex-direction: row;
   width: 100%;
   margin-top: 15px;
-  padding: 10px 10%;
+  padding: 10px 20%;
 }
 
 @media (max-width: 500px) {
@@ -82,7 +96,7 @@
           flex-direction: column;
   height: auto;
   width: 100%;
-  padding: 20px 10%;
+  padding: 20px 20%;
   overflow: hidden;
 }
 
@@ -131,7 +145,7 @@
 @media (max-width: 500px) {
   .wrapperBeritaPage1 .container-1-beritaPage1 .col1-container-1-beritaPage1 .section1-col1-beritaPage1 {
     height: auto;
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
@@ -139,18 +153,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20pt;
   font-weight: bold;
   color: #000;
   text-align: center;
   margin: 1px;
   overflow: hidden;
-}
-
-@media (max-width: 500px) {
-  .wrapperBeritaPage1 .container-1-beritaPage1 .col1-container-1-beritaPage1 .section1-col1-beritaPage1 .txt-title {
-    font-size: 20px;
-  }
 }
 
 .wrapperBeritaPage1 .container-1-beritaPage1 .col1-container-1-beritaPage1 .section2-col1-beritaPage1 {
@@ -279,7 +286,6 @@
           flex-direction: column;
   height: auto;
   width: 100%;
-  padding: 0 10%;
   overflow: hidden;
 }
 
@@ -315,17 +321,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 15pt;
   font-weight: bold;
   color: #000;
   text-align: center;
   overflow: hidden;
-}
-
-@media (max-width: 500px) {
-  .wrapperBeritaPage1 .container-1-beritaPage1 .col2-container-1-beritaPage1 .section1-beritaPage1 .txt-desk-section1-beritaPage1 {
-    font-size: 15px;
-  }
 }
 
 .wrapperBeritaPage1 .container-1-beritaPage1 .col2-container-1-beritaPage1 .section3-beritaPage1 {
@@ -348,17 +347,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 17px;
   font-weight: 500;
   color: #555;
   text-align: justify;
   overflow: hidden;
-}
-
-@media (max-width: 500px) {
-  .wrapperBeritaPage1 .container-1-beritaPage1 .col2-container-1-beritaPage1 .section3-beritaPage1 .txt-desk-section3-beritaPage1 {
-    font-size: 13px;
-  }
 }
 
 .wrapperBeritaPage1 .container-1-beritaPage1 .col2-container-1-beritaPage1 .section4-beritaPage1 {
@@ -409,7 +401,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
   font-weight: 500;
   color: #000;
   text-align: center;
@@ -442,17 +433,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 17px;
   font-weight: 500;
   color: #555;
   text-align: justify;
   overflow: hidden;
-}
-
-@media (max-width: 500px) {
-  .wrapperBeritaPage1 .container-1-beritaPage1 .col2-container-1-beritaPage1 .section5-beritaPage1 .txt-desk-section5-beritaPage1 {
-    font-size: 13px;
-  }
 }
 
 .wrapperBeritaPage1 .container-1-beritaPage1 .col2-container-1-beritaPage1 .section5-beritaPage1 .garis-panjang {
@@ -542,12 +526,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px 0 0 0;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperBeritaPage1 .container-1-beritaPage1 .col3-container-1-beritaPage1 .section6-beritaPage1 .col1-section6-beritaPage1 {
-    padding: 0 10px;
+    padding: 30px 10px 0 10px;
   }
 }
 
@@ -568,7 +553,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 0;
-  padding: 10px 0%;
+  padding: 0px 0 20px 0%;
 }
 
 @media (max-width: 500px) {

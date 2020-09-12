@@ -54,7 +54,7 @@
           flex-direction: row;
   width: 100%;
   margin-top: 15px;
-  padding: 10px 10%;
+  padding: 10px 20%;
 }
 
 @media (max-width: 500px) {
@@ -74,7 +74,7 @@
           flex-direction: column;
   height: auto;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 20%;
   overflow: hidden;
 }
 
@@ -214,7 +214,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 20vh;
-  padding: 0 10%;
+  padding: 20px 20% 0 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -225,7 +225,7 @@
 
 @media (max-width: 500px) {
   .wrapperKetuaUmum .container-2-ketuaumum {
-    padding: 0 10px;
+    padding: 30px 10px 0 10px;
   }
 }
 
@@ -239,7 +239,7 @@
           flex-direction: column;
   height: auto;
   width: 100%;
-  padding: 0px 10% 50px 10%;
+  padding: 0px 20% 50px 20%;
 }
 
 @media (max-width: 500px) {
