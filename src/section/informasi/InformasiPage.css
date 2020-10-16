@@ -16,6 +16,12 @@
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  .wrapperInformasi .headInformasi {
+    height: 15vh;
+  }
+}
+
 .wrapperInformasi .headInformasi .textHeadInformasi {
   width: 100%;
   display: -webkit-box;
@@ -48,6 +54,13 @@
   width: 40%;
   margin-top: 20px;
   padding: 5px 10%;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .linkedInformasi {
+    width: 100%;
+    padding: 0 2%;
+  }
 }
 
 .wrapperInformasi .linkedInformasi i span {
@@ -224,7 +237,7 @@
 
 @media (max-width: 500px) {
   .wrapperInformasi .profilContainer .paragrapKanan .backgroundPK {
-    height: 50vh;
+    height: 40vh;
     position: inherit;
     width: 100%;
   }
@@ -405,6 +418,12 @@
   padding: 40px 10%;
 }
 
+@media (max-width: 500px) {
+  .wrapperInformasi .tataCaraContainer {
+    padding: 40px 10px;
+  }
+}
+
 .wrapperInformasi .tataCaraContainer .textTataCara {
   border-bottom: 1px solid rgba(45, 52, 54, 0.2);
   width: 100%;
@@ -507,6 +526,16 @@
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  .wrapperInformasi .infoDua {
+    padding: 0 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .wrapperInformasi .infoDua .kolomFormulir {
   width: 50%;
   display: -webkit-box;
@@ -527,6 +556,13 @@
   background: #2f3542;
 }
 
+@media (max-width: 500px) {
+  .wrapperInformasi .infoDua .kolomFormulir {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
 .wrapperInformasi .infoDua .kolomFormulir .textFormulir {
   margin-left: 1rem;
   font-family: 'Roboto';
@@ -538,9 +574,21 @@
   margin-right: 20px;
 }
 
+@media (max-width: 500px) {
+  .wrapperInformasi .infoDua .kolomFormulirSatu {
+    margin-right: 0;
+  }
+}
+
 .wrapperInformasi .infoDua .kolomFormulirDua {
   background: #d80010;
   color: #fff;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .infoDua .kolomFormulirDua {
+    margin-top: 10px;
+  }
 }
 
 .wrapperInformasi .carousel-informasiPage {
@@ -555,7 +603,7 @@
 
 @media (max-width: 500px) {
   .wrapperInformasi .carousel-informasiPage {
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
   }
 }

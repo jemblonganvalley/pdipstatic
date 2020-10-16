@@ -6,14 +6,8 @@
 .wrapperBerita .headers {
   background: url(../../img/pemilu8.jpg);
   background-size: cover;
-  height: 25vh;
+  height: 15vh;
   background-position: center;
-}
-
-@media (max-width: 500px) {
-  .wrapperBerita .headers {
-    height: 20vh;
-  }
 }
 
 @media (max-width: 500px) {
@@ -91,21 +85,26 @@
   width: 100%;
   height: auto;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperBerita .container-1-beritaPage .cardBerita1-col3-container-1 {
     height: auto;
+    width: 100%;
+    padding: 0 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -117,7 +116,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20vh;
+  height: auto;
   width: 100%;
   background: #f3f3f3;
   -webkit-box-align: center;
@@ -126,21 +125,38 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 0 0 0;
+  margin: 40px 0;
+  padding: 0px 0 10px 0;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperBerita .container-1-beritaPage .col4-container-1-beritaPage {
     height: auto;
-    padding: 30px 10px 0 10px;
+    margin: 20px 0 40px 0;
+    padding: 0px 10px 0 10px;
+  }
+}
+
+.wrapperBerita .container-1-beritaPage .carousel-informasiPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0px 0 0 0;
+  padding: 0 0 0px 0%;
+}
+
+@media (max-width: 500px) {
+  .wrapperBerita .container-1-beritaPage .carousel-informasiPage {
+    margin: 0;
+    padding: 0;
   }
 }
 
 .wrapperBerita .container-1-beritaPage .col5-container-1-beritaPage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: auto;
   width: 100%;
   overflow: hidden;
@@ -344,12 +360,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 55vh;
+  height: 40vh;
   width: 100%;
   background-image: url(../../img/ketuaumum7.jpg);
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   margin: 50px 0 0px 0;
   overflow: hidden;
 }
@@ -432,7 +448,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20vh;
+  height: auto;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -440,13 +456,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0 0 0;
+  padding: 0px 0 0 0;
+  margin: 40px 0 20px 0;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperBerita .container-3-beritaPage .col1-container-3-beritaPage {
     height: auto;
+    margin: 0 0 40px 0;
     padding: 30px 10px 0 10px;
   }
 }
@@ -457,18 +475,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 0;
   padding: 0px 0%;
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -478,7 +499,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
@@ -486,21 +507,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20vh;
+  height: auto;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px 0 20px 0;
+  padding: 0px 0 0 0;
   overflow: hidden;
 }
 
 @media (max-width: 500px) {
   .wrapperBerita .container-3-beritaPage .col3-container-3-beritaPage {
     height: auto;
+    margin: 0 0 40px 0;
     padding: 30px 10px 0 10px;
   }
 }

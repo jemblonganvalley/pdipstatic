@@ -1,13 +1,13 @@
 // Responsive Max Width 500px
 @media screen and (max-width : 500px){
     .box-carousel-beritaPage{
-        height: 60vh !important;
+        height: 40vh !important;
         padding: 0 !important;
         margin: 0;
 
         // Column1
         .box1-beritaPage{
-            height: 60vh !important;
+            height: 40vh !important;
 
             .box-txt-title{
                 height: 100%;
@@ -52,7 +52,7 @@
 
     .box-carousel-beritaPage{
         display: flex;
-        height: 80vh;
+        height: 40vh;
         width: 100%;
 
             .box1-beritaPage{
@@ -75,7 +75,7 @@
                     // Column1
                     .col1-img{
                         display: flex;
-                        height: 70%;
+                        height: 60%;
                         width: 100%;
                         overflow: hidden;
                         border-bottom: 1px solid #fff;
@@ -103,7 +103,7 @@
                     .col2-img{
                         display: flex;
                         flex-direction: column;
-                        height: 30%;
+                        height: 40%;
                         width: 100%;
                         background-color: rgba(255, 0, 8, 0.6);
                         overflow: hidden;
