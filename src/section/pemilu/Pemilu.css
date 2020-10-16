@@ -97,7 +97,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   overflow: hidden;
 }
@@ -207,7 +207,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20vh;
+  height: 15vh;
   width: 50%;
   background: #d80010;
   margin: 0 20px 0 0;
@@ -215,6 +215,12 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperPemilu .container-1 .col2-container-1 .row1-col2:hover {
+  background: #2f3542;
 }
 
 @media (max-width: 500px) {
@@ -228,11 +234,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 110px;
-  width: 120px;
-  -o-object-fit: cover;
-     object-fit: cover;
   overflow: hidden;
+  margin: 0 30px;
 }
 
 @media (max-width: 500px) {
@@ -306,13 +309,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20vh;
+  height: 15vh;
   width: 50%;
   background: #d80010;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperPemilu .container-1 .col2-container-1 .row2-col2:hover {
+  background: #2f3542;
 }
 
 @media (max-width: 500px) {
@@ -327,11 +336,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 110px;
-  width: 120px;
-  -o-object-fit: cover;
-     object-fit: cover;
   overflow: hidden;
+  margin: 0 30px;
 }
 
 @media (max-width: 500px) {
@@ -401,10 +407,78 @@
   }
 }
 
-.wrapperPemilu .container-2 {
+.wrapperPemilu .sliderTataCara {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0;
+}
+
+.wrapperPemilu .sliderTataCara .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  width: 100%;
+}
+
+.wrapperPemilu .sliderTataCara .carousel .carousel-item .imageTC {
+  width: 100%;
+  display: block;
+  height: 100%;
+  background: url(../../img/illustrator2.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.wrapperPemilu .sliderTataCara .carousel .carousel-item .imageTC .pCarousel {
+  position: absolute;
+  width: 30%;
+  bottom: 40%;
+  right: 15%;
+  font-weight: 700;
+}
+
+.wrapperPemilu .sliderTataCara .carousel .carousel-item .imageTC .kunjungi {
+  color: black;
+  width: 10vw;
+  border-radius: 25px;
+  position: absolute;
+  left: 60%;
+  bottom: 20%;
+  color: #d80010;
+  border: 1px solid #d80010;
+  font-size: 7pt;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperPemilu .sliderTataCara .carousel .carousel-item .imageTC .kunjungi:hover {
+  background: #d80010;
+  color: #ffffff;
+}
+
+.wrapperPemilu .sliderTataCara .carousel-control-next-icon {
+  background: url(../../img/right.png);
+  background-size: cover;
+}
+
+.wrapperPemilu .sliderTataCara .carousel-control-prev-icon {
+  background: url(../../img/left.png);
+  background-size: cover;
+}
+
+.wrapperPemilu .sliderTataCara .carousel-control-next-icon,
+.wrapperPemilu .sliderTataCara .carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.wrapperPemilu .container-2 {
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
@@ -454,7 +528,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60vh;
+  height: 40vh;
   width: 100%;
   background: #f3f3f3;
   -webkit-box-pack: center;
