@@ -6,7 +6,7 @@
 .wrapperInformasi .headInformasi {
   background: url(../../img/mask.png);
   background-size: cover;
-  height: 25vh;
+  height: 15vh;
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,7 +70,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5px 10%;
+  padding: 0 20% 5px 20%;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.wrapperInformasi .profilContainer .divider-profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .divider-profil {
+    padding: 0 10px;
+  }
 }
 
 .wrapperInformasi .profilContainer .paragrapProfil {
@@ -78,8 +105,20 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-top: 1rem;
-  position: relative;
+  margin-top: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .paragrapProfil {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: inherit;
+  }
 }
 
 .wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri {
@@ -93,6 +132,18 @@
   font-family: 'Roboto';
 }
 
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 10%;
+  }
+}
+
 .wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri .merdeka {
   font-style: italic;
 }
@@ -101,9 +152,25 @@
   font-style: italic;
 }
 
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri .solid {
+    text-align: center;
+  }
+}
+
 .wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri .textParagrap {
   font-size: 10pt;
-  width: 50vw;
+  width: 100%;
+  padding: 0 4% 0 0;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri .textParagrap {
+    width: auto;
+    font-size: 9pt;
+    text-align: center;
+    padding: 0 2%;
+  }
 }
 
 .wrapperInformasi .profilContainer .paragrapKanan {
@@ -114,7 +181,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   width: 50vw;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .paragrapKanan {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .wrapperInformasi .profilContainer .paragrapKanan .backgroundPK {
@@ -132,15 +212,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
   bottom: 0;
   width: 25vw;
   right: 0;
   height: 45vh;
-  background: url(../../../img/illustrator.png);
+  background: url(../../img/illustrator.png);
   background-size: cover;
   color: #ffffff;
   font-family: 'Roboto';
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .paragrapKanan .backgroundPK {
+    height: 50vh;
+    position: inherit;
+    width: 100%;
+  }
 }
 
 .wrapperInformasi .profilContainer .paragrapKanan .backgroundPK .textParagrapKanan {
@@ -155,34 +242,10 @@
   width: 100%;
 }
 
-.wrapperInformasi .profilContainer .ytProfil {
-  margin-top: 2rem;
-  padding: 5px 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-.wrapperInformasi .profilContainer .ytProfil .ytIframe {
-  width: 100%;
-  height: 60vh;
-  position: relative;
-}
-
-.wrapperInformasi .profilContainer .ytProfil .ytIframe .iframeProfil {
-  border: 0;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .divider {
+    margin: 1rem 0 0 0;
+  }
 }
 
 .wrapperInformasi .profilContainer .containerLaporan {
@@ -196,11 +259,24 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 2rem;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .containerLaporan {
+    padding: 0 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.wrapperInformasi .profilContainer .containerLaporan .cardLaporanSatu {
+  margin-right: 20px;
 }
 
 .wrapperInformasi .profilContainer .containerLaporan .cardLaporan {
-  width: 48%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +286,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20vh;
+  height: 15vh;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -218,6 +294,16 @@
   background: #e50209;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .containerLaporan .cardLaporan {
+    height: auto;
+    width: 100%;
+    margin: .5rem 0 0 0;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
 }
 
 .wrapperInformasi .profilContainer .containerLaporan .cardLaporan:hover {
@@ -245,7 +331,61 @@
 }
 
 .wrapperInformasi .profilContainer .containerLaporan .cardLaporan .textHarta .paragrapHarta {
-  font-size: 8pt;
+  font-size: 10pt;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .profilContainer .containerLaporan .cardLaporan .textHarta .paragrapHarta {
+    font-size: 8pt;
+  }
+}
+
+.wrapperInformasi .ytProfil {
+  margin-top: 2rem;
+  padding: 10px 20% 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .ytProfil {
+    padding: 0 10px;
+  }
+}
+
+.wrapperInformasi .ytProfil .ytIframe {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+@media (max-width: 400px) {
+  .wrapperInformasi .ytProfil .ytIframe {
+    height: 40vh;
+  }
+}
+
+.wrapperInformasi .ytProfil .ytIframe .iframeProfil {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+@media (max-width: 400px) {
+  .wrapperInformasi .ytProfil .ytIframe .iframeProfil {
+    position: inherit;
+  }
 }
 
 .wrapperInformasi .tataCaraContainer {
@@ -287,14 +427,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .wrapperInformasi .sliderTataCara .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60vh;
+  height: 40vh;
   width: 100%;
 }
 
@@ -353,7 +493,8 @@
 }
 
 .wrapperInformasi .infoDua {
-  padding: 0 10%;
+  margin: 20px 0 0 0;
+  padding: 0 20%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,7 +518,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25vh;
+  height: 15vh;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperInformasi .infoDua .kolomFormulir:hover {
+  background: #2f3542;
 }
 
 .wrapperInformasi .infoDua .kolomFormulir .textFormulir {
@@ -388,16 +535,33 @@
 .wrapperInformasi .infoDua .kolomFormulirSatu {
   background: #d80010;
   color: #ffffff;
+  margin-right: 20px;
 }
 
 .wrapperInformasi .infoDua .kolomFormulirDua {
-  background: #ffffff;
+  background: #d80010;
+  color: #fff;
 }
 
-.wrapperInformasi .wrapperWidget {
+.wrapperInformasi .carousel-informasiPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
+  width: 100%;
+  margin: 40px 0 0 0;
+  padding: 0 0 40px 0%;
+}
+
+@media (max-width: 500px) {
+  .wrapperInformasi .carousel-informasiPage {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.wrapperInformasi .wrapperWidget {
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
