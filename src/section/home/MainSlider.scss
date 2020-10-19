@@ -1,144 +1,271 @@
 @import "../../utilities/variable/variables.scss";
 
+
 $smallPhoneSatu : 500px;
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {
         @content;
     }
 }
+$smallPhoneDua : 400px;
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
+$deviceOne : 1000px;
+@mixin deviceOne {
+    @media (min-width : #{$deviceOne}) {
+        @content;
+    }
+}
+
+$deviceTwo : 1500px;
+@mixin deviceTwo {
+    @media (max-width : #{$deviceTwo}) {
+        @content;
+    }
+}
+
+$deviceThree : 1200px;
+@mixin deviceThree {
+    @media (max-width : #{$deviceThree}) {
+        @content;
+    }
+}
 
 .image1 {
-    height: 100vh;
+    display: flex;
+    height: 90vh;
     width: 100%;
-    background-image: url(../../img/slider.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    background-image: url(../../img/slider2.jpg);
 
     @include smallPhone() {
-        background-size: cover;
-        height: 50vh;
+        height: 40vh;
     }
-    
+
+    img{
+        width: 100%;
+        height: 100%;
+        // position: absolute;
+        object-fit: cover;
+        object-position: center;
+
+        @include smallPhone(){
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
 
     .text1 {
         height: 100%;
-        
         color: #ffffff;
         // border: 1px solid green;
         background: url(../../img/bgTextMobilez-01.svg);
-        background-size: cover;
+        object-fit: cover;
+        background-position: left;
         opacity: 0.8;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 0;
+
+        @include deviceOne(){
+            width: 55%;
+        }
+
+        @include deviceTwo(){
+            width: 70%;
+        }
+
+        @include deviceThree(){
+            width: 80%;
+        }
 
         @include smallPhone() {
-            background-size: cover;
-            height: auto;
-            background: url(../../img/bgTextMobilez-01.svg);
-            background-repeat: no-repeat;
             display: flex;
-            justify-content: center;
+            position: relative;
+            background-size: cover;
+            height: 100%;
+            width: auto;
+            background: none;
+            background-repeat: no-repeat;
             align-items: flex-start;
-            padding-top: 2em;
-            padding-left: 4.5em;
-
-
+            padding: 1rem 0rem 0 0rem;
+            text-align: center;
+            opacity: 1;
+            padding: 0;
         }
         
         h1 {
-            width: 50%;
-            font-size: 20pt;
+            width: 60%;
+            font-size: 25pt;
             text-transform: uppercase;
             margin-bottom: 2em;
             
         @include smallPhone() {
+            position: absolute;
+            top: 30px;
+            left: 30px;
             font-size: 10pt;
-            width: 40%;
-            margin-bottom: 1em;
-            // text-align: center;
-            
+            width: 50%;
+            text-align: start;
+            // margin-bottom: 1em;
         }
+
+        // @include smallPhoneDua() {
+        //     // border: 1px solid blue;
+        //     width: 50%;
+        //     font-size: 8pt;
+        //     margin-bottom: 1em;
+        // }
             
 
         }
         p {
-            font-size: 10pt;
-            width: 50%;
+            font-size: 13pt;
+            width: 60%;
+            padding: 0 80px 0 0;
 
             @include smallPhone() {
-                font-size: 6pt;
-                width: 40%;
+                display: none;
+                font-size: 8pt;
+                width: 50%;
+            }
+        }
+
+        .box-red-paragrap-mainSlider{
+            display: none;
+
+            @include smallPhone(){
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                height: 45%;
+                width: 100%;
+                background-color: rgba(255, 0, 8, 0.6);
+                padding: 20px 30px 0 30px;
+            }
+
+            p{
+                display: flex;
+
+                @include smallPhone(){
+                    display: flex;
+                    top: 0;
+                    width: 100%;
+                    text-align: start;
+                }
             }
         }
     }
 }
 
 .image2 {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-image: url(../../img/slider2.jpg);
     background-size: cover;
 
     @include smallPhone() {
         background-size: cover;
-        height: 50vh;
+        height: auto;
     }
+    // @include smallPhoneDua() {
+    //     background-size: cover;
+    //     height: auto;
+    // }
 
     .text1 {
         height: 100%;
-        
         color: #ffffff;
         // border: 1px solid green;
         background: url(../../img/bgTextMobilez-01.svg);
-        background-size: cover;
+        object-fit: cover;
+        background-position: left;
         opacity: 0.8;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        left: 0;
+        padding: 0;
+
+        @include deviceOne(){
+            width: 55%;
+        }
+
+        @include deviceTwo(){
+            width: 70%;
+        }
+
+        @include deviceThree(){
+            width: 80%;
+        }
 
         @include smallPhone() {
-            background-size: cover;
-            height: auto;
-            background: url(../../img/bgTextMobilez-01.svg);
-            background-repeat: no-repeat;
             display: flex;
-            justify-content: center;
+            position: relative;
+            background-size: cover;
+            height: 100%;
+            width: auto;
+            background: none;
+            background-repeat: no-repeat;
             align-items: flex-start;
-            padding-top: 2em;
-            padding-left: 4.5em;
-
-
+            padding: 1rem 0rem 0 0rem;
+            text-align: center;
+            opacity: 1;
+            padding: 0;
         }
+
+        // @include smallPhoneDua() {
+        //     padding: 4rem 2rem;
+        //     text-align: center;
+        // }
         
         h1 {
-            width: 50%;
-            font-size: 20pt;
+            width: 60%;
+            font-size: 25pt;
             text-transform: uppercase;
             margin-bottom: 2em;
             
         @include smallPhone() {
+            position: absolute;
+            top: 30px;
+            left: 30px;
             font-size: 10pt;
-            width: 40%;
-            margin-bottom: 1em;
-            // text-align: center;
-            
+            width: 50%;
+            text-align: start;
+            // margin-bottom: 1em;
         }
+        // @include smallPhoneDua() {
+        //     // border: 1px solid blue;
+        //     width: 50%;
+        //     font-size: 9pt;
+        // }
             
 
         }
         p {
-            font-size: 10pt;
-            width: 50%;
+            font-size: 13pt;
+            width: 60%;
+            padding: 0 80px 0 0;
 
             @include smallPhone() {
-                font-size: 6pt;
-                width: 40%;
+                display: none;
+                font-size: 8pt;
+                width: 50%;
             }
         }
     }
@@ -147,13 +274,19 @@ $smallPhoneSatu : 500px;
 
 .carousel {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+    @include smallPhone(){
+        height: auto;
+    }
 
     .carousel-inner {
 
         .carousel-item {
             width: 105%;
-
-            
         }
     }
     
@@ -161,8 +294,6 @@ $smallPhoneSatu : 500px;
         right: auto;
         bottom: 5%;
         margin-bottom: 30px;
-
-        
 
         @include smallPhone() {
             margin-bottom: 0;
@@ -186,8 +317,13 @@ $smallPhoneSatu : 500px;
                     width: 10px;
                     height: 10px;
                     padding: 10px;
-
                 }
+                @include smallPhoneDua() {
+                    width: 7px;
+                    height: 7px;
+                    padding: 8px;
+                }
+                
 
                 .indicatorText {
                     cursor: pointer;
@@ -196,9 +332,6 @@ $smallPhoneSatu : 500px;
                     font-weight: bold;
                     text-align: center;
                     font-family: 'Roboto';
-
-
-                   
 
                     @include smallPhone() {
                         font-size: 7pt;
@@ -223,64 +356,39 @@ $smallPhoneSatu : 500px;
 }
 }
 
-// .prev-text {
-//     display: inline-block;
-//     width: 20px;
-//     height: 20px;
-//     border: none;
-//     line-height: .7;
 
-//     span {
-//         font-size: 8pt;
-//         letter-spacing: 1.5px;
-//     }
-
-//     @include smallPhone() {
-//         display: none;
-//     }
-// }
 .arrowsLeft {
-    height: 30px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    width: 80px;
     // border: 1px solid blue;
-    background: rgba(255, 186, 186, 0.8);
+    // background: rgba(255, 186, 186, 0.8);
     // display: none;
-
+    @include smallPhone() {
+        height: 20px;
+        width: 20px;
+    }
     
 }
 
-// .next-text {
-//     display: inline-block;
-//     width: 20px;
-//     height: 20px;
-//     border: none;
-//     line-height: .7;
-
-//     span {
-//         font-size: 8pt;
-//         letter-spacing: 1.5px;
-//     }
-
-//     @include smallPhone() {
-//         display: none;
-//     }
-// }
 
 .arrowsRight {
-    height: 30px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    width: 80px;
     // border: 1px solid blue;
-    background: rgba(255, 186, 186, 0.8);
+    // background: rgba(255, 186, 186, 0.8);
 
+    @include smallPhone() {
+        height: 20px;
+        width: 20px;
+    }
     
 }
-
 
 
 

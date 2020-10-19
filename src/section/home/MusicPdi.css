@@ -1,5 +1,5 @@
 .containerDua {
-  padding: 40px 10%;
+  padding: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,13 +24,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 1px solid blue;
   }
 }
 
 .containerDua .contentDua {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +66,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2.5rem 7%;
+  padding: 1rem 7% 0 7%;
 }
 
 .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .plyr {
@@ -82,7 +81,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../img/megawati10.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,11 +155,10 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
 }
 
 .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-4 .download .downloadContent {
-  padding: 1rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -217,16 +214,14 @@
 .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik .lirik {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 10pt;
   font-weight: 700;
   margin-top: 1rem;
 }
 
 .containerDua .contentDua .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p {
-  font-size: 10pt;
   letter-spacing: .8px;
   margin-top: 1rem;
-  height: 40vh;
+  height: 30vh;
   overflow: scroll;
   color: #ffffff;
   overflow-x: hidden;
@@ -247,12 +242,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.5rem 7%;
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic {
-  width: 90%;
-  height: 15vh;
+  width: 100%;
+  height: 14vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,11 +307,10 @@
   width: 80%;
   height: 100%;
   background: #ffffff;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .judulPlay {
-  padding: 5px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,7 +343,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  padding: 5px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -477,6 +469,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background: #ffffff;
@@ -491,6 +484,7 @@
 }
 
 .containerDua .contentDua .musicList .headersList {
+  gap: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,7 +498,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 20vh;
+  height: 10vh;
   border-top-right-radius: 10px;
   background: #960001;
   color: #ffff;
@@ -525,15 +519,15 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
+  gap: 20px;
 }
 
 .containerDua .contentDua .musicList .headersList .textHeader h4 {
-  font-size: 18pt;
+  font-size: 17pt;
   font-weight: 700;
 }
 
 .containerDua .contentDua .musicList .listMusic .listSatu {
-  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +540,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 20px;
+  padding: 9px 20px;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -557,24 +551,18 @@
   color: #ffffff;
 }
 
-.containerDua .contentDua .musicList .listMusic .listSatu h5 {
-  font-size: 11pt;
-}
-
-.containerDua .contentDua .musicList .listMusic .listSatu h5:nth-child(0) {
+.containerDua .contentDua .musicList .listMusic .listSatu h6:nth-child(0) {
   color: #9e0000;
 }
 
-.containerDua .contentDua .musicList .listMusic .listSatu p {
-  margin-top: 5px;
-  font-size: 9pt;
+.containerDua .contentDua .musicList .listMusic .listSatu small {
+  margin-top: 0px;
   letter-spacing: .8px;
   font-weight: 300;
 }
 
 .containerDua .contentDua .musicList .listMusic .listDua {
   color: #c70000;
-  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,7 +574,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 20px;
+  padding: 9px 20px;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -597,17 +585,12 @@
   color: #ffffff;
 }
 
-.containerDua .contentDua .musicList .listMusic .listDua h5 {
-  font-size: 11pt;
-}
-
-.containerDua .contentDua .musicList .listMusic .listDua h5:nth-child(0) {
+.containerDua .contentDua .musicList .listMusic .listDua h6:nth-child(0) {
   color: #9e0000;
 }
 
-.containerDua .contentDua .musicList .listMusic .listDua p {
+.containerDua .contentDua .musicList .listMusic .listDua small {
   margin-top: 5px;
-  font-size: 8pt;
   letter-spacing: .8px;
   font-weight: 300;
 }
@@ -617,7 +600,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -626,7 +608,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 20px;
+  padding: 9px 20px;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -637,17 +619,12 @@
   color: #ffffff;
 }
 
-.containerDua .contentDua .musicList .listMusic .listTiga h5 {
-  font-size: 11pt;
-}
-
-.containerDua .contentDua .musicList .listMusic .listTiga h5:nth-child(0) {
+.containerDua .contentDua .musicList .listMusic .listTiga h6:nth-child(0) {
   color: #9e0000;
 }
 
-.containerDua .contentDua .musicList .listMusic .listTiga p {
+.containerDua .contentDua .musicList .listMusic .listTiga small {
   margin-top: 5px;
-  font-size: 8pt;
   letter-spacing: .8px;
   font-weight: 300;
 }
@@ -660,12 +637,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 20vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px 20px;
+  padding: 9px 20px;
   border-bottom-right-radius: 10px;
   -webkit-transition: .3s;
   transition: .3s;
@@ -678,17 +654,12 @@
   color: #ffffff;
 }
 
-.containerDua .contentDua .musicList .listMusic .listEmpat h5 {
-  font-size: 11pt;
-}
-
-.containerDua .contentDua .musicList .listMusic .listEmpat h5:nth-child(0) {
+.containerDua .contentDua .musicList .listMusic .listEmpat h6:nth-child(0) {
   color: #9e0000;
 }
 
-.containerDua .contentDua .musicList .listMusic .listEmpat p {
+.containerDua .contentDua .musicList .listMusic .listEmpat small {
   margin-top: 5px;
-  font-size: 8pt;
   letter-spacing: .8px;
   font-weight: 300;
 }

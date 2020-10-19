@@ -1,0 +1,213 @@
+.KM {
+  width: 100%;
+  height: 40vh;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 500px) {
+  .KM {
+    display: none;
+  }
+}
+
+.KM .row > * {
+  padding-right: 0;
+}
+
+.KM .row {
+  --bs-gutter-x: 0;
+}
+
+.KM .rowCustom {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .KM .rowCustom {
+    border: 1PX SOLID BLUE;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .rowCustom {
+    border: 1PX SOLID BLUE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 1rem;
+  }
+}
+
+.KM .carousels .kmCarousel {
+  width: 100%;
+  height: 100%;
+  background: #960001;
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel {
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel {
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-indicators {
+  right: calc(100%/2);
+  position: absolute;
+}
+
+.KM .carousels .kmCarousel .carousel-indicators li {
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.KM .carousels .kmCarousel .carousel-inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.KM .carousels .kmCarousel .carousel-inner .itemKM {
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel .carousel-inner .itemKM {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .itemKM {
+    padding: 1rem;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item {
+  text-align: center;
+  width: 100%;
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM .textCarousel {
+  margin: 1rem 0;
+  word-break: break-word;
+  width: 80%;
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM .textCarousel {
+    margin: .8rem 0;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM h5 {
+  font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM h5 {
+    font-size: 9pt;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM h5 {
+    font-size: 8pt;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM h1 {
+  word-wrap: break-word;
+  width: 80%;
+  font-weight: 300;
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM p {
+  width: 70%;
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM p {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item .textKM p {
+    display: none;
+  }
+}
+
+.KM .carousels .kmCarousel .carousel-inner .carousel-item .banner {
+  position: absolute;
+  float: right;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-position: center center;
+}
+
+@media (max-width: 500px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item .banner {
+    position: inherit;
+  }
+}
+
+@media (max-width: 400px) {
+  .KM .carousels .kmCarousel .carousel-inner .carousel-item .banner {
+    position: initial;
+  }
+}
+/*# sourceMappingURL=CarouselKM.css.map */

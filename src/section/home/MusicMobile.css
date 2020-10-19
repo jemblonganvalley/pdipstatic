@@ -1,0 +1,282 @@
+.musicPdiMobile {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 10px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile .wrapperMobileMusic .headlineMusic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #960001;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile .wrapperMobileMusic .headlineMusic .headlineText {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 20pt;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile .wrapperMobileMusic .judulMusic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background: #c60605;
+    padding: 20px 10%;
+    color: #ffff;
+  }
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile .wrapperMobileMusic .judulMusic .judul {
+    font-weight: 700;
+    letter-spacing: .5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile .wrapperMobileMusic .judulMusic .judulDesc {
+    font-size: 10pt;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile .wrapperMobileMusic .lirikMobile {
+    background: #100000;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile .wrapperMobileMusic .lirikMobile .lirikMobileContainer {
+    width: 100%;
+    color: #ffff;
+  }
+}
+
+.musicPdiMobile .wrapperMobileMusic .lirikMobile .lirikMobileContainer span {
+  font-weight: 300;
+  font-size: 10pt;
+}
+
+.musicPdiMobile .wrapperMobileMusic .lirikMobile .lirikMobileContainer .wrapperLirik {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+  height: 40vh;
+}
+
+.musicPdiMobile .wrapperMobileMusic .lirikMobile .lirikMobileContainer .wrapperLirik .liriks {
+  margin-top: 1rem;
+  font-size: 10pt;
+  font-weight: 300;
+  width: 70%;
+}
+
+.musicPdiMobile .wrapperMobileMusic .lirikMobile .lirikMobileContainer .wrapperLirik::-webkit-scrollbar {
+  width: 6px;
+}
+
+.musicPdiMobile .wrapperMobileMusic .lirikMobile .lirikMobileContainer .wrapperLirik::-webkit-scrollbar-thumb {
+  background: #960001;
+  border-radius: 5px;
+}
+
+.musicPdiMobile .wrapperMobileMusic .lirikMobile .lirikMobileContainer .wrapperLirik::-webkit-scrollbar-track {
+  background: #ffff;
+  border-radius: 5px;
+}
+
+.musicPdiMobile .wrapperMobileMusic .wrapperDownload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #100000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10%;
+}
+
+@media (max-width: 500px) {
+  .musicPdiMobile .wrapperMobileMusic .wrapperDownload img {
+    width: 40px;
+  }
+}
+
+.musicPdiMobile .wrapperMobileMusic .playlist {
+  width: 100%;
+  background: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 35vh;
+  overflow: scroll;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playlist .playlistCustom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 5%;
+  color: #c60605;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playlist .playlistCustom span {
+  font-size: 10pt;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playlist .playlistCustom:hover {
+  background: #960001;
+  color: #ffff;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #c60605;
+  height: auto;
+  color: #ffff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile .player-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile .player-track .time {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile .player-track .progress-bar {
+  background: #d0d8e6;
+  height: 5px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile .player-track .progress-bar .fillBar {
+  background: #a3b3ce;
+  width: 0;
+  height: 5px;
+  border-radius: 20px;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile .playerControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  -webkit-box-shadow: 0px 15px 35px -5px rgba(206, 206, 206, 0.32);
+          box-shadow: 0px 15px 35px -5px rgba(206, 206, 206, 0.32);
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile .playerControl i {
+  font-size: 25pt;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile .playerControl i::before {
+  color: #ffffff;
+}
+
+.musicPdiMobile .wrapperMobileMusic .playMusicMobile .playerControl i:hover::before {
+  color: #ffff;
+  opacity: .7;
+}
+/*# sourceMappingURL=MusicMobile.css.map */
