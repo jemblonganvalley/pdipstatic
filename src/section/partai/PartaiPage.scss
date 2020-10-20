@@ -15,6 +15,27 @@ $smallPhoneDua : 400px;
     }
 }
 
+$deviceOne : 1000px;
+@mixin deviceOne {
+    @media (min-width : #{$deviceOne}) {
+        @content;
+    }
+}
+
+$deviceTwo : 1500px;
+@mixin deviceTwo {
+    @media (max-width : #{$deviceTwo}) {
+        @content;
+    }
+}
+
+$deviceThree : 1200px;
+@mixin deviceThree {
+    @media (max-width : #{$deviceThree}) {
+        @content;
+    }
+}
+
     //START CSS
 
 .wrapperPartai {
@@ -84,8 +105,8 @@ $smallPhoneDua : 400px;
     }
     // END LINK PARTAI
 
-    // START CONTAINER SATU
-    .containerSatu {
+     // START CONTAINER SATU
+     .containerSatu {
         padding: 0px 20% 0px 20%;
         display: flex;
         justify-content: center;
@@ -119,11 +140,27 @@ $smallPhoneDua : 400px;
                 flex-direction: column;
                 width: 100%;
                 height: 100%;
-                // border: 1px solid red;
 
                 .mobileRow{
                     @include smallPhone(){
                         padding: 0 5px;
+                    }
+
+                    .imgMobilePartai{
+                        height: 75px;
+                        width: 75px;
+                        object-fit: cover;
+                        object-position: center;
+
+                        @include deviceOne(){
+                            height: 50px;
+                            width: 50px;
+                        }
+
+                        @include smallPhone(){
+                            height: 65px;
+                            width: 65px;
+                        }
                     }
                 }
 
@@ -131,7 +168,6 @@ $smallPhoneDua : 400px;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    border: 1px solid red;
 
                     @include smallPhone(){
                         margin: 0 0 0 10px;
@@ -142,11 +178,10 @@ $smallPhoneDua : 400px;
                 .col-md-3 {
                     // margin: 20px 0;
                     display: flex;
-                    width: 100%;
+                    width: 25%;
                     height: 100%;
                     justify-content: center;
                     align-items: center;
-                    border: 1px solid blue;
 
                     @include smallPhone() {
                         border-radius: 10px;
@@ -195,95 +230,68 @@ $smallPhoneDua : 400px;
             }
             .parentCarousel {
                 height: 50vh;
-                padding: 0 0px 0 10px;
+                padding: 0 0px 0 0px;
 
                 @include smallPhone(){
                     height: 40vh;
                     padding: 0;
                 }
 
-                .wrapperCarousel {
-                    width: 100%;
+                .carousel{
                     height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    width: 100%;
 
-                    .slide{
+                    .carousel-inner{
+                        position: relative;
                         height: 100%;
-                    }
+                        width: 100%;
 
-                    @include smallPhone() {
-                        height: auto;
-                    }
-                    
-                    .carouselPartai {
-                        left: 30%;
-
-                        @include smallPhone() {
-                            left: 27%;
-                        }
-
-                        .active {
-                            background: none;
-                        }
-
-                        li {
-                            // border: none;
-                            border: 1px solid #ffffff;
-                            width: 8px;
-                            height: 8px;
-                            border-radius: 50%;
-
-                            @include smallPhoneDua() {
-                                width: 6px;
-                                height: 6px;
-                            }
-                        }
-                    }
-
-                    .carouselImgSatu {
-                        height: 50vh;
-                        background-size: cover;
-                        background-position: center;
-
-                        @include smallPhone() {
+                        .imgCarousel{
+                            height: 100%;
                             width: 100%;
-                            height: 40vh;
-                            display: flex;
-                        }
-    
-                    }
-
-                    .carousel-caption {
-                        left: 0;
-                        bottom: 20%;
-                        margin-left: 2.5rem;
-                        text-align: left;
-
-                        @include smallPhone() {
-                            text-align: center;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            bottom: 5%;
-                            
+                            object-fit: cover;
+                            object-position: center;
                         }
 
-                        h5 {
-                            font-style: italic;
-                            font-size: 10pt;
-                            font-weight: 300;
+                        .carousel-caption{
+                            height: 40%;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
 
-                            @include smallPhone() {
-                                font-size: 8pt;
-                                
+                            @include smallPhone(){
+                                height: 60%;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 0 20px 0 20px;
                             }
-                        }
 
-                        h3 {
-                            @include smallPhone() {
-                                font-size: 15pt;
+                            h4{
+                                position: absolute;
+                                top: 0;
+                                left: 30px;
+
+                                @include smallPhone(){
+                                    position: static;
+                                    font-size: 15pt;
+                                    justify-content: center;
+                                    text-align: center;
+                                }
+                            }
+
+                            p{
+                                position: absolute;
+                                top: 40px;
+                                left: 30px;
+                                right: 30px;
+                                text-align: start;
+
+                                @include smallPhone(){
+                                    font-size: 10pt;
+                                    position: static;
+                                    text-align: center;
+                                }
                             }
                         }
                     }
@@ -294,8 +302,6 @@ $smallPhoneDua : 400px;
         }
     }
     // END CONTAINER SATU
-
-    
 
     .containerTiga {
         padding: 0 20%;
@@ -382,7 +388,7 @@ $smallPhoneDua : 400px;
             height: auto;
             width: 100%;
             align-items: center;
-            margin: 40px 0;
+            margin: 0px 0;
 
             @include smallPhone(){
                 padding: 0 10px;
@@ -417,6 +423,7 @@ $smallPhoneDua : 400px;
         background-size: auto;
         height: 40vh;
         display: flex;
+        background-image: url(../../img/pengurus.png);
         background-position: center;
         background-attachment: fixed;
         flex-direction: column;
@@ -493,7 +500,7 @@ $smallPhoneDua : 400px;
             // }
         }
             .imageMaps {
-                background: url(../../../img/maps.jpg);
+                background: url(../../img/maps.jpg);
                 background-size: cover;
                 width: 100%;
                 height: 56vh;
@@ -546,16 +553,17 @@ $smallPhoneDua : 400px;
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            margin: 10px 0 0 0;
+            margin: 10px 0px 0 0;
 
             @include smallPhone(){
                 flex-direction: column;
                 margin: 0;
             }
             
-            #btnGroup{
+            .btn2{
+                margin: 0 20px 0 0;
                 @include smallPhone(){
-                    margin: 0px 0 10px 0;
+                    margin: 0px 20px 10px 0;
                 }
             }
         }

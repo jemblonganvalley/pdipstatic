@@ -3,299 +3,158 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="BreadCrumbs.css">
-<link rel="stylesheet" href="CardInformasi.css">
 <link rel="stylesheet" href="MainButton.css">
-<link rel="stylesheet" href="MainCards.css">
 <link rel="stylesheet" href="MainDivider.css">
-<link rel="stylesheet" href="MultimediaPage.css">
+<link rel="stylesheet" href="MultiMediaPage.css">
+<link rel="stylesheet" href="VMedia.css">
+<link rel="stylesheet" href="CardInformasi.css">
+<link rel="stylesheet" href="MainCards.css">
 
 <div class="wrapperMultimedia">
-    <div class="headerMedia">
-        <div class="textBannerMedia">
-            <h2>Lorem ipsum dolor<br />sit amet consectetur<br />adipisicing elit.</h2>
-        </div>
+
+    <div class="headerMedia" style="
+        background : url(../../img/red_pattern.jpg);">
+      <div class="textBannerMedia">
+        <h2>
+          LOREM IPSUM DOLORSES
+        </h2>
+      </div>
     </div>
+
     <div class="linkedMedia">
-        <!-- <BreadCrumbs link1="Home"/> -->
         <span class="wrapperBread">
-            <ul class="breadcrumb" style="background : none">
+            <ul class="breadcrumb" style="
+                background : none">
                 <li><i class="fa fa-home customBread"></i></li>
-                <li class="breadcrumb-item customBread"><a href={to1}>Home</a></li>
-                <li style="color : #6c757d;" class={`breadcrumb-item ${active} customBread`}><a href={to2}></a>/</li>
-                <li class="breadcrumb-item active customBread"><a href={to3}></a>Multimedia</li>
+                <li class="breadcrumb-item customBread"><a href="">Home</a></li>
+                <li style="
+                    color : #6c757d" class="breadcrumb-item active customBread">Multimedia<a href=""></a>
+                </li>
+                <li class="breadcrumb-item active customBread"> </li>
             </ul>
         </span>
     </div>
     <div class="pidatoKU">
-        <div class="col-lg-9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4Y9vU1dCk78" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <div class="col-lg-3">
-            <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-            <span>Megawati Soekarnoputri,<br />Ketua Umum PDI Perjuangan</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, ullam dicta architecto hic expedita,
-                harum tempore quae sunt obcaecati aperiam placeat praesentium rem voluptatibus quibusdam qui nesciunt
-                non illo! Magni.</p>
-            <div class="socialMedia">
-                <small>SHARE : </small>
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-whatsapp"></i>
+        <div class="wrapperPlayVid">
+            <div class="kolumVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cRJoKbDfn2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="descVideo">
+                <div class="textTop">
+                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
+                    <div class="countLove">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <small>0</small>
+                    </div>
+                </div>
+                
+                <h5 class="headline">headline</h5>
+                <p class="descline">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eos.
+                </p>
+                <div class="share">
+                    <!-- {/* Card Social Media */}
+                    <CardSocialMedia/>
+                    {/* END Card Social Media */} -->
+
+                    <small class="marginShare">SHARE : </small>
+                    <i class="fa fa-facebook marginShare" aria-hidden="true"></i>
+                    <i class="fa fa-twitter marginShare" aria-hidden="true"></i>
+                    <i class="fa fa-instagram marginShare" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp marginShare" aria-hidden="true"></i> 
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- <CardInformasi image={multimediaSatu} /> -->
-    <div class="cardMedia">
-        <div class="siaranLangsung mediaCard">
-            <img src="../../img/multimedia1.png" alt="" width="35" class="imgCards" />
-            <small class="smallCard">siaran langsung</small>
-        </div>
-        <div class="videoDokumentasi mediaCard">
-            <img src="../../img/multimedia2.png" alt="" width="35" class="imgCards" />
-            <small class="smallCard">video dokumentasi</small>
-        </div>
-        <div class="videoInteraktif mediaCard">
-            <img src="../../img/multimedia3.png" alt="" width="35" class="imgCards" />
-            <small class="smallCard">video teaser</small>
-        </div>
-        <div class="siaranPers mediaCard">
-            <img src="../../img//multimedia4.png" alt="" width="35" class="imgCards" />
-            <small class="smallCard">wawancara</small>
-        </div>
-    </div>
-
-    <!-- image2={multimediaDua}
-    image3={multimediaTiga}
-    image4={multimediaEmpat}
-    text="siaran langsung"
-    text2="video dokumentasi"
-    text3="video teaser"
-    text4="wawancara" -->
-
-    <div class="panggung">
-        <div class="textPanggung">
-            <h1 class="panggungH1">Siaran Langsung Pembukaan Rakernas I<br />PDI Perjuangan</h1>
-            <!-- <MainButton name="kunjungi" /> -->
-            <a class="btn btn2" style="" href="">
-                <i class="" style="">kunjungi</i>
+    <div class="wrapperCardInfo">
+        <div class="cardMedia">
+            <a href="" class="siaranLangsung mediaCard">
+                <img src="../../img/ppidSatu.png" alt="" width="35" class="imgCards" />
+                <small class="smallCard" style="font-weight: bold;">SIARAN LANGSUNG</small>
+            </a>
+            <a href="" class="videoDokumentasi mediaCard">
+                <img src="../../img/ppidDua.png" alt="" width="35" class="imgCards" />
+                <small class="smallCard" style="font-weight: bold;">VIDEO DOKUMENTASI</small>
+            </a>
+            <a href="" class="videoInteraktif mediaCard">
+                <img src="../../img/ppid3.png" alt="" width="35" class="imgCards" />
+                <small class="smallCard" style="font-weight: bold;">VIDEO TEASER</small>
+            </a>
+            <a href="" class="siaranPers mediaCard">
+                <img src="../../img/ppid4.png" alt="" width="35" class="imgCards" />
+                <small class="smallCard" style="font-weight: bold;">WAWANCARA</small>
             </a>
         </div>
     </div>
 
-    <div class="cardMediaDua" style="padding: 45px 10%;">
-        <!-- <Cards imageCard={perempuan} />-->
-        <div class="col col-lg-3 cardCustom" style="
-                border-radius : 10px;
-                width : width;
-                 ">
-
-            <div class="imageCard" style="
-                background-image: url(../../img/ig-perempuan.png);
-
-            ">
-
-
-            </div>
-            <div class="text">
-                <small class="textSmall">Admin PDI Perjuangan / 1 Januari 2019</small>
-                <h5 class="textH5" style="
-                    font-size: h5Font;
-                    font-weight: h5Weight;
-                    border-radius: 10px; ">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </h5>
-                <p className="paragrap" style="font-size : paragrapSize;">
-                </p>
-            </div>
-        </div>
-        <!-- textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-        borderRadius="10px" -->
-
-        <!-- <Cards imageCard={megawati12} /> -->
-        <div class="col col-lg-3 cardCustom" style="
-            border-radius : 10px;
-            width : width; ">
-
-            <div class="imageCard" style="
-                    background-image: url(../../img/megawati12.png);
-                ">
-
-                <a as="div" class="VBMusic" href="" style="text-decoration:none">
-                    <i class="fa fa-play" class="VBMusic"></i>
-                </a>
-            </div>
-            <div class="text">
-                <small class="textSmall">Admin PDI Perjuangan / 1 Januari 2019</small>
-                <h5 class="textH5" style="
-                    font-size: h5Font;
-                    font-weight: h5Weight;
-                    border-radius: 10px; ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                </h5>
-                <p className="paragrap" style="font-size : paragrapSize;">
-                </p>
-            </div>
-        </div>
-        <!-- textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-        borderRadius="10px"
-        icons="fa fa-play"
-        classIcon="VBMusic" -->
-
-        <!-- <Cards imageCard={perempuan}/> -->
-        <div class="col col-lg-3 cardCustom" style="
-                border-radius : 10px;
-                width : width; ">
-
-            <div class="imageCard" style="background-image: url(../../img/ig-perempuan.png);">
-
-
-            </div>
-            <div class="text">
-                <small class="textSmall">Admin PDI Perjuangan / 1 Januari 2019</small>
-                <h5 class="textH5" style="
-                    font-size: h5Font;
-                    font-weight: h5Weight;
-                    border-radius: 10px;">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing
-                </h5>
-                <p className="paragrap" style="font-size : paragrapSize;">
-
-                </p>
-            </div>
-        </div>
-
-        <!-- textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-        borderRadius="10px" -->
-
+    <div class="panggung" style="
+        background-image : url(../../img/BKBB_BungKarno.jpg);
+    ">
+      <div class="textPanggung">
+        <h1 class="panggungH1">
+          Siaran Langsung Pembukaan Rakernas
+        </h1>
+        <a href="" class="btn btn2">
+            KUNJUNGI
+        </a>
+      </div>
     </div>
 
-
-
-    <div class="videoBaruPage">
-        <!-- <MainDivider text="Video Terbaru" /> -->
-        <div class="col3-container-3" style="
-    margin : 2rem 0;
-    padding : 0px 10%; ">
-
+    <div class="cardMediaDua">
+        <div class="divider-video-terbaru">
+        <div class="col3-container-3">
             <div class="box-jdl-col3">
                 <p class="txt-jdl-col3">
                     VIDEO TERBARU
                 </p>
             </div>
-
             <div class="box-garis-lurus-col3">
                 <div class="garis-merah" style="
-            width : 100px">
+                width: 150px">
 
                 </div>
             </div>
         </div>
+        </div>
 
+        <div class="cardMultimedia">
+
+      <!-- Card1 -->
+      <div class="col col-lg-3 cardCustom" style="
+      border-radius : 10px;
+      width : width;
+  ">
+
+      <div class="imageCard" style="background-image: url(../../img/pemilu18.jpg);">
+
+
+
+      </div>
+      <div class="text">
+          <small class="textSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
+          <h5 class="textH5" style="
+font-size: h5Font;
+font-weight: h5Weight;
+">
+              Lorem ipsum dolor, sit amet consectetur adipisicing.
+          </h5>
+          <p class="paragrap">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum
+              temporibus. Ipsa at fugit rerum veritatis sint?
+          </p>
+      </div>
+      </div>
+
+  </div>
+  <!-- END Card1 -->
+      
     </div>
 
-    <div class="cardMediaDua">
-        <!-- <Cards imageCard={perempuan} />-->
-        <div class="col col-lg-3 cardCustom" style="
-                    border-radius : 10px;
-                    width : 35%;
-                    top: 40%;">
-
-            <div class="imageCard" style="
-                    background-image: url(../../img/megawati1.jpg);
-    
-                ">
-                <a as="div" class="VBMusic" href="" style="text-decoration:none">
-                    <i class="fa fa-play" class="VBMusic"></i>
-                </a>
-
-
-            </div>
-            <div class="text">
-                <small class="textSmall">Admin PDI Perjuangan / 1 Januari 2019</small>
-                <h5 class="textH5" style="
-                        font-size: h5Font;
-                        font-weight: h5Weight;
-                        border-radius: 10px; ">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </h5>
-                <p className="paragrap" style="font-size : paragrapSize;">
-                </p>
-            </div>
-        </div>
-        <!-- textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-            borderRadius="10px" -->
-
-        <!-- <Cards imageCard={megawati12} /> -->
-        <div class="col col-lg-3 cardCustom" style="
-                border-radius : 10px;
-                width : 35%; ">
-
-            <div class="imageCard" style="
-                        background-image: url(../../img/megawati2.jpg);
-                    ">
-
-                <a as="div" class="VBMusic" href="" style="text-decoration:none">
-                    <i class="fa fa-play" class="VBMusic"></i>
-                </a>
-            </div>
-            <div class="text">
-                <small class="textSmall">Admin PDI Perjuangan / 1 Januari 2019</small>
-                <h5 class="textH5" style="
-                        font-size: h5Font;
-                        font-weight: h5Weight;
-                        border-radius: 10px; ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                </h5>
-                <p className="paragrap" style="font-size : paragrapSize;">
-                </p>
-            </div>
-        </div>
-        <!-- textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-            borderRadius="10px"
-            icons="fa fa-play"
-            classIcon="VBMusic" -->
-
-        <!-- <Cards imageCard={perempuan}/> -->
-        <div class="col col-lg-3 cardCustom" style="
-                    border-radius : 10px;
-                    width : 35%; ">
-
-            <div class="imageCard" style="background-image: url(../../img/megawati3.jpg);">
-                <a as="div" class="VBMusic" href="" style="text-decoration:none">
-                    <i class="fa fa-play" class="VBMusic"></i>
-                </a>
-
-            </div>
-            <div class="text">
-                <small class="textSmall">Admin PDI Perjuangan / 1 Januari 2019</small>
-                <h5 class="textH5" style="
-                        font-size: h5Font;
-                        font-weight: h5Weight;
-                        border-radius: 10px;">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing
-                </h5>
-                <p className="paragrap" style="font-size : paragrapSize;">
-
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-</div>
-</div>
-</div>
+  </div>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

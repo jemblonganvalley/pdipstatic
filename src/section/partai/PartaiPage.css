@@ -154,6 +154,29 @@
   }
 }
 
+.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .mobileRow .imgMobilePartai {
+  height: 75px;
+  width: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (min-width: 1000px) {
+  .wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .mobileRow .imgMobilePartai {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .mobileRow .imgMobilePartai {
+    height: 65px;
+    width: 65px;
+  }
+}
+
 .wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .textContentSatu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +188,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid red;
 }
 
 @media (max-width: 500px) {
@@ -178,7 +200,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 25%;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -186,7 +208,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid blue;
 }
 
 @media (max-width: 500px) {
@@ -253,7 +274,7 @@
 
 .wrapperPartai .containerSatu .contentSatu .parentCarousel {
   height: 50vh;
-  padding: 0 0px 0 10px;
+  padding: 0 0px 0 0px;
 }
 
 @media (max-width: 500px) {
@@ -263,113 +284,77 @@
   }
 }
 
-.wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel {
+.wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel {
+  height: 100%;
   width: 100%;
+}
+
+.wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel .carousel-inner {
+  position: relative;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
 }
 
-.wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .slide {
+.wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel .carousel-inner .imgCarousel {
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
-@media (max-width: 500px) {
-  .wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel {
-    height: auto;
-  }
-}
-
-.wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carouselPartai {
-  left: 30%;
-}
-
-@media (max-width: 500px) {
-  .wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carouselPartai {
-    left: 27%;
-  }
-}
-
-.wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carouselPartai .active {
-  background: none;
-}
-
-.wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carouselPartai li {
-  border: 1px solid #ffffff;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-@media (max-width: 400px) {
-  .wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carouselPartai li {
-    width: 6px;
-    height: 6px;
-  }
-}
-
-.wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carouselImgSatu {
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (max-width: 500px) {
-  .wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carouselImgSatu {
-    width: 100%;
-    height: 40vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carousel-caption {
+.wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel .carousel-inner .carousel-caption {
+  height: 40%;
+  position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: 20%;
-  margin-left: 2.5rem;
-  text-align: left;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
-  .wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carousel-caption {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel .carousel-inner .carousel-caption {
+    height: 60%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    bottom: 5%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px 0 20px;
   }
 }
 
-.wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carousel-caption h5 {
-  font-style: italic;
-  font-size: 10pt;
-  font-weight: 300;
+.wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel .carousel-inner .carousel-caption h4 {
+  position: absolute;
+  top: 0;
+  left: 30px;
 }
 
 @media (max-width: 500px) {
-  .wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carousel-caption h5 {
-    font-size: 8pt;
-  }
-}
-
-@media (max-width: 500px) {
-  .wrapperPartai .containerSatu .contentSatu .parentCarousel .wrapperCarousel .carousel-caption h3 {
+  .wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel .carousel-inner .carousel-caption h4 {
+    position: static;
     font-size: 15pt;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+.wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel .carousel-inner .carousel-caption p {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  right: 30px;
+  text-align: start;
+}
+
+@media (max-width: 500px) {
+  .wrapperPartai .containerSatu .contentSatu .parentCarousel .carousel .carousel-inner .carousel-caption p {
+    font-size: 10pt;
+    position: static;
+    text-align: center;
   }
 }
 
@@ -500,7 +485,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px 0;
+  margin: 0px 0;
 }
 
 @media (max-width: 500px) {
@@ -551,6 +536,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url(../../img/pengurus.png);
   background-position: center;
   background-attachment: fixed;
   -webkit-box-orient: vertical;
@@ -657,7 +643,7 @@
 }
 
 .wrapperPartai .maps .imageMaps {
-  background: url(../../../img/maps.jpg);
+  background: url(../../img/maps.jpg);
   background-size: cover;
   width: 100%;
   height: 56vh;
@@ -732,7 +718,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 10px 0 0 0;
+  margin: 10px 0px 0 0;
 }
 
 @media (max-width: 500px) {
@@ -745,9 +731,13 @@
   }
 }
 
+.wrapperPartai .anggotaLegislatif .btnGroup .btn2 {
+  margin: 0 20px 0 0;
+}
+
 @media (max-width: 500px) {
-  .wrapperPartai .anggotaLegislatif .btnGroup #btnGroup {
-    margin: 0px 0 10px 0;
+  .wrapperPartai .anggotaLegislatif .btnGroup .btn2 {
+    margin: 0px 20px 10px 0;
   }
 }
 /*# sourceMappingURL=PartaiPage.css.map */

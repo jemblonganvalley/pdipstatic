@@ -1,28 +1,45 @@
+@import "../../utilities/variable/variables.scss";
+
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
 
 .containerDua {
-    padding: 40px 10%;
+    padding: 0 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    // @include smallPhone() {
-    //     display: none;
-    // }
+    @include smallPhone() {
+        display: none;
+    }
 
-    // @include smallPhone() {
-    //     padding: 0 2%;
-    //     flex-direction: column;
-    //     border: 1px solid blue;
-    // }
+    @include smallPhone() {
+        padding: 0 2%;
+        flex-direction: column;
+    }
 
     .contentDua {
         // border: 1px solid blue;
         width: 100%;
-        height: 100%;
+        // height: 66vh;
+        // height: 65.2vh;
+        height: auto;
         display: flex;
         border-radius: 10px;
-        // @include smallPhone() {
-        //     flex-direction: column;
-        // }
+        @include smallPhone() {
+            flex-direction: column;
+        }
 
     .wrapperContentMusic {
         width: 100%;
@@ -31,8 +48,7 @@
         flex-direction: column;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-        background: #c60605;
-        // border: 1px solid blue;
+        background: $lightRed;
         .contentMusic {
             width: 100%;
             height: 100%;
@@ -41,7 +57,7 @@
             // flex-direction: row;
             // align-items: center;
             
-            padding: 2.5rem 7%;
+            padding: 1rem 7% 0 7%;
             // border: 1px solid green;
 
             .col-sm-4 {
@@ -52,7 +68,7 @@
         justify-content: center;
         align-items: center;
 
-        background: url(../../img/megawati10.png);
+        
 
         background-size: cover;
         background-position: center;
@@ -106,10 +122,9 @@
                 align-items: center;
                 // border: 1px solid blue;
                 width: 100%;
-                height: 40vh;
+                height: 30vh;
                 .downloadContent {
                     // margin: 1.5rem;
-                    padding: 1rem;
                     flex-direction: row;
                     display: flex;
                     align-items: center;
@@ -131,7 +146,6 @@
 
         .col-sm-8 {
             // border: 1px solid green;
-            
             margin-left: 2rem;
 
             .containerLirik {
@@ -157,17 +171,15 @@
                 .lirik {
                     color: #ffffff;
                     text-transform: uppercase;
-                    font-size: 10pt;
+                    // font-size: 10pt;
                     font-weight: 700;
                     margin-top: 1rem;
 
                 }
                 p {
-                    font-size: 10pt;
                     letter-spacing: .8px;
                     margin-top: 1rem;
-                    height: 50vh;
-                    // border: 1px solid blue;
+                    height: 30vh;
                     overflow: scroll;
                     color: #ffffff;
                     overflow-x: hidden;
@@ -184,19 +196,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0px 7% 2.5rem 7%;
-            
             .wrapperPlayerMusic {
-                width: 90%;
-                height: 15vh;
+                width: 100%;
+                height: 14vh;
                 display: flex;
                 flex-direction: row;
-
 
                 .playButton {
                     width: 20%;
                     height: 100%;
-                    background: #960001;
+                    background: $darkRed;
                     padding: 1rem 0;
                     display: flex;
                     justify-content: center;
@@ -216,7 +225,7 @@
 
                         &:hover {
                             background-color: #ffffff;
-                            color: #d80010;
+                            color: $colors;
                         }
 
                         i {
@@ -232,10 +241,9 @@
                     width: 80%;
                     height: 100%;
                     background: #ffffff;
-                    padding: 1rem;
+                    padding: .5rem;
 
                     .judulPlay {
-                        padding: 5px;
 
                         position: relative;
                         // border: 1px solid blue;
@@ -248,7 +256,7 @@
                         }
 
                         i {
-                            color: #d80010;
+                            color: $colors;
                             position: absolute;
                             right: 0;
                             font-size: 9pt;
@@ -260,7 +268,6 @@
                         display: flex;
                         flex-direction: row;
                         width: 100%;
-                        padding: 5px 0;
                         align-items: center;
                         position: relative;
 
@@ -373,7 +380,7 @@
         
         .musicList {
             display: flex;
-            // border: 1px solid green;
+            height: auto;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
             background: #ffffff;
@@ -385,16 +392,17 @@
             }
 
             .headersList {
+                gap: 10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: row;
                 // margin: 0 10px;
-                height: 20vh;
+                height: 10vh;
                 border-top-right-radius: 10px;
                 // border: 1px solid blue;
-                background: #960001;
-                color: #ffff;
+                background: $darkRed;
+                color: $accent;
                 img {
                     margin-right: 10px;
                     // border:  1px solid green;
@@ -404,8 +412,9 @@
                     justify-content: center;
                     align-items: center;
                     margin-top: 10px;
+                    gap: 20px;
                     h4 {
-                        font-size: 18pt;
+                        font-size: 17pt;
                         font-weight: 700;
                     }
                 }
@@ -413,28 +422,26 @@
 
             .listMusic {
                 .listSatu {
-                    height: 20vh;
                     display: flex;
                     justify-content: center;
                     color: #c70000;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 9px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
-                        background: #ba0003;
+                        background: $secondRed;
                         color: #ffffff;
                     }
-                h5 {
-                    font-size: 11pt;
+                h6 {
+                    
                     &:nth-child(0) {
                         color: #9e0000;
                     }
                 }
-                p{
-                    margin-top: 5px;
-                    font-size: 9pt;
+                small{
+                    margin-top: 0px;
                     letter-spacing: .8px;
                     font-weight: 300;
                     
@@ -443,27 +450,26 @@
     
                 .listDua {
                     color: #c70000;
-                    height: 20vh;
+                    
                     display: flex;
                     justify-content: center;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 9px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
-                        background: #ba0003;
+                        background: $secondRed;
                         color: #ffffff;
                     }
-                h5 {
-                    font-size: 11pt;
+                h6 {
+                    
                     &:nth-child(0) {
                         color: #9e0000;
                     }
                 }
-                p{
+                small{
                     margin-top: 5px;
-                    font-size: 8pt;
                     letter-spacing: .8px;
                     font-weight: 300;
                     
@@ -473,27 +479,26 @@
                 .listTiga {
                     color: #c70000;
                     display: flex;
-                    height: 20vh;
+                    
                     justify-content: center;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 9px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
-                        background: #ba0003;
+                        background: $secondRed;
                         color: #ffffff;
                     }
-                h5 {
-                    font-size: 11pt;
+                h6 {
+                    
                     // color: #9e0000;
                     &:nth-child(0) {
                         color: #9e0000;
                     }
                 }
-                p{
+                small{
                     margin-top: 5px;
-                    font-size: 8pt;
                     letter-spacing: .8px;
                     font-weight: 300;
                     
@@ -504,27 +509,26 @@
                     display: flex;
                     justify-content: center;
                     width: 100%;
-                    height: 20vh;
+                    
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 9px 20px;
                     border-bottom-right-radius: 10px;
                     transition: .3s;
                     color: #c70000;
                     cursor: pointer;
                     &:hover {
-                        background: #ba0003;
+                        background: $secondRed;
                         color: #ffffff;
                     }
-                h5 {
-                    font-size: 11pt;
+                h6 {
+                    
                     // color: #9e0000;
                     &:nth-child(0) {
                         color: #9e0000;
                     }
                 }
-                p{
+                small{
                     margin-top: 5px;
-                    font-size: 8pt;
                     letter-spacing: .8px;
                     font-weight: 300;
                     

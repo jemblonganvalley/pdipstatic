@@ -23,7 +23,7 @@ $smallPhoneDua : 400px;
         width: calc(90%/3);
         background: #ffffff;
         transition: .5s;
-        margin: 0px 0 0 0;
+        margin: 20px 0 0 0;
 
         @include smallPhone() {
             flex-direction: row;
